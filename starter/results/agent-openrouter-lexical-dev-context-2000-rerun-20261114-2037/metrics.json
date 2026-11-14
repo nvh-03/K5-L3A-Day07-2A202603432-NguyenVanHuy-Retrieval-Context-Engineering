@@ -1,0 +1,44 @@
+{
+  "split": "dev",
+  "cases": 17,
+  "provider_errors": 0,
+  "tool_use": {
+    "n": 17,
+    "N": 17
+  },
+  "grounded_answer": {
+    "0": 1,
+    "1": 2,
+    "2": 12,
+    "N": 15,
+    "mean": 1.7333333333333334
+  },
+  "context_evidence": {
+    "n": 10,
+    "N": 15,
+    "rate": 0.6666666666666666,
+    "missed_query_ids": [
+      "q02",
+      "q05",
+      "q06",
+      "q08",
+      "q10"
+    ]
+  },
+  "citation_validity": {
+    "n": 23,
+    "N": 24
+  },
+  "answer_citation_coverage": {
+    "n": 14,
+    "N": 14
+  },
+  "abstention": {
+    "n": 2,
+    "N": 2
+  },
+  "false_abstention": {
+    "n": 1,
+    "N": 15
+  }
+}

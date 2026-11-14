@@ -1,0 +1,95 @@
+[
+  {
+    "id": "indtest-01",
+    "split": "test",
+    "question": "Mạch theo dõi điểm công suất cực đại được nêu điều chỉnh đại lượng nào của bộ chỉnh lưu?",
+    "retrieval_query_en": "Which quantity does the introduced maximum power point tracking circuit adjust in the rectifier?",
+    "answerable": true,
+    "expected_answer": "Nó điều chỉnh động điện trở tải của bộ chỉnh lưu để lấy công suất tối đa từ tín hiệu RF môi trường.",
+    "gold": [
+      {
+        "source_id": "telecom-06-00045",
+        "page": 22,
+        "evidence": "A novel maximum power point tracking (MPPT) circuit was introduced, which dynamically adjusts the rectifier’s load resistance to extract the maximum available power from the ambient RF signals"
+      }
+    ]
+  },
+  {
+    "id": "indtest-02",
+    "split": "test",
+    "question": "Các cột thông minh ở Seoul tích hợp những thiết bị nào và hỗ trợ các mục đích nào?",
+    "retrieval_query_en": "What components do the smart poles installed in Seoul integrate, and what purposes do they support?",
+    "answerable": true,
+    "expected_answer": "Chúng tích hợp đèn đường, điểm truy cập Wi-Fi và camera CCTV; hỗ trợ giám sát môi trường và tăng cường an toàn công cộng.",
+    "gold": [
+      {
+        "source_id": "telecom-06-00045",
+        "page": 24,
+        "evidence": "For instance, Seoul, South Korea, has initiated the installation of multifunctional smart poles that integrate street lighting, Wi-Fi access points, and CCTV cameras. These poles are designed to support various smart city applications, including environmental monitoring and public safety enhancements."
+      }
+    ]
+  },
+  {
+    "id": "indtest-03",
+    "split": "test",
+    "question": "Các cảm biến môi trường tự cấp nguồn mới được nêu có thể theo dõi những gì?",
+    "retrieval_query_en": "What do the new self-powered environmental sensors monitor?",
+    "answerable": true,
+    "expected_answer": "Chất lượng không khí, lưu lượng giao thông và mức tiêu thụ năng lượng.",
+    "gold": [
+      {
+        "source_id": "telecom-06-00045",
+        "page": 25,
+        "evidence": "self-powered environmental sensors designed to monitor air quality, traffic flow, and energy consumption."
+      }
+    ]
+  },
+  {
+    "id": "indtest-04",
+    "split": "test",
+    "question": "Trong môi trường công nghiệp, việc tích hợp RFEH vào cảm biến từ xa đã hỗ trợ những hoạt động nào?",
+    "retrieval_query_en": "In industrial settings, what activities have been advanced by integrating RF energy harvesting into remote sensors?",
+    "answerable": true,
+    "expected_answer": "Nó thúc đẩy các chiến lược bảo trì dự đoán và hoạt động nhà máy thông minh.",
+    "gold": [
+      {
+        "source_id": "telecom-06-00045",
+        "page": 25,
+        "evidence": "In industrial environments, the integration of RFEH into remote sensors has significantly advanced predictive maintenance strategies and smart factory operations."
+      }
+    ]
+  },
+  {
+    "id": "indtest-05",
+    "split": "test",
+    "question": "Theo bài báo, federated learning giúp các thiết bị trong mạng RFEH học chiến lược thu hoạch năng lượng như thế nào?",
+    "retrieval_query_en": "How does federated learning help devices in RFEH networks learn energy-harvesting strategies?",
+    "answerable": true,
+    "expected_answer": "Các thiết bị cộng tác để học các chiến lược thu hoạch tối ưu mà không cần điều khiển tập trung, qua đó bảo vệ quyền riêng tư dữ liệu.",
+    "gold": [
+      {
+        "source_id": "telecom-06-00045",
+        "page": 33,
+        "evidence": "federated learning techniques are emerging as a solution for distributed RFEH networks, allowing devices to collaboratively learn optimal harvesting strategies without centralized control, preserving data privacy."
+      }
+    ]
+  },
+  {
+    "id": "indtest-06",
+    "split": "test",
+    "question": "Bài báo có nêu nhà sản xuất và mã sản phẩm cụ thể của các cột thông minh ở Seoul không?",
+    "retrieval_query_en": "Does the paper name the manufacturer and specific product model of the smart poles in Seoul?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Bài báo mô tả các thiết bị tích hợp và mục đích sử dụng của cột thông minh ở Seoul nhưng không nêu hãng sản xuất hoặc mã sản phẩm."
+  },
+  {
+    "id": "indtest-07",
+    "split": "test",
+    "question": "Bài báo có cho biết chính xác hệ thống quản lý năng lượng dùng mạng nơ-ron phân phối năng lượng cho bao nhiêu thiết bị IoT không?",
+    "retrieval_query_en": "Does the paper state exactly how many IoT devices receive energy distribution from the neural-network energy management system?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Bài báo nói hệ thống dự đoán nhu cầu và phân phối năng lượng hiệu quả cho nhiều thiết bị IoT nhưng không cho biết số lượng thiết bị cụ thể."
+  }
+]

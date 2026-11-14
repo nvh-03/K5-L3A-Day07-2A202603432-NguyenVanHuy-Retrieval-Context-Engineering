@@ -1,0 +1,1115 @@
+[
+  {
+    "query_id": "q01",
+    "split": "dev",
+    "question": "Nh\u1eefng b\u1ed9 ph\u1eadn ch\u00ednh n\u00e0o t\u1ea1o n\u00ean m\u1ed9t h\u1ec7 th\u1ed1ng thu ho\u1ea1ch n\u0103ng l\u01b0\u1ee3ng RF?",
+    "query": "Nh\u1eefng b\u1ed9 ph\u1eadn ch\u00ednh n\u00e0o t\u1ea1o n\u00ean m\u1ed9t h\u1ec7 th\u1ed1ng thu ho\u1ea1ch n\u0103ng l\u01b0\u1ee3ng RF?",
+    "method": "hybrid",
+    "filters": null,
+    "top_k": 3,
+    "answerable": true,
+    "results": [
+      {
+        "id": "telecom-06-00045:16:paragraph:9:ca29f91be898",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 16,
+        "text": "Passive RF energy harvesters capture ambient RF signals emitted from various sources",
+        "metadata": {
+          "section": "techniques"
+        },
+        "dense_rank": 4,
+        "dense_score": 0.7115973830223083,
+        "score": 0.032018442622950824,
+        "lexical_rank": 1,
+        "lexical_score": 0.2840891643329356,
+        "method": "hybrid_rrf",
+        "rank": 1,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:11:paragraph:7:653a0d1610cb",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 11,
+        "text": "RF Energy Sources and Availability The efficiency of RFEH systems is intricately linked to the availability and strength of ambient RF signals, which serve as the primary energy source. These RF energy sources are broadly categorized into intentional and unintentional emitters. Intentional sources involve dedicated RF power transmitters specifically deployed for wireless power transfer applications, providing a consistent and controllable energy supply.",
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "dense_rank": 8,
+        "dense_score": 0.7050427198410034,
+        "score": 0.03057889822595705,
+        "lexical_rank": 3,
+        "lexical_score": 0.19768778906894702,
+        "method": "hybrid_rrf",
+        "rank": 2,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:12:paragraph:1:4be7a255e4c7",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 12,
+        "text": "Such adaptive strategies are crucial for enhancing the viability of RF energy harvesting in environments where RF energy availability is inconsistent [48,49]. Visual representations of RF energy availability, such as heatmaps, offer valuable insights into the distribution of ambient RF energy across various environments. Several studies have conducted measurements and developed these visualizations to assess RF power density.",
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "dense_rank": 18,
+        "dense_score": 0.6706119579441534,
+        "score": 0.028949545078577336,
+        "lexical_rank": 2,
+        "lexical_score": 0.2579307976136368,
+        "method": "hybrid_rrf",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 103.34460000012768
+  },
+  {
+    "query_id": "q02",
+    "split": "dev",
+    "question": "N\u0103m n\u00e0o l\u00e0 hai m\u1ed1c gi\u1edbi h\u1ea1n ph\u1ea1m vi th\u1eddi gian c\u1ee7a c\u00e1c c\u00f4ng tr\u00ecnh \u0111\u01b0\u1ee3c b\u00e0i t\u1ed5ng quan xem x\u00e9t?",
+    "query": "N\u0103m n\u00e0o l\u00e0 hai m\u1ed1c gi\u1edbi h\u1ea1n ph\u1ea1m vi th\u1eddi gian c\u1ee7a c\u00e1c c\u00f4ng tr\u00ecnh \u0111\u01b0\u1ee3c b\u00e0i t\u1ed5ng quan xem x\u00e9t?",
+    "method": "hybrid",
+    "filters": null,
+    "top_k": 3,
+    "answerable": true,
+    "results": [
+      {
+        "id": "telecom-06-00045:4:paragraph:0:0d6e90278782",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 4,
+        "text": "Telecom 2025, 6, 45 4 of 40 tions between 2019 and 2025 were retained for relevance and timeliness. The inclusion criteria required that articles be published in peer-reviewed journals or reputable conference proceedings and focus on technical developments, applications, challenges, or future opportunities in RFEH. Studies were included if they provided experimental, simulationbased, or validated theoretical results.",
+        "metadata": {
+          "section": "overview"
+        },
+        "dense_rank": 1,
+        "dense_score": 0.5201761722564697,
+        "score": 0.01639344262295082,
+        "method": "hybrid_rrf",
+        "rank": 1,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:3:paragraph:2:c29f4d512a09",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 3,
+        "text": "d to scholarly publications and technologies developed between 2019 and 2025, ensuring relevance and timeliness. Applications in smart cities, healthcare, Industry 4.0, and satellite systems are emphasized, while foundational theory is only discussed as necessary to contextualize recent advances.",
+        "metadata": {
+          "section": "overview"
+        },
+        "dense_rank": 2,
+        "dense_score": 0.4611659348011017,
+        "score": 0.016129032258064516,
+        "method": "hybrid_rrf",
+        "rank": 2,
+        "evidence_hit": true
+      },
+      {
+        "id": "telecom-06-00045:4:paragraph:2:5c7d96255242",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 4,
+        "text": "They covered the use of RFEH in diverse domains such as smart cities, biomedical devices, industrial IoT, satellite communication, and AI-integrated systems. The distribution of selected publications across the years is shown in Figure 1, which illustrates that steady growth is evident from 2021, with 2024 marking the highest publication volume, indicative of maturing interest and investment in RF energy-harvesting technologies.",
+        "metadata": {
+          "section": "overview"
+        },
+        "dense_rank": 3,
+        "dense_score": 0.4102239960298548,
+        "score": 0.015873015873015872,
+        "method": "hybrid_rrf",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 211.92169999994803
+  },
+  {
+    "query_id": "q03",
+    "split": "dev",
+    "question": "Sau s\u00e0ng l\u1ecdc, c\u00f3 bao nhi\u00eau b\u00e0i \u0111\u01b0\u1ee3c ch\u1ecdn cu\u1ed1i c\u00f9ng t\u1eeb s\u1ed1 b\u00e0i ban \u0111\u1ea7u?",
+    "query": "Sau s\u00e0ng l\u1ecdc, c\u00f3 bao nhi\u00eau b\u00e0i \u0111\u01b0\u1ee3c ch\u1ecdn cu\u1ed1i c\u00f9ng t\u1eeb s\u1ed1 b\u00e0i ban \u0111\u1ea7u?",
+    "method": "hybrid",
+    "filters": null,
+    "top_k": 3,
+    "answerable": true,
+    "results": [
+      {
+        "id": "telecom-06-00045:4:paragraph:1:beb6dddc9d5f",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 4,
+        "text": "Publications were excluded if they appeared before 2019, lacked technical depth, or offered purely speculative commentary without substantial analysis or modelling. In total, 167 articles were initially gathered. After removing duplicates, screening abstracts, and conducting full-text evaluations, 132 articles were selected for final inclusion.",
+        "metadata": {
+          "section": "overview"
+        },
+        "dense_rank": 1,
+        "dense_score": 0.5867411422796102,
+        "score": 0.01639344262295082,
+        "method": "hybrid_rrf",
+        "rank": 1,
+        "evidence_hit": true
+      },
+      {
+        "id": "telecom-06-00045:4:paragraph:0:0d6e90278782",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 4,
+        "text": "Telecom 2025, 6, 45 4 of 40 tions between 2019 and 2025 were retained for relevance and timeliness. The inclusion criteria required that articles be published in peer-reviewed journals or reputable conference proceedings and focus on technical developments, applications, challenges, or future opportunities in RFEH. Studies were included if they provided experimental, simulationbased, or validated theoretical results.",
+        "metadata": {
+          "section": "overview"
+        },
+        "dense_rank": 2,
+        "dense_score": 0.4978832749620048,
+        "score": 0.016129032258064516,
+        "method": "hybrid_rrf",
+        "rank": 2,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:3:paragraph:0:cfc27a22e385",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 3,
+        "text": "Telecom 2025, 6, 45 3 of 40 Table 1. Key differences between this review and the related literature.",
+        "metadata": {
+          "section": "overview"
+        },
+        "dense_rank": 3,
+        "dense_score": 0.4059691792102931,
+        "score": 0.015873015873015872,
+        "method": "hybrid_rrf",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 75.4116000000522
+  },
+  {
+    "query_id": "q04",
+    "split": "dev",
+    "question": "B\u1ea3ng ph\u00e2n lo\u1ea1i ghi nh\u1eadn bao nhi\u00eau nghi\u00ean c\u1ee9u v\u1ec1 t\u1ed1i \u01b0u n\u0103ng l\u01b0\u1ee3ng b\u1eb1ng AI/ML?",
+    "query": "B\u1ea3ng ph\u00e2n lo\u1ea1i ghi nh\u1eadn bao nhi\u00eau nghi\u00ean c\u1ee9u v\u1ec1 t\u1ed1i \u01b0u n\u0103ng l\u01b0\u1ee3ng b\u1eb1ng AI/ML?",
+    "method": "hybrid",
+    "filters": null,
+    "top_k": 3,
+    "answerable": true,
+    "results": [
+      {
+        "id": "telecom-06-00045:4:paragraph:4:e1f06efdd59b",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 4,
+        "text": "These include single-band and multi-band rectenna designs, SWIPT-enabled architectures, AI/ML-assisted energy optimization, and hybrid energy-harvesting systems. Table 2 summarizes the number of publications per category.",
+        "metadata": {
+          "section": "overview"
+        },
+        "dense_rank": 5,
+        "dense_score": 0.5964706121823377,
+        "score": 0.03177805800756621,
+        "lexical_rank": 1,
+        "lexical_score": 0.2791550007323331,
+        "method": "hybrid_rrf",
+        "rank": 1,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:3:paragraph:4:596c646af047",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 3,
+        "text": "\u2022 The exploration of future research directions emphasizing AI-driven energy optimization and emerging 6G networks. \u2022 An integrative perspective that uniquely combines AI/ML-based approaches and simultaneous wireless information and power transfer (SWIPT) techniques with practical implementation considerations. The remainder of this paper is structured as follows. Section 2 covers the literature on the fundamental principles and components of RFEH systems.",
+        "metadata": {
+          "section": "overview"
+        },
+        "dense_rank": 3,
+        "dense_score": 0.6173945665359497,
+        "score": 0.031746031746031744,
+        "lexical_rank": 3,
+        "lexical_score": 0.2515462341640655,
+        "method": "hybrid_rrf",
+        "rank": 2,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:23:paragraph:4:7689544b56b4",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 23,
+        "text": "AI has also been applied in power distribution and storage optimization. A neural network-based energy management system was introduced to predict energy demand and distribute harvested energy efficiently across multiple IoT devices [83]. In addition, federated learning frameworks have emerged to enhance distributed energy management by allowing local AI models on edge devices to collaboratively improve global energy-harvesting strategies without centralized data sharing.",
+        "metadata": {
+          "section": "developments"
+        },
+        "dense_rank": 2,
+        "dense_score": 0.6245347261428833,
+        "score": 0.031054405392392875,
+        "lexical_rank": 7,
+        "lexical_score": 0.12028707260228172,
+        "method": "hybrid_rrf",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 71.27749999995103
+  },
+  {
+    "query_id": "q05",
+    "split": "dev",
+    "question": "Ngo\u00e0i thi\u1ebft k\u1ebf m\u1ea1ch, nh\u1eefng y\u1ebfu t\u1ed1 m\u00f4i tr\u01b0\u1eddng v\u00e0 RF n\u00e0o \u1ea3nh h\u01b0\u1edfng hi\u1ec7u su\u1ea5t thu ho\u1ea1ch n\u0103ng l\u01b0\u1ee3ng?",
+    "query": "Ngo\u00e0i thi\u1ebft k\u1ebf m\u1ea1ch, nh\u1eefng y\u1ebfu t\u1ed1 m\u00f4i tr\u01b0\u1eddng v\u00e0 RF n\u00e0o \u1ea3nh h\u01b0\u1edfng hi\u1ec7u su\u1ea5t thu ho\u1ea1ch n\u0103ng l\u01b0\u1ee3ng?",
+    "method": "hybrid",
+    "filters": null,
+    "top_k": 3,
+    "answerable": true,
+    "results": [
+      {
+        "id": "telecom-06-00045:12:paragraph:1:4be7a255e4c7",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 12,
+        "text": "Such adaptive strategies are crucial for enhancing the viability of RF energy harvesting in environments where RF energy availability is inconsistent [48,49]. Visual representations of RF energy availability, such as heatmaps, offer valuable insights into the distribution of ambient RF energy across various environments. Several studies have conducted measurements and developed these visualizations to assess RF power density.",
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "dense_rank": 4,
+        "dense_score": 0.6955797102075559,
+        "score": 0.031754032258064516,
+        "lexical_rank": 2,
+        "lexical_score": 0.2579307976136368,
+        "method": "hybrid_rrf",
+        "rank": 1,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:11:paragraph:7:653a0d1610cb",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 11,
+        "text": "RF Energy Sources and Availability The efficiency of RFEH systems is intricately linked to the availability and strength of ambient RF signals, which serve as the primary energy source. These RF energy sources are broadly categorized into intentional and unintentional emitters. Intentional sources involve dedicated RF power transmitters specifically deployed for wireless power transfer applications, providing a consistent and controllable energy supply.",
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "dense_rank": 5,
+        "dense_score": 0.6929986683427893,
+        "score": 0.03125763125763126,
+        "lexical_rank": 3,
+        "lexical_score": 0.19768778906894702,
+        "method": "hybrid_rrf",
+        "rank": 2,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:13:paragraph:5:e42d6edacd8f",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 13,
+        "text": "Studies indicate that harvested power levels vary significantly based on signal strength and distance from RF sources, reinforcing the need for adaptive energy-harvesting strategies [8]. 4. RF Energy-Harvesting Techniques RFEH encompasses various techniques that enable the conversion of ambient RF signals into usable electrical power. These techniques differ in frequency range, circuit complexity, and integration with other energy sources.",
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "dense_rank": 1,
+        "dense_score": 0.7225713945201458,
+        "score": 0.030679156908665108,
+        "lexical_rank": 10,
+        "lexical_score": 0.16389506094378023,
+        "method": "hybrid_rrf",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 73.65170000002763
+  },
+  {
+    "query_id": "q06",
+    "split": "dev",
+    "question": "M\u1ea1ng ph\u1ed1i h\u1ee3p tr\u1edf kh\u00e1ng c\u00f3 vai tr\u00f2 g\u00ec gi\u1eefa \u0103ng-ten v\u00e0 b\u1ed9 ch\u1ec9nh l\u01b0u?",
+    "query": "M\u1ea1ng ph\u1ed1i h\u1ee3p tr\u1edf kh\u00e1ng c\u00f3 vai tr\u00f2 g\u00ec gi\u1eefa \u0103ng-ten v\u00e0 b\u1ed9 ch\u1ec9nh l\u01b0u?",
+    "method": "hybrid",
+    "filters": null,
+    "top_k": 3,
+    "answerable": true,
+    "results": [
+      {
+        "id": "telecom-06-00045:5:paragraph:7:b05e716d41cd",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 5,
+        "text": "The impedance matching network (IMN) plays a crucial role in ensuring maximum power transfer from the antenna to the rectifier [14]. The rectifying diode converts the RF signal into DC, while the DC-pass filter removes high-frequency harmonics to ensure a smooth DC output. The DC-pass capacitor filter further regulates the output impedance and enhances the stability of the generated DC power.",
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "dense_rank": 1,
+        "dense_score": 0.6432592060124412,
+        "score": 0.01639344262295082,
+        "method": "hybrid_rrf",
+        "rank": 1,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:8:paragraph:4:c7bdc7cd058d",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 8,
+        "text": "Traditional matching networks utilize passive components such as inductors and capacitors configured in various L, T, or \u03c0-network topologies, as shown in Figure 4. An L-network consists of two reactive components (inductors and/or capacitors) arranged in either a series-parallel or parallel-series configuration.",
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "dense_rank": 2,
+        "dense_score": 0.6007036924781627,
+        "score": 0.016129032258064516,
+        "method": "hybrid_rrf",
+        "rank": 2,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:9:paragraph:2:38aa7fb2278c",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 9,
+        "text": "A T-network consists of two inductors, connected in series with the transmission path, and a capacitor placed in a shunt to ground at the centre, forming a structure that resembles the letter \u201cT.\u201d T-networks are commonly used in wideband applications and provide higher flexibility in impedance matching over a broad frequency range. They also help in filtering out unwanted high-frequency components while maintaining efficient impedance transformation [32].",
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "dense_rank": 3,
+        "dense_score": 0.5853687175888598,
+        "score": 0.015873015873015872,
+        "method": "hybrid_rrf",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 78.47149999997782
+  },
+  {
+    "query_id": "q07",
+    "split": "dev",
+    "question": "Trong ph\u1ea7n n\u1ec1n t\u1ea3ng, m\u1ea1ng \u03c0 c\u00f3 l\u1ee3i th\u1ebf b\u0103ng th\u00f4ng n\u00e0o so v\u1edbi m\u1ea1ng L?",
+    "query": "Trong ph\u1ea7n n\u1ec1n t\u1ea3ng, m\u1ea1ng \u03c0 c\u00f3 l\u1ee3i th\u1ebf b\u0103ng th\u00f4ng n\u00e0o so v\u1edbi m\u1ea1ng L?",
+    "method": "hybrid",
+    "filters": {
+      "section": "fundamentals"
+    },
+    "top_k": 3,
+    "answerable": true,
+    "results": [
+      {
+        "id": "telecom-06-00045:9:paragraph:1:ecacc4a996e5",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 9,
+        "text": "( B) Shunt L component. (C) Pi-network. (D) T-network. The \u03c0-network provides a broader bandwidth compared to L-networks and is effective in high-frequency applications requiring better selectivity and attenuation of unwanted signals. Additionally, it allows for greater flexibility in impedance transformation, making it suitable for dynamic RF environments.",
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "dense_rank": 1,
+        "dense_score": 0.7411019072946489,
+        "score": 0.03252247488101534,
+        "lexical_rank": 2,
+        "lexical_score": 0.3347685319355111,
+        "method": "hybrid_rrf",
+        "rank": 1,
+        "evidence_hit": true
+      },
+      {
+        "id": "telecom-06-00045:9:paragraph:0:041ba827762a",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 9,
+        "text": "Telecom 2025, 6, 45 9 of 40 and capacitor are reversed. L-networks are simple to design and are typically used for narrowband applications, where the load impedance is either greater or less than the source impedance [31]. A \u03c0-network consists of two capacitors connected in parallel (shunt) with the transmission line, while an inductor is placed in series. This configuration forms a structure resembling the Greek letter \u201c\u03c0.\u201d Figure 4. L\u2013C impedance matching networks. ( A) Series L component.",
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "dense_rank": 3,
+        "dense_score": 0.5583923389443947,
+        "score": 0.032266458495966696,
+        "lexical_rank": 1,
+        "lexical_score": 0.43641725332373676,
+        "method": "hybrid_rrf",
+        "rank": 2,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:9:paragraph:3:20e2eb0852a6",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 9,
+        "text": "The selection of an appropriate matching network depends on the application requirements, frequency range, and impedance characteristics of the antenna and rectifier circuit. While L-networks offer simplicity and efficiency for narrowband applications, \u03c0- and T-networks provide improved bandwidth performance and greater adaptability for dynamic RF harvesting scenarios.",
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "dense_rank": 2,
+        "dense_score": 0.5759038753538192,
+        "score": 0.0315136476426799,
+        "lexical_rank": 5,
+        "lexical_score": 0.2810760720412664,
+        "method": "hybrid_rrf",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 110.67860000002838
+  },
+  {
+    "query_id": "q08",
+    "split": "dev",
+    "question": "\u0110\u00e1nh \u0111\u1ed5i ch\u00ednh khi th\u00eam nhi\u1ec1u t\u1ea7ng v\u00e0o m\u1ea1ch ch\u1ec9nh l\u01b0u l\u00e0 g\u00ec?",
+    "query": "\u0110\u00e1nh \u0111\u1ed5i ch\u00ednh khi th\u00eam nhi\u1ec1u t\u1ea7ng v\u00e0o m\u1ea1ch ch\u1ec9nh l\u01b0u l\u00e0 g\u00ec?",
+    "method": "hybrid",
+    "filters": null,
+    "top_k": 3,
+    "answerable": true,
+    "results": [
+      {
+        "id": "telecom-06-00045:10:paragraph:2:808360189a1f",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 10,
+        "text": "Figure 6c illustrates a multi-stage voltage multiplier, which is essentially an extended version of the voltage doubler. It further increases the output voltage using multiple capacitor\u2013diode stages. Each stage builds upon the voltage of the previous stage, and the maximum output voltage is determined by the total number of stages [36,37]. However, the primary drawback of multi-stage rectifiers is their decreasing overall efficiency.",
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "dense_rank": 1,
+        "dense_score": 0.643869378797376,
+        "score": 0.01639344262295082,
+        "method": "hybrid_rrf",
+        "rank": 1,
+        "evidence_hit": true
+      },
+      {
+        "id": "telecom-06-00045:10:paragraph:1:b80e739b91df",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 10,
+        "text": "This configuration functions as a full-wave rectifier, ensuring more stable DC output compared to the half-wave rectifier. The circuit consists of a one-stage clamper with a pumping capacitor at the input, a shunt diode, a series-rectifying diode, and a shunt capacitor at the output. The output capacitor acts as a low-pass filter to smooth out variations in the rectified DC voltage. This setup results in a higher average DC voltage, making it more efficient for energy-harvesting applications.",
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "dense_rank": 2,
+        "dense_score": 0.5790035050216473,
+        "score": 0.016129032258064516,
+        "method": "hybrid_rrf",
+        "rank": 2,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:10:paragraph:3:b2ce894883f5",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 10,
+        "text": "As more stages are added, cumulative power losses occur due to the inherent inefficiencies of each stage, making the design a trade-off between output voltage and energy conversion efficiency. Figure 5. Rectenna [38]. Figure 6. Rectifier topologies. ( a) Single diode (single stage). ( b) Voltage doubler. ( c) Voltage multiplier (multi-stage) [35]. The choice of rectifier topology significantly impacts the efficiency of RF-to-DC conversion.",
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "dense_rank": 3,
+        "dense_score": 0.5543970530506436,
+        "score": 0.015873015873015872,
+        "method": "hybrid_rrf",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 102.18089999989388
+  },
+  {
+    "query_id": "q09",
+    "split": "dev",
+    "question": "\u0110\u1eb7c \u0111i\u1ec3m n\u00e0o khi\u1ebfn si\u00eau t\u1ee5 ph\u00f9 h\u1ee3p v\u1edbi \u1ee9ng d\u1ee5ng c\u1ea7n c\u00e1c \u0111\u1ee3t c\u1ea5p n\u0103ng l\u01b0\u1ee3ng th\u01b0\u1eddng xuy\u00ean?",
+    "query": "\u0110\u1eb7c \u0111i\u1ec3m n\u00e0o khi\u1ebfn si\u00eau t\u1ee5 ph\u00f9 h\u1ee3p v\u1edbi \u1ee9ng d\u1ee5ng c\u1ea7n c\u00e1c \u0111\u1ee3t c\u1ea5p n\u0103ng l\u01b0\u1ee3ng th\u01b0\u1eddng xuy\u00ean?",
+    "method": "hybrid",
+    "filters": null,
+    "top_k": 3,
+    "answerable": true,
+    "results": [
+      {
+        "id": "telecom-06-00045:11:paragraph:5:4c158620a46c",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 11,
+        "text": "Supercapacitors can handle sudden power surges and provide immediate energy when needed, while batteries ensure sustained operation over extended durations [2]. Table 4 provides a clearer understanding of their roles in RF energy-harvesting systems and also helps determine the most appropriate storage solution based on specific application requirements. Table 4. Comparative evaluation of supercapacitors and batteries [45].",
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "dense_rank": 1,
+        "dense_score": 0.6205103993415833,
+        "score": 0.01639344262295082,
+        "method": "hybrid_rrf",
+        "rank": 1,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:11:paragraph:1:a8cab621d251",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 11,
+        "text": "Supercapacitors are widely used for their ability to charge and discharge rapidly, making them ideal for applications requiring frequent energy bursts. They have a longer lifespan compared to conventional batteries, as they can withstand millions of charge\u2013discharge cycles without significant degradation [41]. However, supercapacitors have lower energy density, meaning they store less energy per unit volume compared to batteries.",
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "dense_rank": 2,
+        "dense_score": 0.6120331287384033,
+        "score": 0.016129032258064516,
+        "method": "hybrid_rrf",
+        "rank": 2,
+        "evidence_hit": true
+      },
+      {
+        "id": "telecom-06-00045:17:paragraph:1:fd238d5f3ee9",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 17,
+        "text": "The energy captured in passive systems is often in the microwatt range, making ultra-low-power circuit design essential. The careful tuning of the impedance matching network is critical to ensure maximum voltage transfer to the rectifier. Energy storage units such as supercapacitors or thin-film batteries are used to accumulate harvested energy for intermittent power delivery.",
+        "metadata": {
+          "section": "techniques"
+        },
+        "dense_rank": 3,
+        "dense_score": 0.6105067729949951,
+        "score": 0.015873015873015872,
+        "method": "hybrid_rrf",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 122.27830000006179
+  },
+  {
+    "query_id": "q10",
+    "split": "dev",
+    "question": "B\u00e0i b\u00e1o n\u00eau kho\u1ea3ng m\u1eadt \u0111\u1ed9 c\u00f4ng su\u1ea5t RF m\u00f4i tr\u01b0\u1eddng n\u00e0o gi\u1eefa v\u00f9ng n\u00f4ng th\u00f4n v\u00e0 \u0111\u00f4 th\u1ecb?",
+    "query": "B\u00e0i b\u00e1o n\u00eau kho\u1ea3ng m\u1eadt \u0111\u1ed9 c\u00f4ng su\u1ea5t RF m\u00f4i tr\u01b0\u1eddng n\u00e0o gi\u1eefa v\u00f9ng n\u00f4ng th\u00f4n v\u00e0 \u0111\u00f4 th\u1ecb?",
+    "method": "hybrid",
+    "filters": null,
+    "top_k": 3,
+    "answerable": true,
+    "results": [
+      {
+        "id": "telecom-06-00045:28:paragraph:0:e3f325452404",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 28,
+        "text": "Telecom 2025, 6, 45 28 of 40 7.2. Unpredictable RF Energy Availability The unpredictable and dynamic nature of ambient RF energy sources poses another significant limitation. In urban areas, RF power densities are relatively high due to dense cellular, Wi-Fi, and broadcast infrastructures. However, in rural, suburban, or industrial environments, RF energy availability fluctuates greatly and may drop to levels insufficient for practical energy harvesting [36].",
+        "metadata": {
+          "section": "challenges"
+        },
+        "dense_rank": 2,
+        "dense_score": 0.7515796274888307,
+        "score": 0.031754032258064516,
+        "lexical_rank": 4,
+        "lexical_score": 0.1934107570336688,
+        "method": "hybrid_rrf",
+        "rank": 1,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:12:paragraph:2:8895b49efde2",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 12,
+        "text": "A study conducted in Montreal, for instance, measured ambient RF power levels along major streets and highways, providing critical data for understanding RF energy distribution in urban settings. The findings shown in Figure 7 reinforce the feasibility of RF energy harvesting in densely populated commercial districts, where multiple cellular networks operate at higher power levels. However, the study also highlights significant variations in RF power levels across different frequency bands.",
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "dense_rank": 1,
+        "dense_score": 0.7717294786926642,
+        "score": 0.031544957774465976,
+        "lexical_rank": 6,
+        "lexical_score": 0.18198518654211115,
+        "method": "hybrid_rrf",
+        "rank": 2,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:11:paragraph:9:b6477decda24",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 11,
+        "text": "Conversely, rural or remote locations, with fewer such devices, exhibit lower RF energy availability. Studies have indicated that RF power density can",
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "dense_rank": 6,
+        "dense_score": 0.6924701929092456,
+        "score": 0.03007688828584351,
+        "lexical_rank": 7,
+        "lexical_score": 0.17689803264404363,
+        "method": "hybrid_rrf",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 85.60090000014497
+  },
+  {
+    "query_id": "q11",
+    "split": "dev",
+    "question": "\u1ede 2,4 GHz, m\u1ed9t m\u1ea1ch ch\u1ec9nh l\u01b0u \u0111\u01b0\u1ee3c b\u00e1o c\u00e1o \u0111\u1ea1t hi\u1ec7u su\u1ea5t c\u1ef1c \u0111\u1ea1i bao nhi\u00eau t\u1ea1i c\u00f4ng su\u1ea5t \u0111\u1ea7u v\u00e0o 14 dBm?",
+    "query": "\u1ede 2,4 GHz, m\u1ed9t m\u1ea1ch ch\u1ec9nh l\u01b0u \u0111\u01b0\u1ee3c b\u00e1o c\u00e1o \u0111\u1ea1t hi\u1ec7u su\u1ea5t c\u1ef1c \u0111\u1ea1i bao nhi\u00eau t\u1ea1i c\u00f4ng su\u1ea5t \u0111\u1ea7u v\u00e0o 14 dBm?",
+    "method": "hybrid",
+    "filters": null,
+    "top_k": 3,
+    "answerable": true,
+    "results": [
+      {
+        "id": "telecom-06-00045:15:paragraph:1:dc6c92ad8fd3",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 15,
+        "text": "[34] reported that a dual-band rectenna operating at 1.8 GHz and 2.45 GHz achieved measured peak conversion efficiencies of 72% at 1.8 GHz (input power of 4 dbm) and 65% at 2.45 GHz (input power of 3 dbm), as shown in Figure 9b [60]. Another study designed a triple-band rectenna operating at 915 MHz, 1.8 GHz, and 2.1 GHz frequency bands. The proposed rectenna achieved efficiencies greater than 52% when harvesting RF energy from outdoor sources.",
+        "metadata": {
+          "section": "techniques"
+        },
+        "dense_rank": 1,
+        "dense_score": 0.7230514453022926,
+        "score": 0.032266458495966696,
+        "lexical_rank": 3,
+        "lexical_score": 0.3730330705055667,
+        "method": "hybrid_rrf",
+        "rank": 1,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:13:paragraph:1:b38d614a33f5",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 13,
+        "text": "Recent advancements have led to significant improvements in rectenna performance. As shown in Figure 8, a rectifier circuit achieved a peak efficiency of 88% at an input power of 14 dBm while maintaining over 60% efficiency within the input power range of 3 dBm to 16 dBm at 2.4 GHz. Similarly, at 5.8 GHz, it attained a maximum efficiency of 81% at 10 dBm input power, sustaining efficiency above 60% for input power levels between 7 dBm and 12 dBm [ 54].",
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "dense_rank": 5,
+        "dense_score": 0.6274942381683546,
+        "score": 0.0315136476426799,
+        "lexical_rank": 2,
+        "lexical_score": 0.43792090043167975,
+        "method": "hybrid_rrf",
+        "rank": 2,
+        "evidence_hit": true
+      },
+      {
+        "id": "telecom-06-00045:14:paragraph:3:58af52e8dbec",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 14,
+        "text": "A rectifier designed for 2.4 GHz operation, shown in Figure 9a, achieved a conversion efficiency of 62.4% at an input power of \u221210 dBm and a conversion efficiency of 31.1% at an input power of \u221220 dBm, incorporating a voltage booster circuit to enhance performance at low power levels [ 58]. Another optimized rectifying circuit for RF energy scavenging at 2.45 GHz reached a conversion efficiency of 31.16% at an input power of 20 dBm, delivering an output voltage of 10.32 V [59].",
+        "metadata": {
+          "section": "techniques"
+        },
+        "dense_rank": 3,
+        "dense_score": 0.6567283085908568,
+        "score": 0.03125763125763126,
+        "lexical_rank": 5,
+        "lexical_score": 0.29452003228373713,
+        "method": "hybrid_rrf",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 90.62500000004547
+  },
+  {
+    "query_id": "q12",
+    "split": "dev",
+    "question": "H\u1ec7 th\u1ed1ng thu ho\u1ea1ch RF \u0111\u01a1n b\u0103ng ho\u1ea1t \u0111\u1ed9ng \u1edf d\u1ea3i t\u1ea7n n\u00e0o v\u00e0 t\u1ed1i \u01b0u nh\u1eefng th\u00e0nh ph\u1ea7n n\u00e0o?",
+    "query": "H\u1ec7 th\u1ed1ng thu ho\u1ea1ch RF \u0111\u01a1n b\u0103ng ho\u1ea1t \u0111\u1ed9ng \u1edf d\u1ea3i t\u1ea7n n\u00e0o v\u00e0 t\u1ed1i \u01b0u nh\u1eefng th\u00e0nh ph\u1ea7n n\u00e0o?",
+    "method": "hybrid",
+    "filters": null,
+    "top_k": 3,
+    "answerable": true,
+    "results": [
+      {
+        "id": "telecom-06-00045:31:paragraph:8:4caf948c2fec",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 31,
+        "text": "Reconfigurable and Adaptive RF Harvesting Systems Conventional RF energy harvesters are typically designed for fixed-frequency operation and static environmental conditions. However, real-world RF environments are dynamic, with fluctuating signal strengths, frequencies, and interference patterns. Reconfigurable and adaptive RFEH systems, capable of dynamically adjusting their operating parameters in response to environmental changes, represent a critical future direction.",
+        "metadata": {
+          "section": "future"
+        },
+        "dense_rank": 3,
+        "dense_score": 0.7000182449806795,
+        "score": 0.029571646010002173,
+        "lexical_rank": 13,
+        "lexical_score": 0.1604160561190987,
+        "method": "hybrid_rrf",
+        "rank": 1,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:16:paragraph:9:ca29f91be898",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 16,
+        "text": "Passive RF energy harvesters capture ambient RF signals emitted from various sources",
+        "metadata": {
+          "section": "techniques"
+        },
+        "dense_rank": 16,
+        "dense_score": 0.6574932336807251,
+        "score": 0.029551337359792925,
+        "lexical_rank": 1,
+        "lexical_score": 0.2840891643329356,
+        "method": "hybrid_rrf",
+        "rank": 2,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:29:paragraph:8:17a9959c1b31",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 29,
+        "text": "As a result, many RF energy-harvesting initiatives must operate within strict power emission limits, limiting the amount of RF energy available for collection. One major issue is the absence of frequency bands specifically allocated for energy harvesting, which forces systems to rely on ambient RF signals not intended for power transfer. This creates unpredictability in energy availability and complicates legal compliance when deploying intentional RF power sources.",
+        "metadata": {
+          "section": "challenges"
+        },
+        "dense_rank": 14,
+        "dense_score": 0.6598456704708546,
+        "score": 0.0288981288981289,
+        "lexical_rank": 5,
+        "lexical_score": 0.18645325219961906,
+        "method": "hybrid_rrf",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 191.2741000001006
+  },
+  {
+    "query_id": "q13",
+    "split": "dev",
+    "question": "Trong ph\u1ea7n k\u1ef9 thu\u1eadt, dual-band rectenna \u0111\u01b0\u1ee3c n\u00eau \u0111\u1ea1t hi\u1ec7u su\u1ea5t c\u1ef1c \u0111\u1ea1i n\u00e0o t\u1ea1i 1,8 GHz v\u00e0 2,45 GHz?",
+    "query": "Trong ph\u1ea7n k\u1ef9 thu\u1eadt, dual-band rectenna \u0111\u01b0\u1ee3c n\u00eau \u0111\u1ea1t hi\u1ec7u su\u1ea5t c\u1ef1c \u0111\u1ea1i n\u00e0o t\u1ea1i 1,8 GHz v\u00e0 2,45 GHz?",
+    "method": "hybrid",
+    "filters": {
+      "section": "techniques"
+    },
+    "top_k": 3,
+    "answerable": true,
+    "results": [
+      {
+        "id": "telecom-06-00045:15:paragraph:1:dc6c92ad8fd3",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 15,
+        "text": "[34] reported that a dual-band rectenna operating at 1.8 GHz and 2.45 GHz achieved measured peak conversion efficiencies of 72% at 1.8 GHz (input power of 4 dbm) and 65% at 2.45 GHz (input power of 3 dbm), as shown in Figure 9b [60]. Another study designed a triple-band rectenna operating at 915 MHz, 1.8 GHz, and 2.1 GHz frequency bands. The proposed rectenna achieved efficiencies greater than 52% when harvesting RF energy from outdoor sources.",
+        "metadata": {
+          "section": "techniques"
+        },
+        "dense_rank": 1,
+        "dense_score": 0.9128712363762417,
+        "score": 0.03278688524590164,
+        "lexical_rank": 1,
+        "lexical_score": 0.6547532251616568,
+        "method": "hybrid_rrf",
+        "rank": 1,
+        "evidence_hit": true
+      },
+      {
+        "id": "telecom-06-00045:14:paragraph:1:f7ef389f5583",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 14,
+        "text": "Single-band systems are designed to operate at a specific frequency, such as 2.4 GHz or 5.8 GHz, which are commonly used in Wi-Fi, industrial, and ISM (Industrial, Scientific, and Medical) band applications. These systems optimize impedance matching networks and rectifier circuits to maximize efficiency at a single frequency, ensuring minimal losses. Typical antennas used for single-band RREH are microstrip patch antennas, monopole antennas, and dipole antennas.",
+        "metadata": {
+          "section": "techniques"
+        },
+        "dense_rank": 3,
+        "dense_score": 0.6762769625352014,
+        "score": 0.03149801587301587,
+        "lexical_rank": 4,
+        "lexical_score": 0.24594958839652814,
+        "method": "hybrid_rrf",
+        "rank": 2,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:14:paragraph:3:58af52e8dbec",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 14,
+        "text": "A rectifier designed for 2.4 GHz operation, shown in Figure 9a, achieved a conversion efficiency of 62.4% at an input power of \u221210 dBm and a conversion efficiency of 31.1% at an input power of \u221220 dBm, incorporating a voltage booster circuit to enhance performance at low power levels [ 58]. Another optimized rectifying circuit for RF energy scavenging at 2.45 GHz reached a conversion efficiency of 31.16% at an input power of 20 dBm, delivering an output voltage of 10.32 V [59].",
+        "metadata": {
+          "section": "techniques"
+        },
+        "dense_rank": 2,
+        "dense_score": 0.7034417390823364,
+        "score": 0.03128054740957967,
+        "lexical_rank": 6,
+        "lexical_score": 0.17081773558788332,
+        "method": "hybrid_rrf",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 146.12929999998414
+  },
+  {
+    "query_id": "q14",
+    "split": "dev",
+    "question": "H\u1ec7 th\u1ed1ng thu ho\u1ea1ch b\u0103ng r\u1ed9ng quad-band \u0111\u01b0\u1ee3c n\u00eau ho\u1ea1t \u0111\u1ed9ng trong d\u1ea3i t\u1ea7n n\u00e0o?",
+    "query": "H\u1ec7 th\u1ed1ng thu ho\u1ea1ch b\u0103ng r\u1ed9ng quad-band \u0111\u01b0\u1ee3c n\u00eau ho\u1ea1t \u0111\u1ed9ng trong d\u1ea3i t\u1ea7n n\u00e0o?",
+    "method": "hybrid",
+    "filters": null,
+    "top_k": 3,
+    "answerable": true,
+    "results": [
+      {
+        "id": "telecom-06-00045:13:paragraph:6:ec8182d72d0c",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 13,
+        "text": "This section discusses key approaches, including single-band vs. multi-band harvesting, narrowband vs. broadband harvesting,",
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "dense_rank": 2,
+        "dense_score": 0.4470444651219576,
+        "score": 0.03200204813108039,
+        "lexical_rank": 3,
+        "lexical_score": 0.1590725741761987,
+        "method": "hybrid_rrf",
+        "rank": 1,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:4:paragraph:4:e1f06efdd59b",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 4,
+        "text": "These include single-band and multi-band rectenna designs, SWIPT-enabled architectures, AI/ML-assisted energy optimization, and hybrid energy-harvesting systems. Table 2 summarizes the number of publications per category.",
+        "metadata": {
+          "section": "overview"
+        },
+        "dense_rank": 6,
+        "dense_score": 0.38654966314285,
+        "score": 0.030536130536130537,
+        "lexical_rank": 5,
+        "lexical_score": 0.13609666061556122,
+        "method": "hybrid_rrf",
+        "rank": 2,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:14:paragraph:1:f7ef389f5583",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 14,
+        "text": "Single-band systems are designed to operate at a specific frequency, such as 2.4 GHz or 5.8 GHz, which are commonly used in Wi-Fi, industrial, and ISM (Industrial, Scientific, and Medical) band applications. These systems optimize impedance matching networks and rectifier circuits to maximize efficiency at a single frequency, ensuring minimal losses. Typical antennas used for single-band RREH are microstrip patch antennas, monopole antennas, and dipole antennas.",
+        "metadata": {
+          "section": "techniques"
+        },
+        "dense_rank": 7,
+        "dense_score": 0.37403994047879885,
+        "score": 0.03007688828584351,
+        "lexical_rank": 6,
+        "lexical_score": 0.12052433715958819,
+        "method": "hybrid_rrf",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 142.95830000014575
+  },
+  {
+    "query_id": "q15",
+    "split": "dev",
+    "question": "N\u0103ng l\u01b0\u1ee3ng thu \u0111\u01b0\u1ee3c trong c\u00e1c h\u1ec7 th\u1ed1ng thu ho\u1ea1ch RF th\u1ee5 \u0111\u1ed9ng th\u01b0\u1eddng \u1edf m\u1ee9c n\u00e0o?",
+    "query": "N\u0103ng l\u01b0\u1ee3ng thu \u0111\u01b0\u1ee3c trong c\u00e1c h\u1ec7 th\u1ed1ng thu ho\u1ea1ch RF th\u1ee5 \u0111\u1ed9ng th\u01b0\u1eddng \u1edf m\u1ee9c n\u00e0o?",
+    "method": "hybrid",
+    "filters": null,
+    "top_k": 3,
+    "answerable": true,
+    "results": [
+      {
+        "id": "telecom-06-00045:16:paragraph:9:ca29f91be898",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 16,
+        "text": "Passive RF energy harvesters capture ambient RF signals emitted from various sources",
+        "metadata": {
+          "section": "techniques"
+        },
+        "dense_rank": 3,
+        "dense_score": 0.7290012240409851,
+        "score": 0.032266458495966696,
+        "lexical_rank": 1,
+        "lexical_score": 0.2840891643329356,
+        "method": "hybrid_rrf",
+        "rank": 1,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:11:paragraph:7:653a0d1610cb",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 11,
+        "text": "RF Energy Sources and Availability The efficiency of RFEH systems is intricately linked to the availability and strength of ambient RF signals, which serve as the primary energy source. These RF energy sources are broadly categorized into intentional and unintentional emitters. Intentional sources involve dedicated RF power transmitters specifically deployed for wireless power transfer applications, providing a consistent and controllable energy supply.",
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "dense_rank": 4,
+        "dense_score": 0.7251373529434204,
+        "score": 0.03149801587301587,
+        "lexical_rank": 3,
+        "lexical_score": 0.19768778906894702,
+        "method": "hybrid_rrf",
+        "rank": 2,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:6:paragraph:0:5f2202e639d7",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 6,
+        "text": "Telecom 2025, 6, 45 6 of 40 Figure 2. RF energy-harvesting process. The efficiency of RFEH is influenced by factors such as the strength and frequency of the ambient RF signals, the design and orientation of the antenna, the effectiveness of the rectifier circuit, proper impedance matching, variations in RF signal availability due to interference, distance from the source, and obstacles. 3.2.",
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "dense_rank": 1,
+        "dense_score": 0.7408744692802429,
+        "score": 0.030886196246139225,
+        "lexical_rank": 9,
+        "lexical_score": 0.16889358009027347,
+        "method": "hybrid_rrf",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 161.65890000002037
+  },
+  {
+    "query_id": "q21",
+    "split": "dev",
+    "question": "B\u00e0i b\u00e1o c\u00f3 n\u00eau dung l\u01b0\u1ee3ng c\u1ee5 th\u1ec3, t\u00ednh b\u1eb1ng mAh, c\u1ee7a pin lithium-ion \u0111\u01b0\u1ee3c d\u00f9ng trong m\u1ed9t h\u1ec7 th\u1ed1ng thu ho\u1ea1ch RF kh\u00f4ng?",
+    "query": "B\u00e0i b\u00e1o c\u00f3 n\u00eau dung l\u01b0\u1ee3ng c\u1ee5 th\u1ec3, t\u00ednh b\u1eb1ng mAh, c\u1ee7a pin lithium-ion \u0111\u01b0\u1ee3c d\u00f9ng trong m\u1ed9t h\u1ec7 th\u1ed1ng thu ho\u1ea1ch RF kh\u00f4ng?",
+    "method": "hybrid",
+    "filters": null,
+    "top_k": 3,
+    "answerable": false,
+    "results": [
+      {
+        "id": "telecom-06-00045:11:paragraph:2:4c0a013cd0f9",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 11,
+        "text": "This makes them more suitable for low-power, short-duration applications such as wireless sensor nodes, IoT devices, and energy buffering in transient-powered systems [42,43]. Rechargeable batteries, such as lithium-ion and lithium-polymer batteries, offer significantly higher energy density, allowing them to store more energy for prolonged operation.",
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "dense_rank": 5,
+        "dense_score": 0.591761076941427,
+        "score": 0.03177805800756621,
+        "lexical_rank": 1,
+        "lexical_score": 0.3942679846140178,
+        "method": "hybrid_rrf",
+        "rank": 1,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:6:paragraph:0:5f2202e639d7",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 6,
+        "text": "Telecom 2025, 6, 45 6 of 40 Figure 2. RF energy-harvesting process. The efficiency of RFEH is influenced by factors such as the strength and frequency of the ambient RF signals, the design and orientation of the antenna, the effectiveness of the rectifier circuit, proper impedance matching, variations in RF signal availability due to interference, distance from the source, and obstacles. 3.2.",
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "dense_rank": 7,
+        "dense_score": 0.5472443969700109,
+        "score": 0.029211087420042643,
+        "lexical_rank": 10,
+        "lexical_score": 0.030680152801415107,
+        "method": "hybrid_rrf",
+        "rank": 2,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:29:paragraph:8:17a9959c1b31",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 29,
+        "text": "As a result, many RF energy-harvesting initiatives must operate within strict power emission limits, limiting the amount of RF energy available for collection. One major issue is the absence of frequency bands specifically allocated for energy harvesting, which forces systems to rely on ambient RF signals not intended for power transfer. This creates unpredictability in energy availability and complicates legal compliance when deploying intentional RF power sources.",
+        "metadata": {
+          "section": "challenges"
+        },
+        "dense_rank": 12,
+        "dense_score": 0.5227521034774657,
+        "score": 0.02904040404040404,
+        "lexical_rank": 6,
+        "lexical_score": 0.033869933154046135,
+        "method": "hybrid_rrf",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 105.94679999985601
+  },
+  {
+    "query_id": "q22",
+    "split": "dev",
+    "question": "B\u00e0i b\u00e1o c\u00f3 x\u00e1c \u0111\u1ecbnh m\u1ed9t m\u1eabu \u0111i\u1ec7n tho\u1ea1i th\u00f4ng minh c\u1ee5 th\u1ec3 \u0111\u01b0\u1ee3c d\u00f9ng l\u00e0m thi\u1ebft b\u1ecb th\u1eed nghi\u1ec7m cho rectenna kh\u00f4ng?",
+    "query": "B\u00e0i b\u00e1o c\u00f3 x\u00e1c \u0111\u1ecbnh m\u1ed9t m\u1eabu \u0111i\u1ec7n tho\u1ea1i th\u00f4ng minh c\u1ee5 th\u1ec3 \u0111\u01b0\u1ee3c d\u00f9ng l\u00e0m thi\u1ebft b\u1ecb th\u1eed nghi\u1ec7m cho rectenna kh\u00f4ng?",
+    "method": "hybrid",
+    "filters": null,
+    "top_k": 3,
+    "answerable": false,
+    "results": [
+      {
+        "id": "telecom-06-00045:31:paragraph:7:be109529fe0b",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 31,
+        "text": "Research efforts focusing on nanomaterial-enhanced substrates and tunable smart surfaces are expected to drive the development of a new generation of rectennas with record-breaking efficiency and flexibility. Additionally, developing standardized testing protocols for evaluating rectenna performance across a range of frequencies, input power levels, and mechanical deformation scenarios will support the benchmarking and commercialization of next-generation rectenna technologies [5]. 8.2.",
+        "metadata": {
+          "section": "future"
+        },
+        "dense_rank": 4,
+        "dense_score": 0.5593291950425768,
+        "score": 0.030776515151515152,
+        "lexical_rank": 6,
+        "lexical_score": 0.1970735779047758,
+        "method": "hybrid_rrf",
+        "rank": 1,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:34:paragraph:1:c86da551cf96",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 34,
+        "text": "Key advancements have been recorded in rectenna design, impedance matching networks, metamaterial-assisted harvesting, and AI-driven energy optimization, resulting in improved RF-to-DC conversion efficiencies and more robust multi-band operation. The applications explored across smart cities, biomedical devices, industrial IoT, smart agriculture, and satellite communications highlight the growing significance of RFEH in enabling self-sustaining, maintenance-free electronic systems.",
+        "metadata": {
+          "section": "conclusions"
+        },
+        "dense_rank": 2,
+        "dense_score": 0.5691787857306737,
+        "score": 0.029116045245077504,
+        "lexical_rank": 17,
+        "lexical_score": 0.11001380435055501,
+        "method": "hybrid_rrf",
+        "rank": 2,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:5:paragraph:0:d694521887ff",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 5,
+        "text": "Telecom 2025, 6, 45 5 of 40 Table 2. Categorization of selected RF energy-harvesting studies. Category Number of Articles Single-band rectenna designs 22 Multi-band/multi-source energy harvesters 20 SWIPT-enabled systems 18 AI/ML-assisted energy optimization 15 Hybrid energy harvesting (RF + solar/etc.) 12 Biomedical applications 10 Smart cities/urban infrastructure 13 Industrial IoT/WSN 22 The analysis shows that improving rectenna designs is still the focus of most studies.",
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "dense_rank": 13,
+        "dense_score": 0.5245955869796531,
+        "score": 0.028404512489927477,
+        "lexical_rank": 8,
+        "lexical_score": 0.17904392927812235,
+        "method": "hybrid_rrf",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 77.80260000004091
+  }
+]

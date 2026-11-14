@@ -1,0 +1,263 @@
+[
+  {
+    "query_id": "indtest-01",
+    "split": "test",
+    "question": "M\u1ea1ch theo d\u00f5i \u0111i\u1ec3m c\u00f4ng su\u1ea5t c\u1ef1c \u0111\u1ea1i \u0111\u01b0\u1ee3c n\u00eau \u0111i\u1ec1u ch\u1ec9nh \u0111\u1ea1i l\u01b0\u1ee3ng n\u00e0o c\u1ee7a b\u1ed9 ch\u1ec9nh l\u01b0u?",
+    "query": "M\u1ea1ch theo d\u00f5i \u0111i\u1ec3m c\u00f4ng su\u1ea5t c\u1ef1c \u0111\u1ea1i \u0111\u01b0\u1ee3c n\u00eau \u0111i\u1ec1u ch\u1ec9nh \u0111\u1ea1i l\u01b0\u1ee3ng n\u00e0o c\u1ee7a b\u1ed9 ch\u1ec9nh l\u01b0u?",
+    "query_field": "question",
+    "method": "lexical",
+    "filters": null,
+    "top_k": 3,
+    "answerable": true,
+    "results": [],
+    "elapsed_ms": 1.167600000371749
+  },
+  {
+    "query_id": "indtest-02",
+    "split": "test",
+    "question": "C\u00e1c c\u1ed9t th\u00f4ng minh \u1edf Seoul t\u00edch h\u1ee3p nh\u1eefng thi\u1ebft b\u1ecb n\u00e0o v\u00e0 h\u1ed7 tr\u1ee3 c\u00e1c m\u1ee5c \u0111\u00edch n\u00e0o?",
+    "query": "C\u00e1c c\u1ed9t th\u00f4ng minh \u1edf Seoul t\u00edch h\u1ee3p nh\u1eefng thi\u1ebft b\u1ecb n\u00e0o v\u00e0 h\u1ed7 tr\u1ee3 c\u00e1c m\u1ee5c \u0111\u00edch n\u00e0o?",
+    "query_field": "question",
+    "method": "lexical",
+    "filters": null,
+    "top_k": 3,
+    "answerable": true,
+    "results": [
+      {
+        "id": "telecom-06-00045:24:paragraph:4:9d80f5472752",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 24,
+        "metadata": {
+          "section": "applications"
+        },
+        "text": "For instance, Seoul, South Korea, has initiated the installation of multifunctional smart poles that integrate street lighting, Wi-Fi access points, and CCTV cameras. These poles are designed to support various smart city applications, including environmental monitoring and public safety enhancements.",
+        "score": 0.19702314594933884,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 1,
+        "evidence_hit": true
+      }
+    ],
+    "elapsed_ms": 0.7635000001755543
+  },
+  {
+    "query_id": "indtest-03",
+    "split": "test",
+    "question": "C\u00e1c c\u1ea3m bi\u1ebfn m\u00f4i tr\u01b0\u1eddng t\u1ef1 c\u1ea5p ngu\u1ed3n m\u1edbi \u0111\u01b0\u1ee3c n\u00eau c\u00f3 th\u1ec3 theo d\u00f5i nh\u1eefng g\u00ec?",
+    "query": "C\u00e1c c\u1ea3m bi\u1ebfn m\u00f4i tr\u01b0\u1eddng t\u1ef1 c\u1ea5p ngu\u1ed3n m\u1edbi \u0111\u01b0\u1ee3c n\u00eau c\u00f3 th\u1ec3 theo d\u00f5i nh\u1eefng g\u00ec?",
+    "query_field": "question",
+    "method": "lexical",
+    "filters": null,
+    "top_k": 3,
+    "answerable": true,
+    "results": [],
+    "elapsed_ms": 0.30079999942245195
+  },
+  {
+    "query_id": "indtest-04",
+    "split": "test",
+    "question": "Trong m\u00f4i tr\u01b0\u1eddng c\u00f4ng nghi\u1ec7p, vi\u1ec7c t\u00edch h\u1ee3p RFEH v\u00e0o c\u1ea3m bi\u1ebfn t\u1eeb xa \u0111\u00e3 h\u1ed7 tr\u1ee3 nh\u1eefng ho\u1ea1t \u0111\u1ed9ng n\u00e0o?",
+    "query": "Trong m\u00f4i tr\u01b0\u1eddng c\u00f4ng nghi\u1ec7p, vi\u1ec7c t\u00edch h\u1ee3p RFEH v\u00e0o c\u1ea3m bi\u1ebfn t\u1eeb xa \u0111\u00e3 h\u1ed7 tr\u1ee3 nh\u1eefng ho\u1ea1t \u0111\u1ed9ng n\u00e0o?",
+    "query_field": "question",
+    "method": "lexical",
+    "filters": null,
+    "top_k": 3,
+    "answerable": true,
+    "results": [
+      {
+        "id": "telecom-06-00045:20:paragraph:0:189e2e2e41aa",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 20,
+        "metadata": {
+          "section": "techniques"
+        },
+        "text": "Telecom 2025, 6, 45 20 of 40 Table 5. Comparison of RFEH techniques.",
+        "score": 0.1940912595043241,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 1,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:2:paragraph:7:bcb2d5a60b21",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 2,
+        "metadata": {
+          "section": "overview"
+        },
+        "text": "The key contributions include a detailed analysis of existing RFEH techniques, including rectenna designs, impedance matching networks, and power management circuits; a review of recent developments in RFEH for IoT, smart cities, and biomedical applications; the identification of current challenges and research gaps in RF energy harvesting; and an exploration of future opportunities, including machine learningbased energy optimization and the role of 6G networks in wireless power transfer.",
+        "score": 0.15738245121921693,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 2,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:2:paragraph:5:5297d35c3c2b",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 2,
+        "metadata": {
+          "section": "overview"
+        },
+        "text": "Interference management poses another challenge in maximizing harvested RF energy without affecting primary communication signals. Energy storage efficiency remains a critical area in need of improvement, with researchers exploring new materials for ultra-low-power energy storage in RFEH systems. The purpose of this paper is to provide a thorough synthesis of recent innovations in RFEH techniques and architectures.",
+        "score": 0.15619322848651893,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 0.6518999998661457
+  },
+  {
+    "query_id": "indtest-05",
+    "split": "test",
+    "question": "Theo b\u00e0i b\u00e1o, federated learning gi\u00fap c\u00e1c thi\u1ebft b\u1ecb trong m\u1ea1ng RFEH h\u1ecdc chi\u1ebfn l\u01b0\u1ee3c thu ho\u1ea1ch n\u0103ng l\u01b0\u1ee3ng nh\u01b0 th\u1ebf n\u00e0o?",
+    "query": "Theo b\u00e0i b\u00e1o, federated learning gi\u00fap c\u00e1c thi\u1ebft b\u1ecb trong m\u1ea1ng RFEH h\u1ecdc chi\u1ebfn l\u01b0\u1ee3c thu ho\u1ea1ch n\u0103ng l\u01b0\u1ee3ng nh\u01b0 th\u1ebf n\u00e0o?",
+    "query_field": "question",
+    "method": "lexical",
+    "filters": null,
+    "top_k": 3,
+    "answerable": true,
+    "results": [
+      {
+        "id": "telecom-06-00045:34:paragraph:4:8fffe0f51056",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 34,
+        "metadata": {
+          "section": "conclusions"
+        },
+        "text": "There is a critical need for multidisciplinary approaches combining material science, RF engineering, machine learning, and regulatory policy to design adaptive, environment-aware RF harvesting systems capable of operating efficiently under real-world conditions. The exploration of AI-driven predictive energy management and federated learning in distributed harvester networks can optimize energy capture and consumption dynamically.",
+        "score": 0.2825747302780951,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 1,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:33:paragraph:1:d2aee0d8349f",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 33,
+        "metadata": {
+          "section": "future"
+        },
+        "text": "Moreover, federated learning techniques are emerging as a solution for distributed RFEH networks, allowing devices to collaboratively learn optimal harvesting strategies without centralized control, preserving data privacy. AI-based optimization also supports the realization of cognitive radio energy harvesting, where devices not only sense and adapt to RF environments but intelligently forecast RF spectrum usage patterns to maximize energy capture [11,128].",
+        "score": 0.21019638509136868,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 2,
+        "evidence_hit": true
+      },
+      {
+        "id": "telecom-06-00045:23:paragraph:4:7689544b56b4",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 23,
+        "metadata": {
+          "section": "developments"
+        },
+        "text": "AI has also been applied in power distribution and storage optimization. A neural network-based energy management system was introduced to predict energy demand and distribute harvested energy efficiently across multiple IoT devices [83]. In addition, federated learning frameworks have emerged to enhance distributed energy management by allowing local AI models on edge devices to collaboratively improve global energy-harvesting strategies without centralized data sharing.",
+        "score": 0.1823415583267191,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 0.6859999994048849
+  },
+  {
+    "query_id": "indtest-06",
+    "split": "test",
+    "question": "B\u00e0i b\u00e1o c\u00f3 n\u00eau nh\u00e0 s\u1ea3n xu\u1ea5t v\u00e0 m\u00e3 s\u1ea3n ph\u1ea9m c\u1ee5 th\u1ec3 c\u1ee7a c\u00e1c c\u1ed9t th\u00f4ng minh \u1edf Seoul kh\u00f4ng?",
+    "query": "B\u00e0i b\u00e1o c\u00f3 n\u00eau nh\u00e0 s\u1ea3n xu\u1ea5t v\u00e0 m\u00e3 s\u1ea3n ph\u1ea9m c\u1ee5 th\u1ec3 c\u1ee7a c\u00e1c c\u1ed9t th\u00f4ng minh \u1edf Seoul kh\u00f4ng?",
+    "query_field": "question",
+    "method": "lexical",
+    "filters": null,
+    "top_k": 3,
+    "answerable": false,
+    "results": [
+      {
+        "id": "telecom-06-00045:24:paragraph:4:9d80f5472752",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 24,
+        "metadata": {
+          "section": "applications"
+        },
+        "text": "For instance, Seoul, South Korea, has initiated the installation of multifunctional smart poles that integrate street lighting, Wi-Fi access points, and CCTV cameras. These poles are designed to support various smart city applications, including environmental monitoring and public safety enhancements.",
+        "score": 0.19702314594933884,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 1,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 0.35969999953522347
+  },
+  {
+    "query_id": "indtest-07",
+    "split": "test",
+    "question": "B\u00e0i b\u00e1o c\u00f3 cho bi\u1ebft ch\u00ednh x\u00e1c h\u1ec7 th\u1ed1ng qu\u1ea3n l\u00fd n\u0103ng l\u01b0\u1ee3ng d\u00f9ng m\u1ea1ng n\u01a1-ron ph\u00e2n ph\u1ed1i n\u0103ng l\u01b0\u1ee3ng cho bao nhi\u00eau thi\u1ebft b\u1ecb IoT kh\u00f4ng?",
+    "query": "B\u00e0i b\u00e1o c\u00f3 cho bi\u1ebft ch\u00ednh x\u00e1c h\u1ec7 th\u1ed1ng qu\u1ea3n l\u00fd n\u0103ng l\u01b0\u1ee3ng d\u00f9ng m\u1ea1ng n\u01a1-ron ph\u00e2n ph\u1ed1i n\u0103ng l\u01b0\u1ee3ng cho bao nhi\u00eau thi\u1ebft b\u1ecb IoT kh\u00f4ng?",
+    "query_field": "question",
+    "method": "lexical",
+    "filters": null,
+    "top_k": 3,
+    "answerable": false,
+    "results": [
+      {
+        "id": "telecom-06-00045:33:paragraph:7:b1131c948b8f",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 33,
+        "metadata": {
+          "section": "future"
+        },
+        "text": "Testbeds integrating RF harvesters with common IoT platforms such as LoRaWAN and NB-IoT are being proposed to evaluate system interoperability and scalability [128,131]. Innovative business models will also be needed, such as energy-as-a-service platforms where energy harvested from ambient RF sources is monetized or shared across IoT ecosystems [131,132].",
+        "score": 0.27839017866150007,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 1,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:30:paragraph:3:4d72715007f8",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 30,
+        "metadata": {
+          "section": "challenges"
+        },
+        "text": "Recent efforts have begun exploring standardization for wireless power transfer and energy-harvesting systems, particularly in 5G and IoT contexts, but comprehensive regulatory guidelines remain lacking. Standardization bodies such as IEEE P2668 and ETSI are beginning to draft interoperability standards and performance benchmarks for energy-harvesting modules, including guidelines for rectenna efficiency, output power levels, and safe integration with IoT networks.",
+        "score": 0.18460898986881652,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 2,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:25:paragraph:9:fcb049559291",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 25,
+        "metadata": {
+          "section": "applications"
+        },
+        "text": "Industrial IoT In industrial environments, the integration of RFEH into remote sensors has significantly advanced predictive maintenance strategies and smart factory operations. Wireless",
+        "score": 0.17562581699167384,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 0.5364999997254927
+  }
+]

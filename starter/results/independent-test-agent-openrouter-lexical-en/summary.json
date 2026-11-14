@@ -1,0 +1,16 @@
+{
+  "split": "test",
+  "method": "lexical",
+  "model": "openai/gpt-4o-mini",
+  "retriever_config": {
+    "algorithm": "tfidf"
+  },
+  "questions": 7,
+  "status_counts": {
+    "answered": 5,
+    "abstain": 2
+  },
+  "median_ms": 6771.341900000152,
+  "service_cost_usd": null,
+  "service_cost_note": "Not reported by the configured model endpoint."
+}

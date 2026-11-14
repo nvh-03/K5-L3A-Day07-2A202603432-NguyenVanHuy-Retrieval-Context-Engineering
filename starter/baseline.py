@@ -36,15 +36,26 @@ def validate(chunks, questions):
         ids.add(q['id'])
         if q.get('split') not in ('dev', 'test') or not isinstance(q.get('question'), str) or not q['question'].strip():
             raise ValueError(f"question {q['id']}: split hoặc question không hợp lệ")
-        if not isinstance(q.get('expected_answer'), str) or not q['expected_answer'].strip():
-            raise ValueError(f"question {q['id']}: expected_answer phải là chuỗi không rỗng")
-        if not isinstance(q.get('gold'), list) or not q['gold']:
-            raise ValueError(f"question {q['id']}: gold phải là danh sách không rỗng")
-        for g in q['gold']:
-            if not all(key in g and g[key] is not None for key in ('source_id', 'page', 'evidence')) or not isinstance(g['evidence'], str) or not g['evidence']:
-                raise ValueError(f"question {q['id']}: gold không hợp lệ")
-            if not any(hit(c, [g]) for c in chunks):
-                raise ValueError(f"question {q['id']}: gold không nằm trọn trong chunk đúng nguồn/trang")
+        answerable = q.get('answerable', True)
+        if not isinstance(answerable, bool):
+            raise ValueError(f"question {q['id']}: answerable phải là boolean")
+        if answerable:
+            if not isinstance(q.get('expected_answer'), str) or not q['expected_answer'].strip():
+                raise ValueError(f"question {q['id']}: expected_answer phải là chuỗi không rỗng")
+            if not isinstance(q.get('gold'), list) or not q['gold']:
+                raise ValueError(f"question {q['id']}: gold phải là danh sách không rỗng")
+            for g in q['gold']:
+                if not all(key in g and g[key] is not None for key in ('source_id', 'page', 'evidence')) or not isinstance(g['evidence'], str) or not g['evidence']:
+                    raise ValueError(f"question {q['id']}: gold không hợp lệ")
+                if not any(hit(c, [g]) for c in chunks):
+                    raise ValueError(f"question {q['id']}: gold không nằm trọn trong chunk đúng nguồn/trang")
+        else:
+            if not isinstance(q.get('expected_behavior'), str) or not q['expected_behavior'].strip():
+                raise ValueError(f"question {q['id']}: expected_behavior phải được ghi cho câu thiếu bằng chứng")
+            if not isinstance(q.get('absence_reason'), str) or not q['absence_reason'].strip():
+                raise ValueError(f"question {q['id']}: absence_reason phải được ghi cho câu thiếu bằng chứng")
+            if 'gold' in q or 'expected_answer' in q:
+                raise ValueError(f"question {q['id']}: câu thiếu bằng chứng không chứa gold hoặc expected_answer")
 
 
 def hit(chunk, gold):
@@ -64,12 +75,17 @@ class TfidfIndex:
         norm = math.sqrt(sum(value * value for value in vector.values())) or 1
         return {term: value / norm for term, value in vector.items()}
 
-    def search(self, question, top_k=3):
+    def search(self, question, top_k=3, filters=None):
+        if top_k <= 0:
+            raise ValueError('top_k phải dương')
+        if filters is not None and not isinstance(filters, dict):
+            raise ValueError('filters phải là object hoặc None')
         query = self._vector(Counter(tokenize(question)))
         results = []
         for chunk, vector in zip(self.chunks, self.vectors):
             score = sum(value * vector.get(term, 0) for term, value in query.items())
-            if score > 0:
+            metadata = chunk.get('metadata', {})
+            if score > 0 and (filters is None or all(metadata.get(key) == value for key, value in filters.items())):
                 results.append({**chunk, 'score': score, 'strategy': 'tfidf'})
         return sorted(results, key=lambda c: (-c['score'], c['id']))[:top_k]
 
@@ -91,13 +107,22 @@ def evaluate(index, questions, budget=800):
     traces = []
     for q in questions:
         start = time.perf_counter()
+        answerable = q.get('answerable', True)
+        if not answerable:
+            elapsed_ms = (time.perf_counter() - start) * 1000
+            traces.append({'query_id': q['id'], 'split': q['split'], 'question': q['question'],
+                           'strategy': 'tfidf', 'top_k': 3, 'budget_chars': budget,
+                           'answerable': False, 'gold': [], 'results': [], 'context': '', 'context_ids': [],
+                           'context_chars': 0, 'elapsed_ms': elapsed_ms,
+                           'hit1': False, 'hit3': False, 'context_hit': False})
+            continue
         results = index.search(q['question'], top_k=3)
         context, ids = pack_context(results, budget)
         elapsed_ms = (time.perf_counter() - start) * 1000
         marked = [{**c, 'hit': hit(c, q['gold'])} for c in results]
         traces.append({'query_id': q['id'], 'split': q['split'], 'question': q['question'],
                        'strategy': 'tfidf', 'top_k': 3, 'budget_chars': budget,
-                       'gold': q['gold'], 'results': marked, 'context': context, 'context_ids': ids,
+                       'answerable': True, 'gold': q['gold'], 'results': marked, 'context': context, 'context_ids': ids,
                        'context_chars': len(context), 'elapsed_ms': elapsed_ms,
                        'hit1': bool(marked and marked[0]['hit']),
                        'hit3': any(c['hit'] for c in marked),
@@ -121,16 +146,18 @@ def main():
     index = TfidfIndex(chunks)
     index_seconds = time.perf_counter() - started
     traces = evaluate(index, selected)
-    summary = {'strategy': 'tfidf', 'split': args.split, 'n': len(traces),
-               'hit1': sum(t['hit1'] for t in traces), 'hit3': sum(t['hit3'] for t in traces),
-               'context_hit': sum(t['context_hit'] for t in traces),
-               'avg_context_chars': statistics.mean(t['context_chars'] for t in traces),
-               'median_ms': statistics.median(t['elapsed_ms'] for t in traces),
+    answerable_traces = [trace for trace in traces if trace['answerable']]
+    summary = {'strategy': 'tfidf', 'split': args.split, 'n': len(answerable_traces),
+               'total_questions': len(traces), 'unanswerable_n': len(traces) - len(answerable_traces),
+               'hit1': sum(t['hit1'] for t in answerable_traces), 'hit3': sum(t['hit3'] for t in answerable_traces),
+               'context_hit': sum(t['context_hit'] for t in answerable_traces),
+               'avg_context_chars': statistics.mean(t['context_chars'] for t in answerable_traces),
+               'median_ms': statistics.median(t['elapsed_ms'] for t in answerable_traces),
                'index_seconds': index_seconds, 'service_cost_usd': 0}
     args.output.mkdir(parents=True, exist_ok=True)
     for name, obj in (('traces.json', traces), ('summary.json', summary)):
-        (args.output / name).write_text(json.dumps(obj, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-    print(json.dumps(summary, ensure_ascii=False, indent=2))
+        (args.output / name).write_text(json.dumps(obj, ensure_ascii=True, indent=2) + '\n', encoding='utf-8')
+    print(json.dumps(summary, ensure_ascii=True, indent=2))
 
 
 if __name__ == '__main__':

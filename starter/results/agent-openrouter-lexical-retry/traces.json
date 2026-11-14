@@ -1,0 +1,245 @@
+[
+  {
+    "query_id": "q04",
+    "split": "dev",
+    "question": "B\u1ea3ng ph\u00e2n lo\u1ea1i ghi nh\u1eadn bao nhi\u00eau nghi\u00ean c\u1ee9u v\u1ec1 t\u1ed1i \u01b0u n\u0103ng l\u01b0\u1ee3ng b\u1eb1ng AI/ML?",
+    "answerable": true,
+    "method": "lexical",
+    "context_budget": 2000,
+    "elapsed_ms": 4209.745400000429,
+    "status": "answered",
+    "answer": "The classification table indicates that there are 15 studies focused on AI/ML-assisted energy optimization. [telecom-06-00045:5:paragraph:0:d694521887ff]",
+    "citations": [
+      "telecom-06-00045:5:paragraph:0:d694521887ff"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "classification table number of studies on energy optimization using AI/ML",
+        "filter": null,
+        "results": [
+          {
+            "id": "telecom-06-00045:4:paragraph:4:e1f06efdd59b",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 4,
+            "metadata": {
+              "section": "overview"
+            },
+            "text": "These include single-band and multi-band rectenna designs, SWIPT-enabled architectures, AI/ML-assisted energy optimization, and hybrid energy-harvesting systems. Table 2 summarizes the number of publications per category.",
+            "score": 0.410685015985815,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 1
+          },
+          {
+            "id": "telecom-06-00045:5:paragraph:0:d694521887ff",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 5,
+            "metadata": {
+              "section": "fundamentals"
+            },
+            "text": "Telecom 2025, 6, 45 5 of 40 Table 2. Categorization of selected RF energy-harvesting studies. Category Number of Articles Single-band rectenna designs 22 Multi-band/multi-source energy harvesters 20 SWIPT-enabled systems 18 AI/ML-assisted energy optimization 15 Hybrid energy harvesting (RF + solar/etc.) 12 Biomedical applications 10 Smart cities/urban infrastructure 13 Industrial IoT/WSN 22 The analysis shows that improving rectenna designs is still the focus of most studies.",
+            "score": 0.3364408903547578,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 2
+          },
+          {
+            "id": "telecom-06-00045:23:paragraph:1:d2f901b1f7ae",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 23,
+            "metadata": {
+              "section": "developments"
+            },
+            "text": "AI and Machine Learning in RF Energy-Harvesting Optimization The integration of AI and machine learning has revolutionized RFEH by enabling adaptive and intelligent power management. AI-driven algorithms are now used to optimize energy-harvesting efficiency based on predictive RF energy availability. One of the major applications of AI in RF energy harvesting is spectrum prediction.",
+            "score": 0.2388665285201287,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 3
+          }
+        ],
+        "context": "[telecom-06-00045:4:paragraph:4:e1f06efdd59b | data/telecom-06-00045.pdf | page 4]\nThese include single-band and multi-band rectenna designs, SWIPT-enabled architectures, AI/ML-assisted energy optimization, and hybrid energy-harvesting systems. Table 2 summarizes the number of publications per category.\n\n[telecom-06-00045:5:paragraph:0:d694521887ff | data/telecom-06-00045.pdf | page 5]\nTelecom 2025, 6, 45 5 of 40 Table 2. Categorization of selected RF energy-harvesting studies. Category Number of Articles Single-band rectenna designs 22 Multi-band/multi-source energy harvesters 20 SWIPT-enabled systems 18 AI/ML-assisted energy optimization 15 Hybrid energy harvesting (RF + solar/etc.) 12 Biomedical applications 10 Smart cities/urban infrastructure 13 Industrial IoT/WSN 22 The analysis shows that improving rectenna designs is still the focus of most studies.\n\n[telecom-06-00045:23:paragraph:1:d2f901b1f7ae | data/telecom-06-00045.pdf | page 23]\nAI and Machine Learning in RF Energy-Harvesting Optimization The integration of AI and machine learning has revolutionized RFEH by enabling adaptive and intelligent power management. AI-driven algorithms are now used to optimize energy-harvesting efficiency based on predictive RF energy availability. One of the major applications of AI in RF energy harvesting is spectrum prediction.",
+        "context_ids": [
+          "telecom-06-00045:4:paragraph:4:e1f06efdd59b",
+          "telecom-06-00045:5:paragraph:0:d694521887ff",
+          "telecom-06-00045:23:paragraph:1:d2f901b1f7ae"
+        ]
+      },
+      {
+        "event": "citation_verification",
+        "citations": [
+          "telecom-06-00045:5:paragraph:0:d694521887ff"
+        ],
+        "supported": true
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q14",
+    "split": "dev",
+    "question": "H\u1ec7 th\u1ed1ng thu ho\u1ea1ch b\u0103ng r\u1ed9ng quad-band \u0111\u01b0\u1ee3c n\u00eau ho\u1ea1t \u0111\u1ed9ng trong d\u1ea3i t\u1ea7n n\u00e0o?",
+    "answerable": true,
+    "method": "lexical",
+    "context_budget": 2000,
+    "elapsed_ms": 3795.071600000483,
+    "status": "answered",
+    "answer": "The quad-band harvesting system operates within the frequency range of 0.8 GHz to 2.6 GHz. [telecom-06-00045:16:paragraph:1:9ebf4a128a02]",
+    "citations": [
+      "telecom-06-00045:16:paragraph:1:9ebf4a128a02"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "quad-band harvesting system frequency range",
+        "filter": null,
+        "results": [
+          {
+            "id": "telecom-06-00045:16:paragraph:1:9ebf4a128a02",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 16,
+            "metadata": {
+              "section": "techniques"
+            },
+            "text": "These antennas are inherently frequency-independent or support multiple resonant modes, allowing them to respond to a broad spectrum of incoming signals. Their geometrical designs are often based on self-similarity or logarithmic scaling, which enables effective energy reception across wide frequency bands. A notable example of broadband design was presented by the authors in [60] where a quad-band RF energy harvester was developed to operate within the 0.8 GHz to 2.6 GHz frequency range.",
+            "score": 0.25049744003200725,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 1
+          },
+          {
+            "id": "telecom-06-00045:20:paragraph:1:e057e5f6ceab",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 20,
+            "metadata": {
+              "section": "techniques"
+            },
+            "text": "Aspect Single-Band Multi-Band Narrowband Broadband Passive Active Hybrid Operating Frequency Single fixed frequency(e.g., 2.4 GHz, 5.8 GHz) Multiple distinct frequencies (e.g., 900 MHz, 1.8 GHz, 2.4 GHz) Very narrow frequency range around centre frequency Wide range (hundreds of MHz to several GHz) Ambient RF signals only Ambient RF signals + assisted with amplifiers Combination of RF, solar, vibration, and thermal energy sources Typical Antennas Used Microstrip patch,dipole, monopole Fractal an",
+            "score": 0.19289103704307678,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 2
+          },
+          {
+            "id": "telecom-06-00045:14:paragraph:0:173b01a2b2ec",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 14,
+            "metadata": {
+              "section": "techniques"
+            },
+            "text": "Telecom 2025, 6, 45 14 of 40 passive vs. active systems, and hybrid energy-harvesting methods that integrate RF energy with solar, vibration, and thermal sources [57]. 4.1. Single-Band vs. Multi-Band RF Energy Harvesting RFEH systems are classified based on their ability to capture energy from either a single frequency band or multiple frequency bands.",
+            "score": 0.19051667391057098,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 3
+          }
+        ],
+        "context": "[telecom-06-00045:16:paragraph:1:9ebf4a128a02 | data/telecom-06-00045.pdf | page 16]\nThese antennas are inherently frequency-independent or support multiple resonant modes, allowing them to respond to a broad spectrum of incoming signals. Their geometrical designs are often based on self-similarity or logarithmic scaling, which enables effective energy reception across wide frequency bands. A notable example of broadband design was presented by the authors in [60] where a quad-band RF energy harvester was developed to operate within the 0.8 GHz to 2.6 GHz frequency range.\n\n[telecom-06-00045:20:paragraph:1:e057e5f6ceab | data/telecom-06-00045.pdf | page 20]\nAspect Single-Band Multi-Band Narrowband Broadband Passive Active Hybrid Operating Frequency Single fixed frequency(e.g., 2.4 GHz, 5.8 GHz) Multiple distinct frequencies (e.g., 900 MHz, 1.8 GHz, 2.4 GHz) Very narrow frequency range around centre frequency Wide range (hundreds of MHz to several GHz) Ambient RF signals only Ambient RF signals + assisted with amplifiers Combination of RF, solar, vibration, and thermal energy sources Typical Antennas Used Microstrip patch,dipole, monopole Fractal an\n\n[telecom-06-00045:14:paragraph:0:173b01a2b2ec | data/telecom-06-00045.pdf | page 14]\nTelecom 2025, 6, 45 14 of 40 passive vs. active systems, and hybrid energy-harvesting methods that integrate RF energy with solar, vibration, and thermal sources [57]. 4.1. Single-Band vs. Multi-Band RF Energy Harvesting RFEH systems are classified based on their ability to capture energy from either a single frequency band or multiple frequency bands.",
+        "context_ids": [
+          "telecom-06-00045:16:paragraph:1:9ebf4a128a02",
+          "telecom-06-00045:20:paragraph:1:e057e5f6ceab",
+          "telecom-06-00045:14:paragraph:0:173b01a2b2ec"
+        ]
+      },
+      {
+        "event": "citation_verification",
+        "citations": [
+          "telecom-06-00045:16:paragraph:1:9ebf4a128a02"
+        ],
+        "supported": true
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q15",
+    "split": "dev",
+    "question": "N\u0103ng l\u01b0\u1ee3ng thu \u0111\u01b0\u1ee3c trong c\u00e1c h\u1ec7 th\u1ed1ng thu ho\u1ea1ch RF th\u1ee5 \u0111\u1ed9ng th\u01b0\u1eddng \u1edf m\u1ee9c n\u00e0o?",
+    "answerable": true,
+    "method": "lexical",
+    "context_budget": 2000,
+    "elapsed_ms": 3551.946200000202,
+    "status": "answered",
+    "answer": "The energy harvested in passive RF harvesting systems is often in the microwatt range, which necessitates ultra-low-power circuit design. Proper tuning of the impedance matching network is crucial for maximizing voltage transfer to the rectifier. [telecom-06-00045:17:paragraph:1:fd238d5f3ee9]",
+    "citations": [
+      "telecom-06-00045:17:paragraph:1:fd238d5f3ee9"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "energy harvested in passive RF harvesting systems",
+        "filter": null,
+        "results": [
+          {
+            "id": "telecom-06-00045:16:paragraph:8:71bf2aef8d7a",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 16,
+            "metadata": {
+              "section": "techniques"
+            },
+            "text": "Passive vs. Active RF Energy Harvesting RFEH systems can be broadly categorized into two types: passive and active. Passive systems rely solely on ambient RF energy present in the environment, capturing and converting it into usable electrical power without the aid of external power sources. In contrast, active systems incorporate external power sources to enhance their energy-harvesting capabilities, often employing amplifiers or other active components to boost performance.",
+            "score": 0.33285432962749373,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 1
+          },
+          {
+            "id": "telecom-06-00045:16:paragraph:9:ca29f91be898",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 16,
+            "metadata": {
+              "section": "techniques"
+            },
+            "text": "Passive RF energy harvesters capture ambient RF signals emitted from various sources",
+            "score": 0.3095847816200141,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 2
+          },
+          {
+            "id": "telecom-06-00045:17:paragraph:1:fd238d5f3ee9",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 17,
+            "metadata": {
+              "section": "techniques"
+            },
+            "text": "The energy captured in passive systems is often in the microwatt range, making ultra-low-power circuit design essential. The careful tuning of the impedance matching network is critical to ensure maximum voltage transfer to the rectifier. Energy storage units such as supercapacitors or thin-film batteries are used to accumulate harvested energy for intermittent power delivery.",
+            "score": 0.24200278135262074,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 3
+          }
+        ],
+        "context": "[telecom-06-00045:16:paragraph:8:71bf2aef8d7a | data/telecom-06-00045.pdf | page 16]\nPassive vs. Active RF Energy Harvesting RFEH systems can be broadly categorized into two types: passive and active. Passive systems rely solely on ambient RF energy present in the environment, capturing and converting it into usable electrical power without the aid of external power sources. In contrast, active systems incorporate external power sources to enhance their energy-harvesting capabilities, often employing amplifiers or other active components to boost performance.\n\n[telecom-06-00045:16:paragraph:9:ca29f91be898 | data/telecom-06-00045.pdf | page 16]\nPassive RF energy harvesters capture ambient RF signals emitted from various sources\n\n[telecom-06-00045:17:paragraph:1:fd238d5f3ee9 | data/telecom-06-00045.pdf | page 17]\nThe energy captured in passive systems is often in the microwatt range, making ultra-low-power circuit design essential. The careful tuning of the impedance matching network is critical to ensure maximum voltage transfer to the rectifier. Energy storage units such as supercapacitors or thin-film batteries are used to accumulate harvested energy for intermittent power delivery.",
+        "context_ids": [
+          "telecom-06-00045:16:paragraph:8:71bf2aef8d7a",
+          "telecom-06-00045:16:paragraph:9:ca29f91be898",
+          "telecom-06-00045:17:paragraph:1:fd238d5f3ee9"
+        ]
+      },
+      {
+        "event": "citation_verification",
+        "citations": [
+          "telecom-06-00045:17:paragraph:1:fd238d5f3ee9"
+        ],
+        "supported": true
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  }
+]

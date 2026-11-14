@@ -1,0 +1,22 @@
+{
+  "method": "dense",
+  "query_field": "retrieval_query_en",
+  "config": {
+    "strategy": "B",
+    "similarity": "cosine"
+  },
+  "questions": 17,
+  "answerable_questions": 15,
+  "unanswerable_questions": 2,
+  "hit_at_1": {
+    "n": 4,
+    "N": 15,
+    "rate": 0.26666666666666666
+  },
+  "evidence_hit_at_3": {
+    "n": 8,
+    "N": 15,
+    "rate": 0.5333333333333333
+  },
+  "median_ms": 76.06809999992947
+}

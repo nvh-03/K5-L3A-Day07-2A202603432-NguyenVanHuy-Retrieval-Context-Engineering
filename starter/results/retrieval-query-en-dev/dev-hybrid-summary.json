@@ -1,0 +1,23 @@
+{
+  "method": "hybrid",
+  "query_field": "retrieval_query_en",
+  "config": {
+    "fusion": "reciprocal_rank_fusion",
+    "candidate_k": 20,
+    "rrf_k": 60
+  },
+  "questions": 17,
+  "answerable_questions": 15,
+  "unanswerable_questions": 2,
+  "hit_at_1": {
+    "n": 6,
+    "N": 15,
+    "rate": 0.4
+  },
+  "evidence_hit_at_3": {
+    "n": 9,
+    "N": 15,
+    "rate": 0.6
+  },
+  "median_ms": 88.464699999804
+}

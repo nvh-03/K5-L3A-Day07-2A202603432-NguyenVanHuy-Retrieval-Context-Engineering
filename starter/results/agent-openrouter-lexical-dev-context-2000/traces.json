@@ -1,0 +1,1532 @@
+[
+  {
+    "query_id": "q01",
+    "split": "dev",
+    "question": "Nh\u1eefng b\u1ed9 ph\u1eadn ch\u00ednh n\u00e0o t\u1ea1o n\u00ean m\u1ed9t h\u1ec7 th\u1ed1ng thu ho\u1ea1ch n\u0103ng l\u01b0\u1ee3ng RF?",
+    "answerable": true,
+    "method": "lexical",
+    "elapsed_ms": 7307.050899999922,
+    "status": "answered",
+    "answer": "The main components of an RF energy harvesting (RFEH) system include the antenna, matching network, rectifier circuit, and energy storage unit. The antenna captures ambient RF signals, the matching network optimizes power transfer efficiency, the rectifier circuit converts RF signals into DC voltage, and the energy storage unit stores the harvested energy for later use. [telecom-06-00045:6:paragraph:1:dc1be09a17b6] [telecom-06-00045:2:paragraph:0:5d6afd37807d]",
+    "citations": [
+      "telecom-06-00045:6:paragraph:1:dc1be09a17b6",
+      "telecom-06-00045:2:paragraph:0:5d6afd37807d"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "main components of an RF energy harvesting system",
+        "filter": null,
+        "results": [
+          {
+            "id": "telecom-06-00045:6:paragraph:1:dc1be09a17b6",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 6,
+            "metadata": {
+              "section": "fundamentals"
+            },
+            "text": "Components of an RF Energy-Harvesting System An RFEH system comprises several interconnected components, each playing a critical role in determining overall efficiency. The major components include the antenna, matching network, rectifier circuit, and energy storage unit. 3.2.1. Antenna The antenna serves as the primary interface for capturing ambient RF signals, making it a crucial component of RFEH systems.",
+            "score": 0.37040192811770645,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 1
+          },
+          {
+            "id": "telecom-06-00045:3:paragraph:3:a4684195e810",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 3,
+            "metadata": {
+              "section": "overview"
+            },
+            "text": "The main contributions of this paper are as follows: \u2022 A detailed analysis of recent RF energy-harvesting techniques including rectenna designs, impedance matching networks, and power management circuits. \u2022 A comprehensive review of applications in IoT, smart cities, biomedical devices, industry, and satellite communications. \u2022 The identification of current challenges and research gaps in RF energy harvesting.",
+            "score": 0.2412673701204125,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 2
+          },
+          {
+            "id": "telecom-06-00045:2:paragraph:0:5d6afd37807d",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 2,
+            "metadata": {
+              "section": "overview"
+            },
+            "text": "Telecom 2025, 6, 45 2 of 40 TV broadcasts, Wi-Fi, and cellular base stations and converting them into usable DC power through RF-to-DC conversion [ 2]. The core components of an RFEH system include a receiving antenna that captures ambient RF signals, a matching network that optimizes power transfer efficiency, a rectifier circuit (rectenna) that converts RF signals into DC voltage, and an energy storage unit that stores harvested energy for later use.",
+            "score": 0.19900210832439352,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 3
+          }
+        ],
+        "context": "[telecom-06-00045:6:paragraph:1:dc1be09a17b6 | data/telecom-06-00045.pdf | page 6]\nComponents of an RF Energy-Harvesting System An RFEH system comprises several interconnected components, each playing a critical role in determining overall efficiency. The major components include the antenna, matching network, rectifier circuit, and energy storage unit. 3.2.1. Antenna The antenna serves as the primary interface for capturing ambient RF signals, making it a crucial component of RFEH systems.\n\n[telecom-06-00045:3:paragraph:3:a4684195e810 | data/telecom-06-00045.pdf | page 3]\nThe main contributions of this paper are as follows: \u2022 A detailed analysis of recent RF energy-harvesting techniques including rectenna designs, impedance matching networks, and power management circuits. \u2022 A comprehensive review of applications in IoT, smart cities, biomedical devices, industry, and satellite communications. \u2022 The identification of current challenges and research gaps in RF energy harvesting.\n\n[telecom-06-00045:2:paragraph:0:5d6afd37807d | data/telecom-06-00045.pdf | page 2]\nTelecom 2025, 6, 45 2 of 40 TV broadcasts, Wi-Fi, and cellular base stations and converting them into usable DC power through RF-to-DC conversion [ 2]. The core components of an RFEH system include a receiving antenna that captures ambient RF signals, a matching network that optimizes power transfer efficiency, a rectifier circuit (rectenna) that converts RF signals into DC voltage, and an energy storage unit that stores harvested energy for later use.",
+        "context_ids": [
+          "telecom-06-00045:6:paragraph:1:dc1be09a17b6",
+          "telecom-06-00045:3:paragraph:3:a4684195e810",
+          "telecom-06-00045:2:paragraph:0:5d6afd37807d"
+        ]
+      },
+      {
+        "event": "citation_verification",
+        "citations": [
+          "telecom-06-00045:6:paragraph:1:dc1be09a17b6",
+          "telecom-06-00045:2:paragraph:0:5d6afd37807d"
+        ],
+        "supported": true
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q02",
+    "split": "dev",
+    "question": "N\u0103m n\u00e0o l\u00e0 hai m\u1ed1c gi\u1edbi h\u1ea1n ph\u1ea1m vi th\u1eddi gian c\u1ee7a c\u00e1c c\u00f4ng tr\u00ecnh \u0111\u01b0\u1ee3c b\u00e0i t\u1ed5ng quan xem x\u00e9t?",
+    "answerable": true,
+    "method": "lexical",
+    "elapsed_ms": 7266.33129999982,
+    "status": "answered",
+    "answer": "The time frame limits of the studies reviewed in the overview are between 2019 and 2025. [telecom-06-00045:4:paragraph:0:0d6e90278782]",
+    "citations": [
+      "telecom-06-00045:4:paragraph:0:0d6e90278782"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "time frame limits of the studies reviewed in the overview",
+        "filter": null,
+        "results": [
+          {
+            "id": "telecom-06-00045:4:paragraph:0:0d6e90278782",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 4,
+            "metadata": {
+              "section": "overview"
+            },
+            "text": "Telecom 2025, 6, 45 4 of 40 tions between 2019 and 2025 were retained for relevance and timeliness. The inclusion criteria required that articles be published in peer-reviewed journals or reputable conference proceedings and focus on technical developments, applications, challenges, or future opportunities in RFEH. Studies were included if they provided experimental, simulationbased, or validated theoretical results.",
+            "score": 0.17044900463614984,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 1
+          },
+          {
+            "id": "telecom-06-00045:21:paragraph:9:067699d07bdc",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 21,
+            "metadata": {
+              "section": "developments"
+            },
+            "text": "Recent studies have introduced adaptive impedance matching techniques that adjust in real time to variations in RF power levels and frequency shifts. A dynamic impedance matching circuit based on varactor diodes was proposed to enhance energy transfer across varying RF environments. It",
+            "score": 0.14446818988835974,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 2
+          },
+          {
+            "id": "telecom-06-00045:6:paragraph:0:5f2202e639d7",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 6,
+            "metadata": {
+              "section": "fundamentals"
+            },
+            "text": "Telecom 2025, 6, 45 6 of 40 Figure 2. RF energy-harvesting process. The efficiency of RFEH is influenced by factors such as the strength and frequency of the ambient RF signals, the design and orientation of the antenna, the effectiveness of the rectifier circuit, proper impedance matching, variations in RF signal availability due to interference, distance from the source, and obstacles. 3.2.",
+            "score": 0.14081615353936358,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 3
+          }
+        ],
+        "context": "[telecom-06-00045:4:paragraph:0:0d6e90278782 | data/telecom-06-00045.pdf | page 4]\nTelecom 2025, 6, 45 4 of 40 tions between 2019 and 2025 were retained for relevance and timeliness. The inclusion criteria required that articles be published in peer-reviewed journals or reputable conference proceedings and focus on technical developments, applications, challenges, or future opportunities in RFEH. Studies were included if they provided experimental, simulationbased, or validated theoretical results.\n\n[telecom-06-00045:21:paragraph:9:067699d07bdc | data/telecom-06-00045.pdf | page 21]\nRecent studies have introduced adaptive impedance matching techniques that adjust in real time to variations in RF power levels and frequency shifts. A dynamic impedance matching circuit based on varactor diodes was proposed to enhance energy transfer across varying RF environments. It\n\n[telecom-06-00045:6:paragraph:0:5f2202e639d7 | data/telecom-06-00045.pdf | page 6]\nTelecom 2025, 6, 45 6 of 40 Figure 2. RF energy-harvesting process. The efficiency of RFEH is influenced by factors such as the strength and frequency of the ambient RF signals, the design and orientation of the antenna, the effectiveness of the rectifier circuit, proper impedance matching, variations in RF signal availability due to interference, distance from the source, and obstacles. 3.2.",
+        "context_ids": [
+          "telecom-06-00045:4:paragraph:0:0d6e90278782",
+          "telecom-06-00045:21:paragraph:9:067699d07bdc",
+          "telecom-06-00045:6:paragraph:0:5f2202e639d7"
+        ]
+      },
+      {
+        "event": "citation_verification",
+        "citations": [
+          "telecom-06-00045:4:paragraph:0:0d6e90278782"
+        ],
+        "supported": true
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q03",
+    "split": "dev",
+    "question": "Sau s\u00e0ng l\u1ecdc, c\u00f3 bao nhi\u00eau b\u00e0i \u0111\u01b0\u1ee3c ch\u1ecdn cu\u1ed1i c\u00f9ng t\u1eeb s\u1ed1 b\u00e0i ban \u0111\u1ea7u?",
+    "answerable": true,
+    "method": "lexical",
+    "elapsed_ms": 4890.006699999958,
+    "status": "answered",
+    "answer": "After filtering, a total of 132 articles were selected for final inclusion. [telecom-06-00045:4:paragraph:1:beb6dddc9d5f] [telecom-06-00045:4:paragraph:3:3c4af90afda4]",
+    "citations": [
+      "telecom-06-00045:4:paragraph:1:beb6dddc9d5f",
+      "telecom-06-00045:4:paragraph:3:3c4af90afda4"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "final number of articles selected after filtering",
+        "filter": null,
+        "results": [
+          {
+            "id": "telecom-06-00045:4:paragraph:1:beb6dddc9d5f",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 4,
+            "metadata": {
+              "section": "overview"
+            },
+            "text": "Publications were excluded if they appeared before 2019, lacked technical depth, or offered purely speculative commentary without substantial analysis or modelling. In total, 167 articles were initially gathered. After removing duplicates, screening abstracts, and conducting full-text evaluations, 132 articles were selected for final inclusion.",
+            "score": 0.2918071670697818,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 1
+          },
+          {
+            "id": "telecom-06-00045:4:paragraph:3:3c4af90afda4",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 4,
+            "metadata": {
+              "section": "overview"
+            },
+            "text": "The data shows a clear trajectory of increasing innovation and scholarly focus in this domain. Figure 1. Distribution of selected publications on RF energy harvesting. To further enhance this review\u2019s analytical depth, the 132 selected articles were categorized based on the primary RF energy-harvesting techniques or themes they addressed.",
+            "score": 0.19441147494606975,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 2
+          },
+          {
+            "id": "telecom-06-00045:5:paragraph:0:d694521887ff",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 5,
+            "metadata": {
+              "section": "fundamentals"
+            },
+            "text": "Telecom 2025, 6, 45 5 of 40 Table 2. Categorization of selected RF energy-harvesting studies. Category Number of Articles Single-band rectenna designs 22 Multi-band/multi-source energy harvesters 20 SWIPT-enabled systems 18 AI/ML-assisted energy optimization 15 Hybrid energy harvesting (RF + solar/etc.) 12 Biomedical applications 10 Smart cities/urban infrastructure 13 Industrial IoT/WSN 22 The analysis shows that improving rectenna designs is still the focus of most studies.",
+            "score": 0.17102370309714526,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 3
+          }
+        ],
+        "context": "[telecom-06-00045:4:paragraph:1:beb6dddc9d5f | data/telecom-06-00045.pdf | page 4]\nPublications were excluded if they appeared before 2019, lacked technical depth, or offered purely speculative commentary without substantial analysis or modelling. In total, 167 articles were initially gathered. After removing duplicates, screening abstracts, and conducting full-text evaluations, 132 articles were selected for final inclusion.\n\n[telecom-06-00045:4:paragraph:3:3c4af90afda4 | data/telecom-06-00045.pdf | page 4]\nThe data shows a clear trajectory of increasing innovation and scholarly focus in this domain. Figure 1. Distribution of selected publications on RF energy harvesting. To further enhance this review\u2019s analytical depth, the 132 selected articles were categorized based on the primary RF energy-harvesting techniques or themes they addressed.\n\n[telecom-06-00045:5:paragraph:0:d694521887ff | data/telecom-06-00045.pdf | page 5]\nTelecom 2025, 6, 45 5 of 40 Table 2. Categorization of selected RF energy-harvesting studies. Category Number of Articles Single-band rectenna designs 22 Multi-band/multi-source energy harvesters 20 SWIPT-enabled systems 18 AI/ML-assisted energy optimization 15 Hybrid energy harvesting (RF + solar/etc.) 12 Biomedical applications 10 Smart cities/urban infrastructure 13 Industrial IoT/WSN 22 The analysis shows that improving rectenna designs is still the focus of most studies.",
+        "context_ids": [
+          "telecom-06-00045:4:paragraph:1:beb6dddc9d5f",
+          "telecom-06-00045:4:paragraph:3:3c4af90afda4",
+          "telecom-06-00045:5:paragraph:0:d694521887ff"
+        ]
+      },
+      {
+        "event": "citation_verification",
+        "citations": [
+          "telecom-06-00045:4:paragraph:1:beb6dddc9d5f",
+          "telecom-06-00045:4:paragraph:3:3c4af90afda4"
+        ],
+        "supported": true
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q04",
+    "split": "dev",
+    "question": "B\u1ea3ng ph\u00e2n lo\u1ea1i ghi nh\u1eadn bao nhi\u00eau nghi\u00ean c\u1ee9u v\u1ec1 t\u1ed1i \u01b0u n\u0103ng l\u01b0\u1ee3ng b\u1eb1ng AI/ML?",
+    "answerable": true,
+    "method": "lexical",
+    "elapsed_ms": 4918.021199999657,
+    "status": "answered",
+    "answer": "The classification table indicates that there are 15 studies on energy optimization using AI/ML. [telecom-06-00045:5:paragraph:0:d694521887ff]",
+    "citations": [
+      "telecom-06-00045:5:paragraph:0:d694521887ff"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "classification table number of studies on energy optimization using AI/ML",
+        "filter": null,
+        "results": [
+          {
+            "id": "telecom-06-00045:4:paragraph:4:e1f06efdd59b",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 4,
+            "metadata": {
+              "section": "overview"
+            },
+            "text": "These include single-band and multi-band rectenna designs, SWIPT-enabled architectures, AI/ML-assisted energy optimization, and hybrid energy-harvesting systems. Table 2 summarizes the number of publications per category.",
+            "score": 0.410685015985815,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 1
+          },
+          {
+            "id": "telecom-06-00045:5:paragraph:0:d694521887ff",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 5,
+            "metadata": {
+              "section": "fundamentals"
+            },
+            "text": "Telecom 2025, 6, 45 5 of 40 Table 2. Categorization of selected RF energy-harvesting studies. Category Number of Articles Single-band rectenna designs 22 Multi-band/multi-source energy harvesters 20 SWIPT-enabled systems 18 AI/ML-assisted energy optimization 15 Hybrid energy harvesting (RF + solar/etc.) 12 Biomedical applications 10 Smart cities/urban infrastructure 13 Industrial IoT/WSN 22 The analysis shows that improving rectenna designs is still the focus of most studies.",
+            "score": 0.3364408903547578,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 2
+          },
+          {
+            "id": "telecom-06-00045:23:paragraph:1:d2f901b1f7ae",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 23,
+            "metadata": {
+              "section": "developments"
+            },
+            "text": "AI and Machine Learning in RF Energy-Harvesting Optimization The integration of AI and machine learning has revolutionized RFEH by enabling adaptive and intelligent power management. AI-driven algorithms are now used to optimize energy-harvesting efficiency based on predictive RF energy availability. One of the major applications of AI in RF energy harvesting is spectrum prediction.",
+            "score": 0.2388665285201287,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 3
+          }
+        ],
+        "context": "[telecom-06-00045:4:paragraph:4:e1f06efdd59b | data/telecom-06-00045.pdf | page 4]\nThese include single-band and multi-band rectenna designs, SWIPT-enabled architectures, AI/ML-assisted energy optimization, and hybrid energy-harvesting systems. Table 2 summarizes the number of publications per category.\n\n[telecom-06-00045:5:paragraph:0:d694521887ff | data/telecom-06-00045.pdf | page 5]\nTelecom 2025, 6, 45 5 of 40 Table 2. Categorization of selected RF energy-harvesting studies. Category Number of Articles Single-band rectenna designs 22 Multi-band/multi-source energy harvesters 20 SWIPT-enabled systems 18 AI/ML-assisted energy optimization 15 Hybrid energy harvesting (RF + solar/etc.) 12 Biomedical applications 10 Smart cities/urban infrastructure 13 Industrial IoT/WSN 22 The analysis shows that improving rectenna designs is still the focus of most studies.\n\n[telecom-06-00045:23:paragraph:1:d2f901b1f7ae | data/telecom-06-00045.pdf | page 23]\nAI and Machine Learning in RF Energy-Harvesting Optimization The integration of AI and machine learning has revolutionized RFEH by enabling adaptive and intelligent power management. AI-driven algorithms are now used to optimize energy-harvesting efficiency based on predictive RF energy availability. One of the major applications of AI in RF energy harvesting is spectrum prediction.",
+        "context_ids": [
+          "telecom-06-00045:4:paragraph:4:e1f06efdd59b",
+          "telecom-06-00045:5:paragraph:0:d694521887ff",
+          "telecom-06-00045:23:paragraph:1:d2f901b1f7ae"
+        ]
+      },
+      {
+        "event": "citation_verification",
+        "citations": [
+          "telecom-06-00045:5:paragraph:0:d694521887ff"
+        ],
+        "supported": true
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q05",
+    "split": "dev",
+    "question": "Ngo\u00e0i thi\u1ebft k\u1ebf m\u1ea1ch, nh\u1eefng y\u1ebfu t\u1ed1 m\u00f4i tr\u01b0\u1eddng v\u00e0 RF n\u00e0o \u1ea3nh h\u01b0\u1edfng hi\u1ec7u su\u1ea5t thu ho\u1ea1ch n\u0103ng l\u01b0\u1ee3ng?",
+    "answerable": true,
+    "method": "lexical",
+    "elapsed_ms": 4781.4116000004105,
+    "status": "answered",
+    "answer": "The performance of energy harvesting is influenced by several environmental and RF factors. Key factors include dynamic RF environments characterized by fluctuating signal strengths, frequencies, and interference patterns. Reconfigurable and adaptive RF energy harvesting systems are essential for adjusting to these changes. Additionally, variations in user density, environmental obstacles, and temporal factors such as time of day or weather conditions can lead to significant fluctuations in harvested energy, impacting the reliability of autonomous devices. [telecom-06-00045:31:paragraph:8:4caf948c2fec] [telecom-06-00045:30:paragraph:6:015ccf80c270]",
+    "citations": [
+      "telecom-06-00045:31:paragraph:8:4caf948c2fec",
+      "telecom-06-00045:30:paragraph:6:015ccf80c270"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "environmental factors and RF affecting energy harvesting performance",
+        "filter": null,
+        "results": [
+          {
+            "id": "telecom-06-00045:31:paragraph:8:4caf948c2fec",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 31,
+            "metadata": {
+              "section": "future"
+            },
+            "text": "Reconfigurable and Adaptive RF Harvesting Systems Conventional RF energy harvesters are typically designed for fixed-frequency operation and static environmental conditions. However, real-world RF environments are dynamic, with fluctuating signal strengths, frequencies, and interference patterns. Reconfigurable and adaptive RFEH systems, capable of dynamically adjusting their operating parameters in response to environmental changes, represent a critical future direction.",
+            "score": 0.16669680642201928,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 1
+          },
+          {
+            "id": "telecom-06-00045:2:paragraph:5:5297d35c3c2b",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 2,
+            "metadata": {
+              "section": "overview"
+            },
+            "text": "Interference management poses another challenge in maximizing harvested RF energy without affecting primary communication signals. Energy storage efficiency remains a critical area in need of improvement, with researchers exploring new materials for ultra-low-power energy storage in RFEH systems. The purpose of this paper is to provide a thorough synthesis of recent innovations in RFEH techniques and architectures.",
+            "score": 0.16404313843998164,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 2
+          },
+          {
+            "id": "telecom-06-00045:30:paragraph:6:015ccf80c270",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 30,
+            "metadata": {
+              "section": "challenges"
+            },
+            "text": "For example, variations in user density, environmental obstacles, and temporal factors such as time of day or weather conditions can cause substantial fluctuations in harvested energy, challenging the reliability of autonomous devices [8]. Moreover, implementation trials exhibit highlighted integration issues when embedding RF harvesters within commercial IoT devices or wearable systems.",
+            "score": 0.15583347508060463,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 3
+          }
+        ],
+        "context": "[telecom-06-00045:31:paragraph:8:4caf948c2fec | data/telecom-06-00045.pdf | page 31]\nReconfigurable and Adaptive RF Harvesting Systems Conventional RF energy harvesters are typically designed for fixed-frequency operation and static environmental conditions. However, real-world RF environments are dynamic, with fluctuating signal strengths, frequencies, and interference patterns. Reconfigurable and adaptive RFEH systems, capable of dynamically adjusting their operating parameters in response to environmental changes, represent a critical future direction.\n\n[telecom-06-00045:2:paragraph:5:5297d35c3c2b | data/telecom-06-00045.pdf | page 2]\nInterference management poses another challenge in maximizing harvested RF energy without affecting primary communication signals. Energy storage efficiency remains a critical area in need of improvement, with researchers exploring new materials for ultra-low-power energy storage in RFEH systems. The purpose of this paper is to provide a thorough synthesis of recent innovations in RFEH techniques and architectures.\n\n[telecom-06-00045:30:paragraph:6:015ccf80c270 | data/telecom-06-00045.pdf | page 30]\nFor example, variations in user density, environmental obstacles, and temporal factors such as time of day or weather conditions can cause substantial fluctuations in harvested energy, challenging the reliability of autonomous devices [8]. Moreover, implementation trials exhibit highlighted integration issues when embedding RF harvesters within commercial IoT devices or wearable systems.",
+        "context_ids": [
+          "telecom-06-00045:31:paragraph:8:4caf948c2fec",
+          "telecom-06-00045:2:paragraph:5:5297d35c3c2b",
+          "telecom-06-00045:30:paragraph:6:015ccf80c270"
+        ]
+      },
+      {
+        "event": "citation_verification",
+        "citations": [
+          "telecom-06-00045:31:paragraph:8:4caf948c2fec",
+          "telecom-06-00045:30:paragraph:6:015ccf80c270"
+        ],
+        "supported": true
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q06",
+    "split": "dev",
+    "question": "M\u1ea1ng ph\u1ed1i h\u1ee3p tr\u1edf kh\u00e1ng c\u00f3 vai tr\u00f2 g\u00ec gi\u1eefa \u0103ng-ten v\u00e0 b\u1ed9 ch\u1ec9nh l\u01b0u?",
+    "answerable": true,
+    "method": "lexical",
+    "elapsed_ms": 6449.844700000085,
+    "status": "answered",
+    "answer": "The impedance matching network plays a crucial role in maximizing RF energy transfer from the antenna to the rectifier. It ensures that the antenna's complex impedance matches the complex conjugate of the rectifier input, which minimizes reflection and maximizes the power delivered to the load. This matching is essential for the overall efficiency of RF energy-harvesting systems, as it adjusts the impedance between the antenna and rectifier for efficient power transfer. [telecom-06-00045:21:paragraph:8:83f75fc1c579] [telecom-06-00045:6:paragraph:1:dc1be09a17b6] [telecom-06-00045:8:paragraph:2:c7d949348deb]",
+    "citations": [
+      "telecom-06-00045:21:paragraph:8:83f75fc1c579",
+      "telecom-06-00045:6:paragraph:1:dc1be09a17b6",
+      "telecom-06-00045:8:paragraph:2:c7d949348deb"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "impedance matching network role between antenna and rectifier",
+        "filter": null,
+        "results": [
+          {
+            "id": "telecom-06-00045:21:paragraph:8:83f75fc1c579",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 21,
+            "metadata": {
+              "section": "developments"
+            },
+            "text": "Impedance Matching and Power Management Circuits Impedance matching is critical for maximizing RF energy transfer from the antenna to the rectifier. At a fundamental level, proper matching ensures that the antenna\u2019s complex impedance is the complex conjugate of the rectifier input, thereby minimizing reflection (|\u0393| \u2192 0) and maximizing power delivered to the load.",
+            "score": 0.3086023250241442,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 1
+          },
+          {
+            "id": "telecom-06-00045:6:paragraph:1:dc1be09a17b6",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 6,
+            "metadata": {
+              "section": "fundamentals"
+            },
+            "text": "Components of an RF Energy-Harvesting System An RFEH system comprises several interconnected components, each playing a critical role in determining overall efficiency. The major components include the antenna, matching network, rectifier circuit, and energy storage unit. 3.2.1. Antenna The antenna serves as the primary interface for capturing ambient RF signals, making it a crucial component of RFEH systems.",
+            "score": 0.27548010338192247,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 2
+          },
+          {
+            "id": "telecom-06-00045:8:paragraph:2:c7d949348deb",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 8,
+            "metadata": {
+              "section": "fundamentals"
+            },
+            "text": "Half-Wave Cockcroft\u2013 Walton 68 +5 \u221221 Meander Antenna (434 MHz) 45 \u00d7 25 1.2 Voltage Doubler 20 \u221230 \u221235 Fractal Antenna (900 MHz/ 2.45 GHz) 25 \u00d7 25 2.5 Doubler/Full-wave 30 @ \u221210 dBm \u221210 \u221220 Printed Dipole (2.45 GHz) 60 \u00d7 20 2.0 Full-WaveRectifier 33 \u22125 \u221218 3.2.2. Matching Network A matching network is a circuit designed to adjust the impedance between two components, typically between an antenna and a rectifier, to ensure efficient power transfer.",
+            "score": 0.25293736989533155,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 3
+          }
+        ],
+        "context": "[telecom-06-00045:21:paragraph:8:83f75fc1c579 | data/telecom-06-00045.pdf | page 21]\nImpedance Matching and Power Management Circuits Impedance matching is critical for maximizing RF energy transfer from the antenna to the rectifier. At a fundamental level, proper matching ensures that the antenna\u2019s complex impedance is the complex conjugate of the rectifier input, thereby minimizing reflection (|\u0393| \u2192 0) and maximizing power delivered to the load.\n\n[telecom-06-00045:6:paragraph:1:dc1be09a17b6 | data/telecom-06-00045.pdf | page 6]\nComponents of an RF Energy-Harvesting System An RFEH system comprises several interconnected components, each playing a critical role in determining overall efficiency. The major components include the antenna, matching network, rectifier circuit, and energy storage unit. 3.2.1. Antenna The antenna serves as the primary interface for capturing ambient RF signals, making it a crucial component of RFEH systems.\n\n[telecom-06-00045:8:paragraph:2:c7d949348deb | data/telecom-06-00045.pdf | page 8]\nHalf-Wave Cockcroft\u2013 Walton 68 +5 \u221221 Meander Antenna (434 MHz) 45 \u00d7 25 1.2 Voltage Doubler 20 \u221230 \u221235 Fractal Antenna (900 MHz/ 2.45 GHz) 25 \u00d7 25 2.5 Doubler/Full-wave 30 @ \u221210 dBm \u221210 \u221220 Printed Dipole (2.45 GHz) 60 \u00d7 20 2.0 Full-WaveRectifier 33 \u22125 \u221218 3.2.2. Matching Network A matching network is a circuit designed to adjust the impedance between two components, typically between an antenna and a rectifier, to ensure efficient power transfer.",
+        "context_ids": [
+          "telecom-06-00045:21:paragraph:8:83f75fc1c579",
+          "telecom-06-00045:6:paragraph:1:dc1be09a17b6",
+          "telecom-06-00045:8:paragraph:2:c7d949348deb"
+        ]
+      },
+      {
+        "event": "citation_verification",
+        "citations": [
+          "telecom-06-00045:21:paragraph:8:83f75fc1c579",
+          "telecom-06-00045:6:paragraph:1:dc1be09a17b6",
+          "telecom-06-00045:8:paragraph:2:c7d949348deb"
+        ],
+        "supported": true
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q07",
+    "split": "dev",
+    "question": "Trong ph\u1ea7n n\u1ec1n t\u1ea3ng, m\u1ea1ng \u03c0 c\u00f3 l\u1ee3i th\u1ebf b\u0103ng th\u00f4ng n\u00e0o so v\u1edbi m\u1ea1ng L?",
+    "answerable": true,
+    "method": "lexical",
+    "elapsed_ms": 10960.482299999967,
+    "status": "answered",
+    "answer": "The \u03c0-network provides a broader bandwidth compared to L-networks, making it effective in high-frequency applications that require better selectivity and attenuation of unwanted signals. Additionally, \u03c0-networks offer greater flexibility in impedance transformation, which is advantageous in dynamic RF environments. In contrast, L-networks are simpler and typically used for narrowband applications. [telecom-06-00045:9:paragraph:1:ecacc4a996e5] [telecom-06-00045:9:paragraph:3:20e2eb0852a6] [telecom-06-00045:9:paragraph:0:041ba827762a]",
+    "citations": [
+      "telecom-06-00045:9:paragraph:1:ecacc4a996e5",
+      "telecom-06-00045:9:paragraph:3:20e2eb0852a6",
+      "telecom-06-00045:9:paragraph:0:041ba827762a"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "bandwidth advantage of \u03c0 network over L network",
+        "filter": {
+          "section": "fundamentals"
+        },
+        "results": [
+          {
+            "id": "telecom-06-00045:9:paragraph:1:ecacc4a996e5",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 9,
+            "metadata": {
+              "section": "fundamentals"
+            },
+            "text": "( B) Shunt L component. (C) Pi-network. (D) T-network. The \u03c0-network provides a broader bandwidth compared to L-networks and is effective in high-frequency applications requiring better selectivity and attenuation of unwanted signals. Additionally, it allows for greater flexibility in impedance transformation, making it suitable for dynamic RF environments.",
+            "score": 0.4393182641554013,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 1
+          },
+          {
+            "id": "telecom-06-00045:9:paragraph:3:20e2eb0852a6",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 9,
+            "metadata": {
+              "section": "fundamentals"
+            },
+            "text": "The selection of an appropriate matching network depends on the application requirements, frequency range, and impedance characteristics of the antenna and rectifier circuit. While L-networks offer simplicity and efficiency for narrowband applications, \u03c0- and T-networks provide improved bandwidth performance and greater adaptability for dynamic RF harvesting scenarios.",
+            "score": 0.31136280086534135,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 2
+          },
+          {
+            "id": "telecom-06-00045:9:paragraph:0:041ba827762a",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 9,
+            "metadata": {
+              "section": "fundamentals"
+            },
+            "text": "Telecom 2025, 6, 45 9 of 40 and capacitor are reversed. L-networks are simple to design and are typically used for narrowband applications, where the load impedance is either greater or less than the source impedance [31]. A \u03c0-network consists of two capacitors connected in parallel (shunt) with the transmission line, while an inductor is placed in series. This configuration forms a structure resembling the Greek letter \u201c\u03c0.\u201d Figure 4. L\u2013C impedance matching networks. ( A) Series L component.",
+            "score": 0.29557937282433205,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 3
+          }
+        ],
+        "context": "[telecom-06-00045:9:paragraph:1:ecacc4a996e5 | data/telecom-06-00045.pdf | page 9]\n( B) Shunt L component. (C) Pi-network. (D) T-network. The \u03c0-network provides a broader bandwidth compared to L-networks and is effective in high-frequency applications requiring better selectivity and attenuation of unwanted signals. Additionally, it allows for greater flexibility in impedance transformation, making it suitable for dynamic RF environments.\n\n[telecom-06-00045:9:paragraph:3:20e2eb0852a6 | data/telecom-06-00045.pdf | page 9]\nThe selection of an appropriate matching network depends on the application requirements, frequency range, and impedance characteristics of the antenna and rectifier circuit. While L-networks offer simplicity and efficiency for narrowband applications, \u03c0- and T-networks provide improved bandwidth performance and greater adaptability for dynamic RF harvesting scenarios.\n\n[telecom-06-00045:9:paragraph:0:041ba827762a | data/telecom-06-00045.pdf | page 9]\nTelecom 2025, 6, 45 9 of 40 and capacitor are reversed. L-networks are simple to design and are typically used for narrowband applications, where the load impedance is either greater or less than the source impedance [31]. A \u03c0-network consists of two capacitors connected in parallel (shunt) with the transmission line, while an inductor is placed in series. This configuration forms a structure resembling the Greek letter \u201c\u03c0.\u201d Figure 4. L\u2013C impedance matching networks. ( A) Series L component.",
+        "context_ids": [
+          "telecom-06-00045:9:paragraph:1:ecacc4a996e5",
+          "telecom-06-00045:9:paragraph:3:20e2eb0852a6",
+          "telecom-06-00045:9:paragraph:0:041ba827762a"
+        ]
+      },
+      {
+        "event": "citation_verification",
+        "citations": [
+          "telecom-06-00045:9:paragraph:1:ecacc4a996e5",
+          "telecom-06-00045:9:paragraph:3:20e2eb0852a6",
+          "telecom-06-00045:9:paragraph:0:041ba827762a"
+        ],
+        "supported": true
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q08",
+    "split": "dev",
+    "question": "\u0110\u00e1nh \u0111\u1ed5i ch\u00ednh khi th\u00eam nhi\u1ec1u t\u1ea7ng v\u00e0o m\u1ea1ch ch\u1ec9nh l\u01b0u l\u00e0 g\u00ec?",
+    "answerable": true,
+    "method": "lexical",
+    "elapsed_ms": 4653.946300000371,
+    "status": "answered",
+    "answer": "The main trade-off when adding multiple stages to a rectifier circuit is the cumulative power losses that occur due to the inherent inefficiencies of each stage. This results in a design challenge where there is a balance between achieving a higher output voltage and maintaining energy conversion efficiency. [telecom-06-00045:10:paragraph:3:b2ce894883f5] [telecom-06-00045:15:paragraph:5:0a6da52e80cd]",
+    "citations": [
+      "telecom-06-00045:10:paragraph:3:b2ce894883f5",
+      "telecom-06-00045:15:paragraph:5:0a6da52e80cd"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "trade-off when adding multiple stages to rectifier circuit",
+        "filter": null,
+        "results": [
+          {
+            "id": "telecom-06-00045:10:paragraph:3:b2ce894883f5",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 10,
+            "metadata": {
+              "section": "fundamentals"
+            },
+            "text": "As more stages are added, cumulative power losses occur due to the inherent inefficiencies of each stage, making the design a trade-off between output voltage and energy conversion efficiency. Figure 5. Rectenna [38]. Figure 6. Rectifier topologies. ( a) Single diode (single stage). ( b) Voltage doubler. ( c) Voltage multiplier (multi-stage) [35]. The choice of rectifier topology significantly impacts the efficiency of RF-to-DC conversion.",
+            "score": 0.20571140567390717,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 1
+          },
+          {
+            "id": "telecom-06-00045:16:paragraph:5:9576f7b24f1f",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 16,
+            "metadata": {
+              "section": "techniques"
+            },
+            "text": "A comprehensive review by the authors in [13,63] highlights various impedance matching network configurations and their impact on the performance of broadband RF energy harvesters, emphasizing the need for advanced design methodologies to address these challenges. The choice between narrowband and broadband RF energy-harvesting systems involves a trade-off between efficiency at specific frequencies and versatility across multiple frequencies.",
+            "score": 0.1553957641965123,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 2
+          },
+          {
+            "id": "telecom-06-00045:15:paragraph:5:0a6da52e80cd",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 15,
+            "metadata": {
+              "section": "techniques"
+            },
+            "text": "However, they are ineffective in scenarios where the targeted RF source is unavailable. Multi-band RFEH, on the other hand, enables energy collection from multiple sources, making it more adaptable to dynamic RF environments. Nevertheless, the trade-off lies in the difficulty of maintaining consistent performance across a wide range of frequencies, often requiring multi-stage rectification circuits or switchable matching networks, which can increase power losses and reduce net efficiency.",
+            "score": 0.14277667681018666,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 3
+          }
+        ],
+        "context": "[telecom-06-00045:10:paragraph:3:b2ce894883f5 | data/telecom-06-00045.pdf | page 10]\nAs more stages are added, cumulative power losses occur due to the inherent inefficiencies of each stage, making the design a trade-off between output voltage and energy conversion efficiency. Figure 5. Rectenna [38]. Figure 6. Rectifier topologies. ( a) Single diode (single stage). ( b) Voltage doubler. ( c) Voltage multiplier (multi-stage) [35]. The choice of rectifier topology significantly impacts the efficiency of RF-to-DC conversion.\n\n[telecom-06-00045:16:paragraph:5:9576f7b24f1f | data/telecom-06-00045.pdf | page 16]\nA comprehensive review by the authors in [13,63] highlights various impedance matching network configurations and their impact on the performance of broadband RF energy harvesters, emphasizing the need for advanced design methodologies to address these challenges. The choice between narrowband and broadband RF energy-harvesting systems involves a trade-off between efficiency at specific frequencies and versatility across multiple frequencies.\n\n[telecom-06-00045:15:paragraph:5:0a6da52e80cd | data/telecom-06-00045.pdf | page 15]\nHowever, they are ineffective in scenarios where the targeted RF source is unavailable. Multi-band RFEH, on the other hand, enables energy collection from multiple sources, making it more adaptable to dynamic RF environments. Nevertheless, the trade-off lies in the difficulty of maintaining consistent performance across a wide range of frequencies, often requiring multi-stage rectification circuits or switchable matching networks, which can increase power losses and reduce net efficiency.",
+        "context_ids": [
+          "telecom-06-00045:10:paragraph:3:b2ce894883f5",
+          "telecom-06-00045:16:paragraph:5:9576f7b24f1f",
+          "telecom-06-00045:15:paragraph:5:0a6da52e80cd"
+        ]
+      },
+      {
+        "event": "citation_verification",
+        "citations": [
+          "telecom-06-00045:10:paragraph:3:b2ce894883f5",
+          "telecom-06-00045:15:paragraph:5:0a6da52e80cd"
+        ],
+        "supported": true
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q09",
+    "split": "dev",
+    "question": "\u0110\u1eb7c \u0111i\u1ec3m n\u00e0o khi\u1ebfn si\u00eau t\u1ee5 ph\u00f9 h\u1ee3p v\u1edbi \u1ee9ng d\u1ee5ng c\u1ea7n c\u00e1c \u0111\u1ee3t c\u1ea5p n\u0103ng l\u01b0\u1ee3ng th\u01b0\u1eddng xuy\u00ean?",
+    "answerable": true,
+    "method": "lexical",
+    "elapsed_ms": 5493.775500000083,
+    "status": "abstain",
+    "answer": "Kh\u00f4ng \u0111\u1ee7 b\u1eb1ng ch\u1ee9ng \u0111\u1ec3 tr\u1ea3 l\u1eddi.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "characteristics of supercapacitors suitable for applications requiring frequent energy bursts",
+        "filter": null,
+        "results": [
+          {
+            "id": "telecom-06-00045:11:paragraph:1:a8cab621d251",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 11,
+            "metadata": {
+              "section": "fundamentals"
+            },
+            "text": "Supercapacitors are widely used for their ability to charge and discharge rapidly, making them ideal for applications requiring frequent energy bursts. They have a longer lifespan compared to conventional batteries, as they can withstand millions of charge\u2013discharge cycles without significant degradation [41]. However, supercapacitors have lower energy density, meaning they store less energy per unit volume compared to batteries.",
+            "score": 0.3164854821605044,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 1
+          },
+          {
+            "id": "telecom-06-00045:11:paragraph:0:07fa36638fcc",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 11,
+            "metadata": {
+              "section": "fundamentals"
+            },
+            "text": "Telecom 2025, 6, 45 11 of 40 intermittent and varies in intensity depending on the surrounding environment, an efficient storage mechanism is needed to accumulate and regulate the harvested energy before it can be utilized. The two primary storage solutions in RF energy-harvesting applications are supercapacitors and rechargeable batteries, each with distinct characteristics suited for different use cases.",
+            "score": 0.15800312647278023,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 2
+          },
+          {
+            "id": "telecom-06-00045:6:paragraph:4:ed76df2ba6f7",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 6,
+            "metadata": {
+              "section": "fundamentals"
+            },
+            "text": "They operate efficiently over narrow frequency ranges, making them suitable for harvesting RF energy from known, fixed-frequency sources such as broadcast transmitters and cellular base stations. Microstrip patch antennas are compact, lightweight, and suitable for integration into wearable and embedded systems.",
+            "score": 0.1318359886097141,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 3
+          }
+        ],
+        "context": "[telecom-06-00045:11:paragraph:1:a8cab621d251 | data/telecom-06-00045.pdf | page 11]\nSupercapacitors are widely used for their ability to charge and discharge rapidly, making them ideal for applications requiring frequent energy bursts. They have a longer lifespan compared to conventional batteries, as they can withstand millions of charge\u2013discharge cycles without significant degradation [41]. However, supercapacitors have lower energy density, meaning they store less energy per unit volume compared to batteries.\n\n[telecom-06-00045:11:paragraph:0:07fa36638fcc | data/telecom-06-00045.pdf | page 11]\nTelecom 2025, 6, 45 11 of 40 intermittent and varies in intensity depending on the surrounding environment, an efficient storage mechanism is needed to accumulate and regulate the harvested energy before it can be utilized. The two primary storage solutions in RF energy-harvesting applications are supercapacitors and rechargeable batteries, each with distinct characteristics suited for different use cases.\n\n[telecom-06-00045:6:paragraph:4:ed76df2ba6f7 | data/telecom-06-00045.pdf | page 6]\nThey operate efficiently over narrow frequency ranges, making them suitable for harvesting RF energy from known, fixed-frequency sources such as broadcast transmitters and cellular base stations. Microstrip patch antennas are compact, lightweight, and suitable for integration into wearable and embedded systems.",
+        "context_ids": [
+          "telecom-06-00045:11:paragraph:1:a8cab621d251",
+          "telecom-06-00045:11:paragraph:0:07fa36638fcc",
+          "telecom-06-00045:6:paragraph:4:ed76df2ba6f7"
+        ]
+      },
+      {
+        "event": "citation_verification",
+        "citations": [
+          "telecom-06-00045:11:paragraph:1:a8cab621d251",
+          "telecom-06-00045:11:paragraph:0:07fa36638fcc"
+        ],
+        "supported": false
+      }
+    ]
+  },
+  {
+    "query_id": "q10",
+    "split": "dev",
+    "question": "B\u00e0i b\u00e1o n\u00eau kho\u1ea3ng m\u1eadt \u0111\u1ed9 c\u00f4ng su\u1ea5t RF m\u00f4i tr\u01b0\u1eddng n\u00e0o gi\u1eefa v\u00f9ng n\u00f4ng th\u00f4n v\u00e0 \u0111\u00f4 th\u1ecb?",
+    "answerable": true,
+    "method": "lexical",
+    "elapsed_ms": 5157.3106000000735,
+    "status": "answered",
+    "answer": "The RF power density in urban areas is relatively high due to dense cellular, Wi-Fi, and broadcast infrastructures, while in rural areas, RF energy availability is lower and can fluctuate greatly, sometimes dropping to levels insufficient for practical energy harvesting. [telecom-06-00045:11:paragraph:9:b6477decda24] [telecom-06-00045:12:paragraph:5:990df6dec6c5] [telecom-06-00045:28:paragraph:0:e3f325452404]",
+    "citations": [
+      "telecom-06-00045:11:paragraph:9:b6477decda24",
+      "telecom-06-00045:12:paragraph:5:990df6dec6c5",
+      "telecom-06-00045:28:paragraph:0:e3f325452404"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "RF power density rural urban areas",
+        "filter": null,
+        "results": [
+          {
+            "id": "telecom-06-00045:11:paragraph:9:b6477decda24",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 11,
+            "metadata": {
+              "section": "fundamentals"
+            },
+            "text": "Conversely, rural or remote locations, with fewer such devices, exhibit lower RF energy availability. Studies have indicated that RF power density can",
+            "score": 0.29747798269170495,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 1
+          },
+          {
+            "id": "telecom-06-00045:12:paragraph:5:990df6dec6c5",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 12,
+            "metadata": {
+              "section": "fundamentals"
+            },
+            "text": "The disparity in RF power levels between urban and rural regions underscores the need for adaptive and efficient energy-harvesting techniques tailored to different environments [52,53].",
+            "score": 0.24433868866474204,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 2
+          },
+          {
+            "id": "telecom-06-00045:28:paragraph:0:e3f325452404",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 28,
+            "metadata": {
+              "section": "challenges"
+            },
+            "text": "Telecom 2025, 6, 45 28 of 40 7.2. Unpredictable RF Energy Availability The unpredictable and dynamic nature of ambient RF energy sources poses another significant limitation. In urban areas, RF power densities are relatively high due to dense cellular, Wi-Fi, and broadcast infrastructures. However, in rural, suburban, or industrial environments, RF energy availability fluctuates greatly and may drop to levels insufficient for practical energy harvesting [36].",
+            "score": 0.23848165180738037,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 3
+          }
+        ],
+        "context": "[telecom-06-00045:11:paragraph:9:b6477decda24 | data/telecom-06-00045.pdf | page 11]\nConversely, rural or remote locations, with fewer such devices, exhibit lower RF energy availability. Studies have indicated that RF power density can\n\n[telecom-06-00045:12:paragraph:5:990df6dec6c5 | data/telecom-06-00045.pdf | page 12]\nThe disparity in RF power levels between urban and rural regions underscores the need for adaptive and efficient energy-harvesting techniques tailored to different environments [52,53].\n\n[telecom-06-00045:28:paragraph:0:e3f325452404 | data/telecom-06-00045.pdf | page 28]\nTelecom 2025, 6, 45 28 of 40 7.2. Unpredictable RF Energy Availability The unpredictable and dynamic nature of ambient RF energy sources poses another significant limitation. In urban areas, RF power densities are relatively high due to dense cellular, Wi-Fi, and broadcast infrastructures. However, in rural, suburban, or industrial environments, RF energy availability fluctuates greatly and may drop to levels insufficient for practical energy harvesting [36].",
+        "context_ids": [
+          "telecom-06-00045:11:paragraph:9:b6477decda24",
+          "telecom-06-00045:12:paragraph:5:990df6dec6c5",
+          "telecom-06-00045:28:paragraph:0:e3f325452404"
+        ]
+      },
+      {
+        "event": "citation_verification",
+        "citations": [
+          "telecom-06-00045:11:paragraph:9:b6477decda24",
+          "telecom-06-00045:12:paragraph:5:990df6dec6c5",
+          "telecom-06-00045:28:paragraph:0:e3f325452404"
+        ],
+        "supported": true
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q11",
+    "split": "dev",
+    "question": "\u1ede 2,4 GHz, m\u1ed9t m\u1ea1ch ch\u1ec9nh l\u01b0u \u0111\u01b0\u1ee3c b\u00e1o c\u00e1o \u0111\u1ea1t hi\u1ec7u su\u1ea5t c\u1ef1c \u0111\u1ea1i bao nhi\u00eau t\u1ea1i c\u00f4ng su\u1ea5t \u0111\u1ea7u v\u00e0o 14 dBm?",
+    "answerable": true,
+    "method": "lexical",
+    "elapsed_ms": 4099.854900000082,
+    "status": "answered",
+    "answer": "At 2.4 GHz, a rectifier circuit achieved a peak efficiency of 88% at an input power of 14 dBm. [telecom-06-00045:13:paragraph:1:b38d614a33f5]",
+    "citations": [
+      "telecom-06-00045:13:paragraph:1:b38d614a33f5"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "maximum efficiency rectifier 2.4 GHz input power 14 dBm",
+        "filter": null,
+        "results": [
+          {
+            "id": "telecom-06-00045:13:paragraph:1:b38d614a33f5",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 13,
+            "metadata": {
+              "section": "fundamentals"
+            },
+            "text": "Recent advancements have led to significant improvements in rectenna performance. As shown in Figure 8, a rectifier circuit achieved a peak efficiency of 88% at an input power of 14 dBm while maintaining over 60% efficiency within the input power range of 3 dBm to 16 dBm at 2.4 GHz. Similarly, at 5.8 GHz, it attained a maximum efficiency of 81% at 10 dBm input power, sustaining efficiency above 60% for input power levels between 7 dBm and 12 dBm [ 54].",
+            "score": 0.5598352014667763,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 1
+          },
+          {
+            "id": "telecom-06-00045:8:paragraph:1:8cb4553e3fdf",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 8,
+            "metadata": {
+              "section": "fundamentals"
+            },
+            "text": "Antenna Type and Frequency Antenna Structure Size (mm) Antenna Gain(dBi) Circuit Type andFrequency Efficiency (%) InputPower(dBm) MinimumSensitivity(dBm) Logarithmic Spiral Antenna (2\u201318 GHz) 60 \u00d7 60 3.2 Half-Wave Rectifier (2.4 GHz) 20 +4 \u221218 Linear Tapered Slot Antenna (1.85/2.4 GHz) 80 \u00d7 40 5.1 Differential Rectifier (1.85 GHz) 13 \u221215 \u221222 Concentric Square Patch (2.4/5.5 GHz) 45 \u00d7 45 4.0 @ 2.4 GHz Full-WaveRectifier 36% @ 2.4 GHz,5% @ 5.5 GHz 0 \u221216 Slotted Patch Antenna (2.45 GHz) 35 \u00d7 30 5.3",
+            "score": 0.4139038580038221,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 2
+          },
+          {
+            "id": "telecom-06-00045:14:paragraph:3:58af52e8dbec",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 14,
+            "metadata": {
+              "section": "techniques"
+            },
+            "text": "A rectifier designed for 2.4 GHz operation, shown in Figure 9a, achieved a conversion efficiency of 62.4% at an input power of \u221210 dBm and a conversion efficiency of 31.1% at an input power of \u221220 dBm, incorporating a voltage booster circuit to enhance performance at low power levels [ 58]. Another optimized rectifying circuit for RF energy scavenging at 2.45 GHz reached a conversion efficiency of 31.16% at an input power of 20 dBm, delivering an output voltage of 10.32 V [59].",
+            "score": 0.3751455163223427,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 3
+          }
+        ],
+        "context": "[telecom-06-00045:13:paragraph:1:b38d614a33f5 | data/telecom-06-00045.pdf | page 13]\nRecent advancements have led to significant improvements in rectenna performance. As shown in Figure 8, a rectifier circuit achieved a peak efficiency of 88% at an input power of 14 dBm while maintaining over 60% efficiency within the input power range of 3 dBm to 16 dBm at 2.4 GHz. Similarly, at 5.8 GHz, it attained a maximum efficiency of 81% at 10 dBm input power, sustaining efficiency above 60% for input power levels between 7 dBm and 12 dBm [ 54].\n\n[telecom-06-00045:8:paragraph:1:8cb4553e3fdf | data/telecom-06-00045.pdf | page 8]\nAntenna Type and Frequency Antenna Structure Size (mm) Antenna Gain(dBi) Circuit Type andFrequency Efficiency (%) InputPower(dBm) MinimumSensitivity(dBm) Logarithmic Spiral Antenna (2\u201318 GHz) 60 \u00d7 60 3.2 Half-Wave Rectifier (2.4 GHz) 20 +4 \u221218 Linear Tapered Slot Antenna (1.85/2.4 GHz) 80 \u00d7 40 5.1 Differential Rectifier (1.85 GHz) 13 \u221215 \u221222 Concentric Square Patch (2.4/5.5 GHz) 45 \u00d7 45 4.0 @ 2.4 GHz Full-WaveRectifier 36% @ 2.4 GHz,5% @ 5.5 GHz 0 \u221216 Slotted Patch Antenna (2.45 GHz) 35 \u00d7 30 5.3\n\n[telecom-06-00045:14:paragraph:3:58af52e8dbec | data/telecom-06-00045.pdf | page 14]\nA rectifier designed for 2.4 GHz operation, shown in Figure 9a, achieved a conversion efficiency of 62.4% at an input power of \u221210 dBm and a conversion efficiency of 31.1% at an input power of \u221220 dBm, incorporating a voltage booster circuit to enhance performance at low power levels [ 58]. Another optimized rectifying circuit for RF energy scavenging at 2.45 GHz reached a conversion efficiency of 31.16% at an input power of 20 dBm, delivering an output voltage of 10.32 V [59].",
+        "context_ids": [
+          "telecom-06-00045:13:paragraph:1:b38d614a33f5",
+          "telecom-06-00045:8:paragraph:1:8cb4553e3fdf",
+          "telecom-06-00045:14:paragraph:3:58af52e8dbec"
+        ]
+      },
+      {
+        "event": "citation_verification",
+        "citations": [
+          "telecom-06-00045:13:paragraph:1:b38d614a33f5"
+        ],
+        "supported": true
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q12",
+    "split": "dev",
+    "question": "H\u1ec7 th\u1ed1ng thu ho\u1ea1ch RF \u0111\u01a1n b\u0103ng ho\u1ea1t \u0111\u1ed9ng \u1edf d\u1ea3i t\u1ea7n n\u00e0o v\u00e0 t\u1ed1i \u01b0u nh\u1eefng th\u00e0nh ph\u1ea7n n\u00e0o?",
+    "answerable": true,
+    "method": "lexical",
+    "elapsed_ms": 4884.352899999612,
+    "status": "answered",
+    "answer": "The RF single-band harvesting system operates at specific frequencies such as 2.4 GHz or 5.8 GHz, which are commonly used in Wi-Fi and ISM band applications. It optimizes components like impedance matching networks and rectifier circuits to maximize efficiency at a single frequency, ensuring minimal losses. Typical antennas used include microstrip patch antennas, monopole antennas, and dipole antennas. [telecom-06-00045:20:paragraph:1:e057e5f6ceab] [telecom-06-00045:14:paragraph:1:f7ef389f5583]",
+    "citations": [
+      "telecom-06-00045:20:paragraph:1:e057e5f6ceab",
+      "telecom-06-00045:14:paragraph:1:f7ef389f5583"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "RF single band harvesting system frequency range and optimized components",
+        "filter": null,
+        "results": [
+          {
+            "id": "telecom-06-00045:14:paragraph:0:173b01a2b2ec",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 14,
+            "metadata": {
+              "section": "techniques"
+            },
+            "text": "Telecom 2025, 6, 45 14 of 40 passive vs. active systems, and hybrid energy-harvesting methods that integrate RF energy with solar, vibration, and thermal sources [57]. 4.1. Single-Band vs. Multi-Band RF Energy Harvesting RFEH systems are classified based on their ability to capture energy from either a single frequency band or multiple frequency bands.",
+            "score": 0.3045543823272708,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 1
+          },
+          {
+            "id": "telecom-06-00045:20:paragraph:1:e057e5f6ceab",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 20,
+            "metadata": {
+              "section": "techniques"
+            },
+            "text": "Aspect Single-Band Multi-Band Narrowband Broadband Passive Active Hybrid Operating Frequency Single fixed frequency(e.g., 2.4 GHz, 5.8 GHz) Multiple distinct frequencies (e.g., 900 MHz, 1.8 GHz, 2.4 GHz) Very narrow frequency range around centre frequency Wide range (hundreds of MHz to several GHz) Ambient RF signals only Ambient RF signals + assisted with amplifiers Combination of RF, solar, vibration, and thermal energy sources Typical Antennas Used Microstrip patch,dipole, monopole Fractal an",
+            "score": 0.26794494834498794,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 2
+          },
+          {
+            "id": "telecom-06-00045:14:paragraph:1:f7ef389f5583",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 14,
+            "metadata": {
+              "section": "techniques"
+            },
+            "text": "Single-band systems are designed to operate at a specific frequency, such as 2.4 GHz or 5.8 GHz, which are commonly used in Wi-Fi, industrial, and ISM (Industrial, Scientific, and Medical) band applications. These systems optimize impedance matching networks and rectifier circuits to maximize efficiency at a single frequency, ensuring minimal losses. Typical antennas used for single-band RREH are microstrip patch antennas, monopole antennas, and dipole antennas.",
+            "score": 0.26097362416568237,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 3
+          }
+        ],
+        "context": "[telecom-06-00045:14:paragraph:0:173b01a2b2ec | data/telecom-06-00045.pdf | page 14]\nTelecom 2025, 6, 45 14 of 40 passive vs. active systems, and hybrid energy-harvesting methods that integrate RF energy with solar, vibration, and thermal sources [57]. 4.1. Single-Band vs. Multi-Band RF Energy Harvesting RFEH systems are classified based on their ability to capture energy from either a single frequency band or multiple frequency bands.\n\n[telecom-06-00045:20:paragraph:1:e057e5f6ceab | data/telecom-06-00045.pdf | page 20]\nAspect Single-Band Multi-Band Narrowband Broadband Passive Active Hybrid Operating Frequency Single fixed frequency(e.g., 2.4 GHz, 5.8 GHz) Multiple distinct frequencies (e.g., 900 MHz, 1.8 GHz, 2.4 GHz) Very narrow frequency range around centre frequency Wide range (hundreds of MHz to several GHz) Ambient RF signals only Ambient RF signals + assisted with amplifiers Combination of RF, solar, vibration, and thermal energy sources Typical Antennas Used Microstrip patch,dipole, monopole Fractal an\n\n[telecom-06-00045:14:paragraph:1:f7ef389f5583 | data/telecom-06-00045.pdf | page 14]\nSingle-band systems are designed to operate at a specific frequency, such as 2.4 GHz or 5.8 GHz, which are commonly used in Wi-Fi, industrial, and ISM (Industrial, Scientific, and Medical) band applications. These systems optimize impedance matching networks and rectifier circuits to maximize efficiency at a single frequency, ensuring minimal losses. Typical antennas used for single-band RREH are microstrip patch antennas, monopole antennas, and dipole antennas.",
+        "context_ids": [
+          "telecom-06-00045:14:paragraph:0:173b01a2b2ec",
+          "telecom-06-00045:20:paragraph:1:e057e5f6ceab",
+          "telecom-06-00045:14:paragraph:1:f7ef389f5583"
+        ]
+      },
+      {
+        "event": "citation_verification",
+        "citations": [
+          "telecom-06-00045:20:paragraph:1:e057e5f6ceab",
+          "telecom-06-00045:14:paragraph:1:f7ef389f5583"
+        ],
+        "supported": true
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q13",
+    "split": "dev",
+    "question": "Trong ph\u1ea7n k\u1ef9 thu\u1eadt, dual-band rectenna \u0111\u01b0\u1ee3c n\u00eau \u0111\u1ea1t hi\u1ec7u su\u1ea5t c\u1ef1c \u0111\u1ea1i n\u00e0o t\u1ea1i 1,8 GHz v\u00e0 2,45 GHz?",
+    "answerable": true,
+    "method": "lexical",
+    "elapsed_ms": 3978.6754000001565,
+    "status": "answered",
+    "answer": "The dual-band rectenna achieved measured peak conversion efficiencies of 72% at 1.8 GHz and 65% at 2.45 GHz. [telecom-06-00045:15:paragraph:1:dc6c92ad8fd3]",
+    "citations": [
+      "telecom-06-00045:15:paragraph:1:dc6c92ad8fd3"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "dual-band rectenna maximum efficiency 1.8 GHz 2.45 GHz",
+        "filter": {
+          "section": "techniques"
+        },
+        "results": [
+          {
+            "id": "telecom-06-00045:15:paragraph:1:dc6c92ad8fd3",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 15,
+            "metadata": {
+              "section": "techniques"
+            },
+            "text": "[34] reported that a dual-band rectenna operating at 1.8 GHz and 2.45 GHz achieved measured peak conversion efficiencies of 72% at 1.8 GHz (input power of 4 dbm) and 65% at 2.45 GHz (input power of 3 dbm), as shown in Figure 9b [60]. Another study designed a triple-band rectenna operating at 915 MHz, 1.8 GHz, and 2.1 GHz frequency bands. The proposed rectenna achieved efficiencies greater than 52% when harvesting RF energy from outdoor sources.",
+            "score": 0.602048720561182,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 1
+          },
+          {
+            "id": "telecom-06-00045:14:paragraph:5:c51df601bcaf",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 14,
+            "metadata": {
+              "section": "techniques"
+            },
+            "text": "These systems are best suited for predictable environments with stable RF sources, where maximum efficiency at one frequency outweighs adaptability. (a) (b) Figure 9. RF energy-harvesting system. (a) Single band [58]. (b) Multiple bands [62]. In contrast, multi-band RFEH systems operate across multiple frequency bands, allowing them to harvest energy from diverse RF sources such as GSM at 900 MHz and 1.8 GHz, LTE ranging from 700 MHz to 2.6 GHz, and Wi-Fi at 2.4 GHz and 5 GHz.",
+            "score": 0.38078255760987273,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 2
+          },
+          {
+            "id": "telecom-06-00045:20:paragraph:1:e057e5f6ceab",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 20,
+            "metadata": {
+              "section": "techniques"
+            },
+            "text": "Aspect Single-Band Multi-Band Narrowband Broadband Passive Active Hybrid Operating Frequency Single fixed frequency(e.g., 2.4 GHz, 5.8 GHz) Multiple distinct frequencies (e.g., 900 MHz, 1.8 GHz, 2.4 GHz) Very narrow frequency range around centre frequency Wide range (hundreds of MHz to several GHz) Ambient RF signals only Ambient RF signals + assisted with amplifiers Combination of RF, solar, vibration, and thermal energy sources Typical Antennas Used Microstrip patch,dipole, monopole Fractal an",
+            "score": 0.3786642913708178,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 3
+          }
+        ],
+        "context": "[telecom-06-00045:15:paragraph:1:dc6c92ad8fd3 | data/telecom-06-00045.pdf | page 15]\n[34] reported that a dual-band rectenna operating at 1.8 GHz and 2.45 GHz achieved measured peak conversion efficiencies of 72% at 1.8 GHz (input power of 4 dbm) and 65% at 2.45 GHz (input power of 3 dbm), as shown in Figure 9b [60]. Another study designed a triple-band rectenna operating at 915 MHz, 1.8 GHz, and 2.1 GHz frequency bands. The proposed rectenna achieved efficiencies greater than 52% when harvesting RF energy from outdoor sources.\n\n[telecom-06-00045:14:paragraph:5:c51df601bcaf | data/telecom-06-00045.pdf | page 14]\nThese systems are best suited for predictable environments with stable RF sources, where maximum efficiency at one frequency outweighs adaptability. (a) (b) Figure 9. RF energy-harvesting system. (a) Single band [58]. (b) Multiple bands [62]. In contrast, multi-band RFEH systems operate across multiple frequency bands, allowing them to harvest energy from diverse RF sources such as GSM at 900 MHz and 1.8 GHz, LTE ranging from 700 MHz to 2.6 GHz, and Wi-Fi at 2.4 GHz and 5 GHz.\n\n[telecom-06-00045:20:paragraph:1:e057e5f6ceab | data/telecom-06-00045.pdf | page 20]\nAspect Single-Band Multi-Band Narrowband Broadband Passive Active Hybrid Operating Frequency Single fixed frequency(e.g., 2.4 GHz, 5.8 GHz) Multiple distinct frequencies (e.g., 900 MHz, 1.8 GHz, 2.4 GHz) Very narrow frequency range around centre frequency Wide range (hundreds of MHz to several GHz) Ambient RF signals only Ambient RF signals + assisted with amplifiers Combination of RF, solar, vibration, and thermal energy sources Typical Antennas Used Microstrip patch,dipole, monopole Fractal an",
+        "context_ids": [
+          "telecom-06-00045:15:paragraph:1:dc6c92ad8fd3",
+          "telecom-06-00045:14:paragraph:5:c51df601bcaf",
+          "telecom-06-00045:20:paragraph:1:e057e5f6ceab"
+        ]
+      },
+      {
+        "event": "citation_verification",
+        "citations": [
+          "telecom-06-00045:15:paragraph:1:dc6c92ad8fd3"
+        ],
+        "supported": true
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q14",
+    "split": "dev",
+    "question": "H\u1ec7 th\u1ed1ng thu ho\u1ea1ch b\u0103ng r\u1ed9ng quad-band \u0111\u01b0\u1ee3c n\u00eau ho\u1ea1t \u0111\u1ed9ng trong d\u1ea3i t\u1ea7n n\u00e0o?",
+    "answerable": true,
+    "method": "lexical",
+    "elapsed_ms": 4046.59219999985,
+    "status": "answered",
+    "answer": "The quad-band harvesting system operates within the frequency range of 0.8 GHz to 2.6 GHz. [telecom-06-00045:16:paragraph:1:9ebf4a128a02]",
+    "citations": [
+      "telecom-06-00045:16:paragraph:1:9ebf4a128a02"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "quad-band harvesting system frequency range",
+        "filter": null,
+        "results": [
+          {
+            "id": "telecom-06-00045:16:paragraph:1:9ebf4a128a02",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 16,
+            "metadata": {
+              "section": "techniques"
+            },
+            "text": "These antennas are inherently frequency-independent or support multiple resonant modes, allowing them to respond to a broad spectrum of incoming signals. Their geometrical designs are often based on self-similarity or logarithmic scaling, which enables effective energy reception across wide frequency bands. A notable example of broadband design was presented by the authors in [60] where a quad-band RF energy harvester was developed to operate within the 0.8 GHz to 2.6 GHz frequency range.",
+            "score": 0.25049744003200725,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 1
+          },
+          {
+            "id": "telecom-06-00045:20:paragraph:1:e057e5f6ceab",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 20,
+            "metadata": {
+              "section": "techniques"
+            },
+            "text": "Aspect Single-Band Multi-Band Narrowband Broadband Passive Active Hybrid Operating Frequency Single fixed frequency(e.g., 2.4 GHz, 5.8 GHz) Multiple distinct frequencies (e.g., 900 MHz, 1.8 GHz, 2.4 GHz) Very narrow frequency range around centre frequency Wide range (hundreds of MHz to several GHz) Ambient RF signals only Ambient RF signals + assisted with amplifiers Combination of RF, solar, vibration, and thermal energy sources Typical Antennas Used Microstrip patch,dipole, monopole Fractal an",
+            "score": 0.19289103704307678,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 2
+          },
+          {
+            "id": "telecom-06-00045:14:paragraph:0:173b01a2b2ec",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 14,
+            "metadata": {
+              "section": "techniques"
+            },
+            "text": "Telecom 2025, 6, 45 14 of 40 passive vs. active systems, and hybrid energy-harvesting methods that integrate RF energy with solar, vibration, and thermal sources [57]. 4.1. Single-Band vs. Multi-Band RF Energy Harvesting RFEH systems are classified based on their ability to capture energy from either a single frequency band or multiple frequency bands.",
+            "score": 0.19051667391057098,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 3
+          }
+        ],
+        "context": "[telecom-06-00045:16:paragraph:1:9ebf4a128a02 | data/telecom-06-00045.pdf | page 16]\nThese antennas are inherently frequency-independent or support multiple resonant modes, allowing them to respond to a broad spectrum of incoming signals. Their geometrical designs are often based on self-similarity or logarithmic scaling, which enables effective energy reception across wide frequency bands. A notable example of broadband design was presented by the authors in [60] where a quad-band RF energy harvester was developed to operate within the 0.8 GHz to 2.6 GHz frequency range.\n\n[telecom-06-00045:20:paragraph:1:e057e5f6ceab | data/telecom-06-00045.pdf | page 20]\nAspect Single-Band Multi-Band Narrowband Broadband Passive Active Hybrid Operating Frequency Single fixed frequency(e.g., 2.4 GHz, 5.8 GHz) Multiple distinct frequencies (e.g., 900 MHz, 1.8 GHz, 2.4 GHz) Very narrow frequency range around centre frequency Wide range (hundreds of MHz to several GHz) Ambient RF signals only Ambient RF signals + assisted with amplifiers Combination of RF, solar, vibration, and thermal energy sources Typical Antennas Used Microstrip patch,dipole, monopole Fractal an\n\n[telecom-06-00045:14:paragraph:0:173b01a2b2ec | data/telecom-06-00045.pdf | page 14]\nTelecom 2025, 6, 45 14 of 40 passive vs. active systems, and hybrid energy-harvesting methods that integrate RF energy with solar, vibration, and thermal sources [57]. 4.1. Single-Band vs. Multi-Band RF Energy Harvesting RFEH systems are classified based on their ability to capture energy from either a single frequency band or multiple frequency bands.",
+        "context_ids": [
+          "telecom-06-00045:16:paragraph:1:9ebf4a128a02",
+          "telecom-06-00045:20:paragraph:1:e057e5f6ceab",
+          "telecom-06-00045:14:paragraph:0:173b01a2b2ec"
+        ]
+      },
+      {
+        "event": "citation_verification",
+        "citations": [
+          "telecom-06-00045:16:paragraph:1:9ebf4a128a02"
+        ],
+        "supported": true
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q15",
+    "split": "dev",
+    "question": "N\u0103ng l\u01b0\u1ee3ng thu \u0111\u01b0\u1ee3c trong c\u00e1c h\u1ec7 th\u1ed1ng thu ho\u1ea1ch RF th\u1ee5 \u0111\u1ed9ng th\u01b0\u1eddng \u1edf m\u1ee9c n\u00e0o?",
+    "answerable": true,
+    "method": "lexical",
+    "elapsed_ms": 3889.131500000076,
+    "status": "answered",
+    "answer": "The energy harvested in passive RF harvesting systems is often in the microwatt range, which necessitates ultra-low-power circuit design. Proper tuning of the impedance matching network is crucial for maximizing voltage transfer to the rectifier. [telecom-06-00045:17:paragraph:1:fd238d5f3ee9]",
+    "citations": [
+      "telecom-06-00045:17:paragraph:1:fd238d5f3ee9"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "energy harvested in passive RF harvesting systems",
+        "filter": null,
+        "results": [
+          {
+            "id": "telecom-06-00045:16:paragraph:8:71bf2aef8d7a",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 16,
+            "metadata": {
+              "section": "techniques"
+            },
+            "text": "Passive vs. Active RF Energy Harvesting RFEH systems can be broadly categorized into two types: passive and active. Passive systems rely solely on ambient RF energy present in the environment, capturing and converting it into usable electrical power without the aid of external power sources. In contrast, active systems incorporate external power sources to enhance their energy-harvesting capabilities, often employing amplifiers or other active components to boost performance.",
+            "score": 0.33285432962749373,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 1
+          },
+          {
+            "id": "telecom-06-00045:16:paragraph:9:ca29f91be898",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 16,
+            "metadata": {
+              "section": "techniques"
+            },
+            "text": "Passive RF energy harvesters capture ambient RF signals emitted from various sources",
+            "score": 0.3095847816200141,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 2
+          },
+          {
+            "id": "telecom-06-00045:17:paragraph:1:fd238d5f3ee9",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 17,
+            "metadata": {
+              "section": "techniques"
+            },
+            "text": "The energy captured in passive systems is often in the microwatt range, making ultra-low-power circuit design essential. The careful tuning of the impedance matching network is critical to ensure maximum voltage transfer to the rectifier. Energy storage units such as supercapacitors or thin-film batteries are used to accumulate harvested energy for intermittent power delivery.",
+            "score": 0.24200278135262074,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 3
+          }
+        ],
+        "context": "[telecom-06-00045:16:paragraph:8:71bf2aef8d7a | data/telecom-06-00045.pdf | page 16]\nPassive vs. Active RF Energy Harvesting RFEH systems can be broadly categorized into two types: passive and active. Passive systems rely solely on ambient RF energy present in the environment, capturing and converting it into usable electrical power without the aid of external power sources. In contrast, active systems incorporate external power sources to enhance their energy-harvesting capabilities, often employing amplifiers or other active components to boost performance.\n\n[telecom-06-00045:16:paragraph:9:ca29f91be898 | data/telecom-06-00045.pdf | page 16]\nPassive RF energy harvesters capture ambient RF signals emitted from various sources\n\n[telecom-06-00045:17:paragraph:1:fd238d5f3ee9 | data/telecom-06-00045.pdf | page 17]\nThe energy captured in passive systems is often in the microwatt range, making ultra-low-power circuit design essential. The careful tuning of the impedance matching network is critical to ensure maximum voltage transfer to the rectifier. Energy storage units such as supercapacitors or thin-film batteries are used to accumulate harvested energy for intermittent power delivery.",
+        "context_ids": [
+          "telecom-06-00045:16:paragraph:8:71bf2aef8d7a",
+          "telecom-06-00045:16:paragraph:9:ca29f91be898",
+          "telecom-06-00045:17:paragraph:1:fd238d5f3ee9"
+        ]
+      },
+      {
+        "event": "citation_verification",
+        "citations": [
+          "telecom-06-00045:17:paragraph:1:fd238d5f3ee9"
+        ],
+        "supported": true
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  },
+  {
+    "query_id": "q21",
+    "split": "dev",
+    "question": "B\u00e0i b\u00e1o c\u00f3 n\u00eau dung l\u01b0\u1ee3ng c\u1ee5 th\u1ec3, t\u00ednh b\u1eb1ng mAh, c\u1ee7a pin lithium-ion \u0111\u01b0\u1ee3c d\u00f9ng trong m\u1ed9t h\u1ec7 th\u1ed1ng thu ho\u1ea1ch RF kh\u00f4ng?",
+    "answerable": false,
+    "method": "lexical",
+    "elapsed_ms": 2365.0775999999496,
+    "status": "abstain",
+    "answer": "Kh\u00f4ng \u0111\u1ee7 b\u1eb1ng ch\u1ee9ng \u0111\u1ec3 tr\u1ea3 l\u1eddi.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "lithium-ion battery capacity mAh RF harvesting system",
+        "filter": null,
+        "results": [
+          {
+            "id": "telecom-06-00045:11:paragraph:2:4c0a013cd0f9",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 11,
+            "metadata": {
+              "section": "fundamentals"
+            },
+            "text": "This makes them more suitable for low-power, short-duration applications such as wireless sensor nodes, IoT devices, and energy buffering in transient-powered systems [42,43]. Rechargeable batteries, such as lithium-ion and lithium-polymer batteries, offer significantly higher energy density, allowing them to store more energy for prolonged operation.",
+            "score": 0.33264755189962947,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 1
+          },
+          {
+            "id": "telecom-06-00045:5:paragraph:2:d5f4991b24d5",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 5,
+            "metadata": {
+              "section": "fundamentals"
+            },
+            "text": "Fundamentals of RF Energy Harvesting RF energy harvesting is a transformative technology that enables the collection and conversion of ambient electromagnetic waves into usable electrical energy, allowing wireless electronic devices to operate without relying on traditional battery power sources.",
+            "score": 0.12503211717386992,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 2
+          },
+          {
+            "id": "telecom-06-00045:26:paragraph:1:45aae9411720",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 26,
+            "metadata": {
+              "section": "applications"
+            },
+            "text": "For instance, a study demonstrated the deployment of RF-powered low-energy sensor nodes for predictive maintenance in electromagnetically harsh industrial environments. The system utilized 2.45 GHz RF energy to power sensor nodes monitoring machinery conditions, effectively eliminating the need for battery replacements and enhancing maintenance efficiency [53].",
+            "score": 0.10944985290005113,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 3
+          }
+        ],
+        "context": "[telecom-06-00045:11:paragraph:2:4c0a013cd0f9 | data/telecom-06-00045.pdf | page 11]\nThis makes them more suitable for low-power, short-duration applications such as wireless sensor nodes, IoT devices, and energy buffering in transient-powered systems [42,43]. Rechargeable batteries, such as lithium-ion and lithium-polymer batteries, offer significantly higher energy density, allowing them to store more energy for prolonged operation.\n\n[telecom-06-00045:5:paragraph:2:d5f4991b24d5 | data/telecom-06-00045.pdf | page 5]\nFundamentals of RF Energy Harvesting RF energy harvesting is a transformative technology that enables the collection and conversion of ambient electromagnetic waves into usable electrical energy, allowing wireless electronic devices to operate without relying on traditional battery power sources.\n\n[telecom-06-00045:26:paragraph:1:45aae9411720 | data/telecom-06-00045.pdf | page 26]\nFor instance, a study demonstrated the deployment of RF-powered low-energy sensor nodes for predictive maintenance in electromagnetically harsh industrial environments. The system utilized 2.45 GHz RF energy to power sensor nodes monitoring machinery conditions, effectively eliminating the need for battery replacements and enhancing maintenance efficiency [53].",
+        "context_ids": [
+          "telecom-06-00045:11:paragraph:2:4c0a013cd0f9",
+          "telecom-06-00045:5:paragraph:2:d5f4991b24d5",
+          "telecom-06-00045:26:paragraph:1:45aae9411720"
+        ]
+      },
+      {
+        "event": "model_abstention",
+        "reason": "The retrieved context does not provide specific capacity in mAh for the lithium-ion battery used in the RF harvesting system."
+      }
+    ]
+  },
+  {
+    "query_id": "q22",
+    "split": "dev",
+    "question": "B\u00e0i b\u00e1o c\u00f3 x\u00e1c \u0111\u1ecbnh m\u1ed9t m\u1eabu \u0111i\u1ec7n tho\u1ea1i th\u00f4ng minh c\u1ee5 th\u1ec3 \u0111\u01b0\u1ee3c d\u00f9ng l\u00e0m thi\u1ebft b\u1ecb th\u1eed nghi\u1ec7m cho rectenna kh\u00f4ng?",
+    "answerable": false,
+    "method": "lexical",
+    "elapsed_ms": 5815.787099999852,
+    "status": "abstain",
+    "answer": "Kh\u00f4ng \u0111\u1ee7 b\u1eb1ng ch\u1ee9ng \u0111\u1ec3 tr\u1ea3 l\u1eddi.",
+    "citations": [],
+    "events": [
+      {
+        "event": "search",
+        "query": "specific smartphone model used as test device for rectenna",
+        "filter": null,
+        "results": [
+          {
+            "id": "telecom-06-00045:23:paragraph:2:e0c65027b69e",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 23,
+            "metadata": {
+              "section": "developments"
+            },
+            "text": "A machine learning-based model was developed to analyze real-time RF spectrum data and predict the optimal frequency bands for energy harvesting [ 81]. The model improved energyharvesting efficiency by 25% by dynamically switching between different frequency bands. Another key innovation is the use of reinforcement learning for adaptive impedance matching and power management.",
+            "score": 0.2214174252902796,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 1
+          },
+          {
+            "id": "telecom-06-00045:23:paragraph:8:60cf14a12231",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 23,
+            "metadata": {
+              "section": "developments"
+            },
+            "text": "The integration of SWIPT with AI-driven optimization further enhances performance. A predictive AI model was integrated into a SWIPT-enabled IoT network to optimize resource allocation, leading to a 30% improvement in energy-harvesting efficiency. This model incorporates real-time contextual awareness of user mobility and signal fading, enabling the development intelligent modulation and coding schemes for dual-function transmission.",
+            "score": 0.18117895331516412,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 2
+          },
+          {
+            "id": "telecom-06-00045:22:paragraph:4:d7eec020721e",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 22,
+            "metadata": {
+              "section": "developments"
+            },
+            "text": "While MPPT boosts net energy by 10\u201325% in fluctuating fields, it introduces control-loop latency and demands the precise sensing of rectifier voltage/current, which can be challenging at\u03bcW power levels. An equivalent circuit model has been developed that closely aligns with the mechanical model of piezoelectric energy harvesters, facilitating improved impedance matching and power management [77].",
+            "score": 0.17488067715490052,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 3
+          }
+        ],
+        "context": "[telecom-06-00045:23:paragraph:2:e0c65027b69e | data/telecom-06-00045.pdf | page 23]\nA machine learning-based model was developed to analyze real-time RF spectrum data and predict the optimal frequency bands for energy harvesting [ 81]. The model improved energyharvesting efficiency by 25% by dynamically switching between different frequency bands. Another key innovation is the use of reinforcement learning for adaptive impedance matching and power management.\n\n[telecom-06-00045:23:paragraph:8:60cf14a12231 | data/telecom-06-00045.pdf | page 23]\nThe integration of SWIPT with AI-driven optimization further enhances performance. A predictive AI model was integrated into a SWIPT-enabled IoT network to optimize resource allocation, leading to a 30% improvement in energy-harvesting efficiency. This model incorporates real-time contextual awareness of user mobility and signal fading, enabling the development intelligent modulation and coding schemes for dual-function transmission.\n\n[telecom-06-00045:22:paragraph:4:d7eec020721e | data/telecom-06-00045.pdf | page 22]\nWhile MPPT boosts net energy by 10\u201325% in fluctuating fields, it introduces control-loop latency and demands the precise sensing of rectifier voltage/current, which can be challenging at\u03bcW power levels. An equivalent circuit model has been developed that closely aligns with the mechanical model of piezoelectric energy harvesters, facilitating improved impedance matching and power management [77].",
+        "context_ids": [
+          "telecom-06-00045:23:paragraph:2:e0c65027b69e",
+          "telecom-06-00045:23:paragraph:8:60cf14a12231",
+          "telecom-06-00045:22:paragraph:4:d7eec020721e"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "specific smartphone model used as test device for rectenna",
+        "filter": null,
+        "results": [
+          {
+            "id": "telecom-06-00045:23:paragraph:2:e0c65027b69e",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 23,
+            "metadata": {
+              "section": "developments"
+            },
+            "text": "A machine learning-based model was developed to analyze real-time RF spectrum data and predict the optimal frequency bands for energy harvesting [ 81]. The model improved energyharvesting efficiency by 25% by dynamically switching between different frequency bands. Another key innovation is the use of reinforcement learning for adaptive impedance matching and power management.",
+            "score": 0.2214174252902796,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 1
+          },
+          {
+            "id": "telecom-06-00045:23:paragraph:8:60cf14a12231",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 23,
+            "metadata": {
+              "section": "developments"
+            },
+            "text": "The integration of SWIPT with AI-driven optimization further enhances performance. A predictive AI model was integrated into a SWIPT-enabled IoT network to optimize resource allocation, leading to a 30% improvement in energy-harvesting efficiency. This model incorporates real-time contextual awareness of user mobility and signal fading, enabling the development intelligent modulation and coding schemes for dual-function transmission.",
+            "score": 0.18117895331516412,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 2
+          },
+          {
+            "id": "telecom-06-00045:22:paragraph:4:d7eec020721e",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 22,
+            "metadata": {
+              "section": "developments"
+            },
+            "text": "While MPPT boosts net energy by 10\u201325% in fluctuating fields, it introduces control-loop latency and demands the precise sensing of rectifier voltage/current, which can be challenging at\u03bcW power levels. An equivalent circuit model has been developed that closely aligns with the mechanical model of piezoelectric energy harvesters, facilitating improved impedance matching and power management [77].",
+            "score": 0.17488067715490052,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 3
+          }
+        ],
+        "context": "[telecom-06-00045:23:paragraph:2:e0c65027b69e | data/telecom-06-00045.pdf | page 23]\nA machine learning-based model was developed to analyze real-time RF spectrum data and predict the optimal frequency bands for energy harvesting [ 81]. The model improved energyharvesting efficiency by 25% by dynamically switching between different frequency bands. Another key innovation is the use of reinforcement learning for adaptive impedance matching and power management.\n\n[telecom-06-00045:23:paragraph:8:60cf14a12231 | data/telecom-06-00045.pdf | page 23]\nThe integration of SWIPT with AI-driven optimization further enhances performance. A predictive AI model was integrated into a SWIPT-enabled IoT network to optimize resource allocation, leading to a 30% improvement in energy-harvesting efficiency. This model incorporates real-time contextual awareness of user mobility and signal fading, enabling the development intelligent modulation and coding schemes for dual-function transmission.\n\n[telecom-06-00045:22:paragraph:4:d7eec020721e | data/telecom-06-00045.pdf | page 22]\nWhile MPPT boosts net energy by 10\u201325% in fluctuating fields, it introduces control-loop latency and demands the precise sensing of rectifier voltage/current, which can be challenging at\u03bcW power levels. An equivalent circuit model has been developed that closely aligns with the mechanical model of piezoelectric energy harvesters, facilitating improved impedance matching and power management [77].",
+        "context_ids": [
+          "telecom-06-00045:23:paragraph:2:e0c65027b69e",
+          "telecom-06-00045:23:paragraph:8:60cf14a12231",
+          "telecom-06-00045:22:paragraph:4:d7eec020721e"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "specific smartphone model used as test device for rectenna",
+        "filter": null,
+        "results": [
+          {
+            "id": "telecom-06-00045:23:paragraph:2:e0c65027b69e",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 23,
+            "metadata": {
+              "section": "developments"
+            },
+            "text": "A machine learning-based model was developed to analyze real-time RF spectrum data and predict the optimal frequency bands for energy harvesting [ 81]. The model improved energyharvesting efficiency by 25% by dynamically switching between different frequency bands. Another key innovation is the use of reinforcement learning for adaptive impedance matching and power management.",
+            "score": 0.2214174252902796,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 1
+          },
+          {
+            "id": "telecom-06-00045:23:paragraph:8:60cf14a12231",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 23,
+            "metadata": {
+              "section": "developments"
+            },
+            "text": "The integration of SWIPT with AI-driven optimization further enhances performance. A predictive AI model was integrated into a SWIPT-enabled IoT network to optimize resource allocation, leading to a 30% improvement in energy-harvesting efficiency. This model incorporates real-time contextual awareness of user mobility and signal fading, enabling the development intelligent modulation and coding schemes for dual-function transmission.",
+            "score": 0.18117895331516412,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 2
+          },
+          {
+            "id": "telecom-06-00045:22:paragraph:4:d7eec020721e",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 22,
+            "metadata": {
+              "section": "developments"
+            },
+            "text": "While MPPT boosts net energy by 10\u201325% in fluctuating fields, it introduces control-loop latency and demands the precise sensing of rectifier voltage/current, which can be challenging at\u03bcW power levels. An equivalent circuit model has been developed that closely aligns with the mechanical model of piezoelectric energy harvesters, facilitating improved impedance matching and power management [77].",
+            "score": 0.17488067715490052,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 3
+          }
+        ],
+        "context": "[telecom-06-00045:23:paragraph:2:e0c65027b69e | data/telecom-06-00045.pdf | page 23]\nA machine learning-based model was developed to analyze real-time RF spectrum data and predict the optimal frequency bands for energy harvesting [ 81]. The model improved energyharvesting efficiency by 25% by dynamically switching between different frequency bands. Another key innovation is the use of reinforcement learning for adaptive impedance matching and power management.\n\n[telecom-06-00045:23:paragraph:8:60cf14a12231 | data/telecom-06-00045.pdf | page 23]\nThe integration of SWIPT with AI-driven optimization further enhances performance. A predictive AI model was integrated into a SWIPT-enabled IoT network to optimize resource allocation, leading to a 30% improvement in energy-harvesting efficiency. This model incorporates real-time contextual awareness of user mobility and signal fading, enabling the development intelligent modulation and coding schemes for dual-function transmission.\n\n[telecom-06-00045:22:paragraph:4:d7eec020721e | data/telecom-06-00045.pdf | page 22]\nWhile MPPT boosts net energy by 10\u201325% in fluctuating fields, it introduces control-loop latency and demands the precise sensing of rectifier voltage/current, which can be challenging at\u03bcW power levels. An equivalent circuit model has been developed that closely aligns with the mechanical model of piezoelectric energy harvesters, facilitating improved impedance matching and power management [77].",
+        "context_ids": [
+          "telecom-06-00045:23:paragraph:2:e0c65027b69e",
+          "telecom-06-00045:23:paragraph:8:60cf14a12231",
+          "telecom-06-00045:22:paragraph:4:d7eec020721e"
+        ]
+      },
+      {
+        "event": "search",
+        "query": "specific smartphone model used as test device for rectenna",
+        "filter": null,
+        "results": [
+          {
+            "id": "telecom-06-00045:23:paragraph:2:e0c65027b69e",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 23,
+            "metadata": {
+              "section": "developments"
+            },
+            "text": "A machine learning-based model was developed to analyze real-time RF spectrum data and predict the optimal frequency bands for energy harvesting [ 81]. The model improved energyharvesting efficiency by 25% by dynamically switching between different frequency bands. Another key innovation is the use of reinforcement learning for adaptive impedance matching and power management.",
+            "score": 0.2214174252902796,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 1
+          },
+          {
+            "id": "telecom-06-00045:23:paragraph:8:60cf14a12231",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 23,
+            "metadata": {
+              "section": "developments"
+            },
+            "text": "The integration of SWIPT with AI-driven optimization further enhances performance. A predictive AI model was integrated into a SWIPT-enabled IoT network to optimize resource allocation, leading to a 30% improvement in energy-harvesting efficiency. This model incorporates real-time contextual awareness of user mobility and signal fading, enabling the development intelligent modulation and coding schemes for dual-function transmission.",
+            "score": 0.18117895331516412,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 2
+          },
+          {
+            "id": "telecom-06-00045:22:paragraph:4:d7eec020721e",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 22,
+            "metadata": {
+              "section": "developments"
+            },
+            "text": "While MPPT boosts net energy by 10\u201325% in fluctuating fields, it introduces control-loop latency and demands the precise sensing of rectifier voltage/current, which can be challenging at\u03bcW power levels. An equivalent circuit model has been developed that closely aligns with the mechanical model of piezoelectric energy harvesters, facilitating improved impedance matching and power management [77].",
+            "score": 0.17488067715490052,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 3
+          }
+        ],
+        "context": "[telecom-06-00045:23:paragraph:2:e0c65027b69e | data/telecom-06-00045.pdf | page 23]\nA machine learning-based model was developed to analyze real-time RF spectrum data and predict the optimal frequency bands for energy harvesting [ 81]. The model improved energyharvesting efficiency by 25% by dynamically switching between different frequency bands. Another key innovation is the use of reinforcement learning for adaptive impedance matching and power management.\n\n[telecom-06-00045:23:paragraph:8:60cf14a12231 | data/telecom-06-00045.pdf | page 23]\nThe integration of SWIPT with AI-driven optimization further enhances performance. A predictive AI model was integrated into a SWIPT-enabled IoT network to optimize resource allocation, leading to a 30% improvement in energy-harvesting efficiency. This model incorporates real-time contextual awareness of user mobility and signal fading, enabling the development intelligent modulation and coding schemes for dual-function transmission.\n\n[telecom-06-00045:22:paragraph:4:d7eec020721e | data/telecom-06-00045.pdf | page 22]\nWhile MPPT boosts net energy by 10\u201325% in fluctuating fields, it introduces control-loop latency and demands the precise sensing of rectifier voltage/current, which can be challenging at\u03bcW power levels. An equivalent circuit model has been developed that closely aligns with the mechanical model of piezoelectric energy harvesters, facilitating improved impedance matching and power management [77].",
+        "context_ids": [
+          "telecom-06-00045:23:paragraph:2:e0c65027b69e",
+          "telecom-06-00045:23:paragraph:8:60cf14a12231",
+          "telecom-06-00045:22:paragraph:4:d7eec020721e"
+        ]
+      },
+      {
+        "event": "search_limit"
+      }
+    ]
+  }
+]

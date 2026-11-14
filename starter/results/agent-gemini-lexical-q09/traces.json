@@ -1,0 +1,84 @@
+[
+  {
+    "query_id": "q09",
+    "split": "dev",
+    "question": "\u0110\u1eb7c \u0111i\u1ec3m n\u00e0o khi\u1ebfn si\u00eau t\u1ee5 ph\u00f9 h\u1ee3p v\u1edbi \u1ee9ng d\u1ee5ng c\u1ea7n c\u00e1c \u0111\u1ee3t c\u1ea5p n\u0103ng l\u01b0\u1ee3ng th\u01b0\u1eddng xuy\u00ean?",
+    "answerable": true,
+    "method": "lexical",
+    "context_budget": 2000,
+    "prompt_revision": "minimal_direct_citations_gemini_auto_retry",
+    "elapsed_ms": 40784.80209999998,
+    "status": "answered",
+    "answer": "\u0110\u1eb7c \u0111i\u1ec3m khi\u1ebfn si\u00eau t\u1ee5 (supercapacitors) ph\u00f9 h\u1ee3p v\u1edbi c\u00e1c \u1ee9ng d\u1ee5ng c\u1ea7n nh\u1eefng \u0111\u1ee3t c\u1ea5p n\u0103ng l\u01b0\u1ee3ng th\u01b0\u1eddng xuy\u00ean l\u00e0 kh\u1ea3 n\u0103ng s\u1ea1c v\u00e0 x\u1ea3 nhanh ch\u00f3ng (ability to charge and discharge rapidly) [telecom-06-00045:11:paragraph:1:a8cab621d251].",
+    "citations": [
+      "telecom-06-00045:11:paragraph:1:a8cab621d251"
+    ],
+    "events": [
+      {
+        "event": "search",
+        "query": "supercapacitor frequent energy bursts power density charge discharge cycles",
+        "filter": null,
+        "results": [
+          {
+            "id": "telecom-06-00045:11:paragraph:1:a8cab621d251",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 11,
+            "metadata": {
+              "section": "fundamentals"
+            },
+            "text": "Supercapacitors are widely used for their ability to charge and discharge rapidly, making them ideal for applications requiring frequent energy bursts. They have a longer lifespan compared to conventional batteries, as they can withstand millions of charge\u2013discharge cycles without significant degradation [41]. However, supercapacitors have lower energy density, meaning they store less energy per unit volume compared to batteries.",
+            "score": 0.4297970131783059,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 1
+          },
+          {
+            "id": "telecom-06-00045:11:paragraph:3:e6988eb38257",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 11,
+            "metadata": {
+              "section": "fundamentals"
+            },
+            "text": "This makes them ideal for applications where continuous power is required, such as medical implants, remote monitoring systems, and wearable electronics. However, batteries have longer charging times and a limited number of charge\u2013discharge cycles, which can impact their long-term sustainability.",
+            "score": 0.24240504727953668,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 2
+          },
+          {
+            "id": "telecom-06-00045:11:paragraph:6:efb496dfde5e",
+            "source_id": "telecom-06-00045",
+            "source": "data/telecom-06-00045.pdf",
+            "page": 11,
+            "metadata": {
+              "section": "fundamentals"
+            },
+            "text": "Supercapacitor Battery Recharge cycle lifetime > 106 cycles < 103 cycles Fastest charging time sec~min Hours Fastest discharging time <a few min 0.3~3 h Self-discharge rate 30% 5% Voltage 0\u20132.7 V 3.7\u20134.2 V Energy density (Wh/kg) low (0.8\u201310) high (20\u2013150) Power density (W/kg) high (500\u2013400) low (50\u2013300) Charging circuit simple Complex 3.3.",
+            "score": 0.22489502914595083,
+            "strategy": "tfidf",
+            "method": "lexical",
+            "rank": 3
+          }
+        ],
+        "context": "[telecom-06-00045:11:paragraph:1:a8cab621d251 | data/telecom-06-00045.pdf | page 11]\nSupercapacitors are widely used for their ability to charge and discharge rapidly, making them ideal for applications requiring frequent energy bursts. They have a longer lifespan compared to conventional batteries, as they can withstand millions of charge\u2013discharge cycles without significant degradation [41]. However, supercapacitors have lower energy density, meaning they store less energy per unit volume compared to batteries.\n\n[telecom-06-00045:11:paragraph:3:e6988eb38257 | data/telecom-06-00045.pdf | page 11]\nThis makes them ideal for applications where continuous power is required, such as medical implants, remote monitoring systems, and wearable electronics. However, batteries have longer charging times and a limited number of charge\u2013discharge cycles, which can impact their long-term sustainability.\n\n[telecom-06-00045:11:paragraph:6:efb496dfde5e | data/telecom-06-00045.pdf | page 11]\nSupercapacitor Battery Recharge cycle lifetime > 106 cycles < 103 cycles Fastest charging time sec~min Hours Fastest discharging time <a few min 0.3~3 h Self-discharge rate 30% 5% Voltage 0\u20132.7 V 3.7\u20134.2 V Energy density (Wh/kg) low (0.8\u201310) high (20\u2013150) Power density (W/kg) high (500\u2013400) low (50\u2013300) Charging circuit simple Complex 3.3.",
+        "context_ids": [
+          "telecom-06-00045:11:paragraph:1:a8cab621d251",
+          "telecom-06-00045:11:paragraph:3:e6988eb38257",
+          "telecom-06-00045:11:paragraph:6:efb496dfde5e"
+        ]
+      },
+      {
+        "event": "citation_verification",
+        "citations": [
+          "telecom-06-00045:11:paragraph:1:a8cab621d251"
+        ],
+        "supported": true
+      },
+      {
+        "event": "answer"
+      }
+    ]
+  }
+]

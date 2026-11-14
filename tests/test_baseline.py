@@ -48,6 +48,15 @@ class BaselineTests(unittest.TestCase):
         self.assertTrue(trace['hit3'])
         self.assertFalse(trace['context_hit'])
 
+    def test_unanswerable_questions_are_allowed(self):
+        abstain = {'id': 'q2', 'split': 'dev', 'question': 'Có chính sách cho trẻ em đi máy bay miễn phí không?',
+                   'answerable': False, 'expected_behavior': 'search_and_abstain', 'absence_reason': 'Không có bằng chứng'}
+        validate(self.chunks, [abstain])
+        trace = evaluate(TfidfIndex(self.chunks), [abstain], budget=800)[0]
+        self.assertFalse(trace['answerable'])
+        self.assertFalse(trace['hit1'])
+        self.assertFalse(trace['hit3'])
+
     def test_convert_day6_and_preserve_filter(self):
         raw_chunk = {'chunk_id': 'c1', 'document_id': 'doc', 'source': 'doc.pdf', 'page': 1,
                      'text': 'bảy ngày', 'metadata': {'year': 2025}}
@@ -64,13 +73,17 @@ class BaselineTests(unittest.TestCase):
             (root/'chunks.json').write_text(json.dumps(self.chunks), encoding='utf-8')
             # A test gold which fails validation must not be inspected by a dev run.
             test = {**self.q, 'id': 't', 'split': 'test', 'gold': [{'source_id': 'x', 'page': 9, 'evidence': 'missing'}]}
-            (root/'q.json').write_text(json.dumps([self.q, test]), encoding='utf-8')
+            abstain = {'id': 'a', 'split': 'dev', 'question': 'Câu không có bằng chứng?',
+                       'answerable': False, 'expected_behavior': 'search_and_abstain',
+                       'absence_reason': 'Không có thông tin trong fixture.'}
+            (root/'q.json').write_text(json.dumps([self.q, test, abstain]), encoding='utf-8')
             subprocess.run([sys.executable, str(ROOT/'starter/baseline.py'), '--chunks', str(root/'chunks.json'),
                             '--questions', str(root/'q.json'), '--split', 'dev', '--output', str(root/'out')],
                            check=True, capture_output=True, text=True)
-            summary = json.loads((root/'out/summary.json').read_text())
+            summary = json.loads((root/'out/summary.json').read_text(encoding='utf-8'))
             self.assertEqual((summary['split'], summary['n'], summary['hit1']), ('dev', 1, 1))
-            self.assertEqual(len(json.loads((root/'out/traces.json').read_text())), 1)
+            self.assertEqual((summary['total_questions'], summary['unanswerable_n']), (2, 1))
+            self.assertEqual(len(json.loads((root/'out/traces.json').read_text(encoding='utf-8'))), 2)
 
 
 if __name__ == '__main__': unittest.main()

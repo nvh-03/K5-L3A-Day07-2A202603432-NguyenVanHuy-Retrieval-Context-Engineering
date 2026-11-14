@@ -1,0 +1,21 @@
+{
+  "provider": "Gemini",
+  "model": "gemini-3.5-flash",
+  "method": "lexical",
+  "prompt_revision": "minimal_direct_citations_gemini_auto_retry",
+  "query_id": "q09",
+  "status": "answered",
+  "citations": [
+    "telecom-06-00045:11:paragraph:1:a8cab621d251"
+  ],
+  "searches": 1,
+  "verifier": [
+    [
+      true,
+      [
+        "telecom-06-00045:11:paragraph:1:a8cab621d251"
+      ]
+    ]
+  ],
+  "elapsed_ms": 40784.80209999998
+}

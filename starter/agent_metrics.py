@@ -5,10 +5,12 @@ from pathlib import Path
 
 
 def aggregate(cases, traces, reviews):
-    """Cases: id/answerable; traces: query_id/status/events/citations.
+    """Cases: id/answerable/gold; traces: query_id/status/events/citations.
 
     Reviews: query_id, answer_grade (0..2 for answerable), citation_support
     (one boolean per citation), and abstention_correct (boolean for unanswerable).
+    Context evidence requires an exact gold quote in the final packed search context,
+    matched to a retrieved chunk with the same source and page.
     Provider errors are excluded and reported.
     """
     if len({c['id'] for c in cases}) != len(cases):
@@ -19,6 +21,7 @@ def aggregate(cases, traces, reviews):
     review_by_id = {r['query_id']: r for r in reviews}
     out = {'cases': len(cases), 'provider_errors': 0, 'tool_use': {'n': 0, 'N': 0},
            'grounded_answer': {'0': 0, '1': 0, '2': 0, 'N': 0, 'mean': None},
+           'context_evidence': {'n': 0, 'N': 0, 'rate': None, 'missed_query_ids': []},
            'citation_validity': {'n': 0, 'N': 0}, 'answer_citation_coverage': {'n': 0, 'N': 0},
            'abstention': {'n': 0, 'N': 0}, 'false_abstention': {'n': 0, 'N': 0}}
     for case in cases:
@@ -38,6 +41,15 @@ def aggregate(cases, traces, reviews):
         if not isinstance(events, list) or not isinstance(citations, list): raise ValueError(f'{cid}: events/citations không hợp lệ')
         if not isinstance(support, list) or len(support) != len(citations) or any(type(v) is not bool for v in support):
             raise ValueError(f'{cid}: cần một nhãn boolean cho mỗi citation')
+        if case['answerable']:
+            gold = case.get('gold')
+            if not isinstance(gold, list) or not gold:
+                raise ValueError(f'{cid}: cần gold để tính context evidence')
+            out['context_evidence']['N'] += 1
+            if _final_context_supports_gold(t, gold):
+                out['context_evidence']['n'] += 1
+            else:
+                out['context_evidence']['missed_query_ids'].append(cid)
         out['tool_use']['N'] += 1
         out['tool_use']['n'] += any(e.get('event') == 'search' for e in events)
         out['citation_validity']['n'] += sum(support)
@@ -63,7 +75,47 @@ def aggregate(cases, traces, reviews):
             out['abstention']['n'] += correct
     g = out['grounded_answer']
     if g['N']: g['mean'] = (g['1'] + 2*g['2']) / g['N']
+    context_evidence = out['context_evidence']
+    if context_evidence['N']:
+        context_evidence['rate'] = context_evidence['n'] / context_evidence['N']
     return out
+
+
+def _final_context_supports_gold(trace, gold):
+    searches = [event for event in trace.get('events', []) if event.get('event') == 'search']
+    if not searches:
+        return False
+    final_search = searches[-1]
+    context = final_search.get('context')
+    context_ids = final_search.get('context_ids')
+    if not isinstance(context, str) or not isinstance(context_ids, list):
+        return False
+    results_by_id = {
+        row.get('id'): row
+        for event in searches
+        for row in event.get('results', [])
+        if isinstance(row, dict) and isinstance(row.get('id'), str)
+    }
+    for evidence in gold:
+        for chunk_id in context_ids:
+            row = results_by_id.get(chunk_id)
+            if (
+                not isinstance(row, dict)
+                or row.get('source_id') != evidence.get('source_id')
+                or row.get('page') != evidence.get('page')
+                or not isinstance(row.get('source'), str)
+            ):
+                continue
+            marker = f"[{chunk_id} | {row['source']} | page {row['page']}]\n"
+            start = context.find(marker)
+            if start < 0:
+                continue
+            body_start = start + len(marker)
+            body_end = context.find('\n\n[', body_start)
+            body = context[body_start:] if body_end < 0 else context[body_start:body_end]
+            if isinstance(evidence.get('evidence'), str) and evidence['evidence'] in body:
+                return True
+    return False
 
 
 def main():

@@ -1,0 +1,17 @@
+{
+  "split": "dev",
+  "method": "dense",
+  "model": "openai/gpt-4o-mini",
+  "retriever_config": {
+    "strategy": "B",
+    "similarity": "cosine"
+  },
+  "questions": 17,
+  "status_counts": {
+    "answered": 12,
+    "abstain": 5
+  },
+  "median_ms": 4713.2682999999815,
+  "service_cost_usd": null,
+  "service_cost_note": "Not reported by the configured model endpoint."
+}

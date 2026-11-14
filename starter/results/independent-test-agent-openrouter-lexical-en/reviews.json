@@ -1,0 +1,44 @@
+[
+  {
+    "query_id": "indtest-01",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "review_note": "Trả lời đúng điện trở tải của chỉnh lưu và mục tiêu lấy công suất tối đa; citation nêu trực tiếp thao tác MPPT."
+  },
+  {
+    "query_id": "indtest-02",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "review_note": "Nêu đủ đèn đường, điểm truy cập Wi-Fi, CCTV, giám sát môi trường và an toàn công cộng; citation hỗ trợ toàn bộ."
+  },
+  {
+    "query_id": "indtest-03",
+    "answer_grade": 2,
+    "citation_support": [true, true, true],
+    "review_note": "Nêu đủ ba chỉ tiêu được hỏi; citation đầu hỗ trợ trực tiếp, hai citation sau hỗ trợ các chi tiết bổ sung về các tham số cảm biến và ứng dụng."
+  },
+  {
+    "query_id": "indtest-04",
+    "answer_grade": 2,
+    "citation_support": [true, true],
+    "review_note": "Nêu đúng bảo trì dự đoán và nhà máy thông minh; citation đầu hỗ trợ trực tiếp, citation thứ hai hỗ trợ các chi tiết thêm về cảm biến công nghiệp không pin."
+  },
+  {
+    "query_id": "indtest-05",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "review_note": "Nêu đúng học cộng tác, không cần điều khiển tập trung và bảo vệ riêng tư; citation còn hỗ trợ các chi tiết bổ sung về thích nghi và dự báo phổ."
+  },
+  {
+    "query_id": "indtest-06",
+    "abstention_correct": true,
+    "citation_support": [],
+    "review_note": "Ngữ cảnh chỉ mô tả thành phần và mục đích của cột thông minh, không nêu hãng hoặc mã sản phẩm; agent abstain."
+  },
+  {
+    "query_id": "indtest-07",
+    "abstention_correct": true,
+    "citation_support": [],
+    "review_note": "Ngữ cảnh nói phân phối cho nhiều thiết bị IoT nhưng không cho số lượng cụ thể; agent abstain."
+  }
+]

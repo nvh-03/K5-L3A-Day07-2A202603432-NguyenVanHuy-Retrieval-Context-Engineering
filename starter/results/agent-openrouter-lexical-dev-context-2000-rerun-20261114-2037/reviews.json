@@ -1,0 +1,104 @@
+[
+  {
+    "query_id": "q01",
+    "answer_grade": 2,
+    "citation_support": [true, true],
+    "review_note": "Đủ bốn thành phần. Cả hai citation đều nêu các thành phần chính; citation trang 2 còn giải thích đúng vai trò từng phần."
+  },
+  {
+    "query_id": "q02",
+    "answer_grade": 0,
+    "citation_support": [],
+    "review_note": "Abstain nhầm: gold có mốc 2019–2025. Các lượt tìm lặp lại trả về ngữ cảnh không liên quan, nên đây là lỗi truy xuất/query và từ chối câu có đáp án."
+  },
+  {
+    "query_id": "q03",
+    "answer_grade": 2,
+    "citation_support": [true, true],
+    "review_note": "Nêu đúng 132 từ 167. Citation thứ nhất chứa cả hai con số và kết quả sàng lọc; citation thứ hai xác nhận 132 bài được chọn."
+  },
+  {
+    "query_id": "q04",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "review_note": "Trả lời đúng 15; citation chứa hàng AI/ML-assisted energy optimization với số lượng 15."
+  },
+  {
+    "query_id": "q05",
+    "answer_grade": 1,
+    "citation_support": [true, true, true],
+    "review_note": "Một phần đúng: nêu biến thiên cường độ/tần số, nhiễu và vật cản/thời gian; còn thiếu hướng anten, khoảng cách đến nguồn và hiệu quả chỉnh lưu/phối hợp trở kháng trong expected_answer. Ba citation hỗ trợ các khẳng định đã nêu."
+  },
+  {
+    "query_id": "q06",
+    "answer_grade": 2,
+    "citation_support": [true, true],
+    "review_note": "Giải thích đúng phối hợp trở kháng giảm phản xạ và tăng công suất truyền từ anten tới chỉnh lưu; cả hai citation liên quan trực tiếp."
+  },
+  {
+    "query_id": "q07",
+    "answer_grade": 2,
+    "citation_support": [true, true],
+    "review_note": "Nêu đúng băng thông rộng hơn; hai citation hỗ trợ so sánh pi/L và khả năng băng thông của các mạng."
+  },
+  {
+    "query_id": "q08",
+    "answer_grade": 2,
+    "citation_support": [true, false],
+    "review_note": "Mô tả đúng đánh đổi điện áp đầu ra và hiệu suất/tổn hao. Citation thứ nhất hỗ trợ trực tiếp; citation thứ hai nói về hiệu suất đa băng và không hỗ trợ câu trả lời về thêm tầng chỉnh lưu."
+  },
+  {
+    "query_id": "q09",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "review_note": "Trả lời đúng khả năng nạp/xả nhanh; các thông tin thêm về tuổi thọ và mật độ năng lượng cũng có trong citation."
+  },
+  {
+    "query_id": "q10",
+    "answer_grade": 1,
+    "citation_support": [true, true, true],
+    "review_note": "Chỉ trả lời xu hướng đô thị cao/nông thôn thấp, thiếu khoảng số cụ thể 0,1 đến trên 10 µW/cm² theo câu hỏi. Các citation hỗ trợ nhận định định tính nhưng context không có các giá trị số gold."
+  },
+  {
+    "query_id": "q11",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "review_note": "Đúng 88% tại 14 dBm và 2,4 GHz theo câu hỏi; citation chứa cả chi tiết này và dải duy trì trên 60%."
+  },
+  {
+    "query_id": "q12",
+    "answer_grade": 2,
+    "citation_support": [true, true],
+    "review_note": "Nêu đúng tần số ví dụ và hai thành phần được tối ưu; thông tin bổ sung về loại anten cũng được các citation hỗ trợ."
+  },
+  {
+    "query_id": "q13",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "review_note": "Đúng 72% tại 1,8 GHz và 65% tại 2,45 GHz; citation có cả điều kiện công suất đầu vào."
+  },
+  {
+    "query_id": "q14",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "review_note": "Đúng dải 0,8–2,6 GHz; citation nêu nguyên khoảng tần số."
+  },
+  {
+    "query_id": "q15",
+    "answer_grade": 2,
+    "citation_support": [true],
+    "review_note": "Đúng mức microwatt; citation trực tiếp nêu mức năng lượng và hỗ trợ các thông tin bổ sung."
+  },
+  {
+    "query_id": "q21",
+    "abstention_correct": true,
+    "citation_support": [],
+    "review_note": "Câu hỏi yêu cầu dung lượng mAh cụ thể nhưng corpus không cung cấp thông tin đó; agent abstain, không thêm khẳng định."
+  },
+  {
+    "query_id": "q22",
+    "abstention_correct": true,
+    "citation_support": [],
+    "review_note": "Corpus không xác định mẫu điện thoại thử nghiệm cụ thể; agent cuối cùng abstain, không thêm khẳng định."
+  }
+]

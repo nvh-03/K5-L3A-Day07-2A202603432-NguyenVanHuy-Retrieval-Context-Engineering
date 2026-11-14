@@ -21,6 +21,8 @@ Triển khai và benchmark **ít nhất 3 phương pháp khác nhau**, bao gồm
 
 Một pipeline hybrid hoặc có rerank được tính là một phương pháp nếu khác rõ về cách tìm/xếp hạng; mô tả và benchmark riêng. Chỉ cộng score từ các retriever khi đã có cách chuẩn hóa hoặc hợp nhất hợp lý. Không cần làm tất cả gợi ý.
 
+Starter hiện có TF-IDF, dense qua vector store Day 6, và hybrid reciprocal-rank fusion; xem [cách chạy và schema trace](starter/README.md#4-so-sánh-retrieval). Dùng cùng split dev, corpus và cutoff để so sánh. Không chạy test cho đến khi đã chốt cấu hình.
+
 Để dễ kiểm tra, kết quả nên có ID, nội dung, score hoặc rank, nguồn, trang và metadata. Filter phải dựa trên thông tin người dùng cung cấp hoặc được hệ thống suy luận từ query một cách đáng tin; ghi lại cách suy luận, không dùng gold hay đáp án chuẩn.
 
 ## 3. Thiết kế agent và context

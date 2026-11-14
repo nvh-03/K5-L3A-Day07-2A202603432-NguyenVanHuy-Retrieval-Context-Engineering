@@ -1,0 +1,51 @@
+{
+  "provider": "OpenRouter",
+  "model": "openai/gpt-4o-mini",
+  "method": "lexical",
+  "questions": 3,
+  "status_counts": {
+    "answered": 3,
+    "abstain": 0
+  },
+  "results": [
+    {
+      "query_id": "q04",
+      "status": "answered",
+      "citations": [
+        "telecom-06-00045:5:paragraph:0:d694521887ff"
+      ],
+      "events": [
+        "search",
+        "citation_verification",
+        "answer"
+      ],
+      "elapsed_ms": 4209.745400000429
+    },
+    {
+      "query_id": "q14",
+      "status": "answered",
+      "citations": [
+        "telecom-06-00045:16:paragraph:1:9ebf4a128a02"
+      ],
+      "events": [
+        "search",
+        "citation_verification",
+        "answer"
+      ],
+      "elapsed_ms": 3795.071600000483
+    },
+    {
+      "query_id": "q15",
+      "status": "answered",
+      "citations": [
+        "telecom-06-00045:17:paragraph:1:fd238d5f3ee9"
+      ],
+      "events": [
+        "search",
+        "citation_verification",
+        "answer"
+      ],
+      "elapsed_ms": 3551.946200000202
+    }
+  ]
+}

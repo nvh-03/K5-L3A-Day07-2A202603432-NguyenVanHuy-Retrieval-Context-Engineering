@@ -1,0 +1,415 @@
+[
+  {
+    "query_id": "indtest-01",
+    "split": "test",
+    "question": "M\u1ea1ch theo d\u00f5i \u0111i\u1ec3m c\u00f4ng su\u1ea5t c\u1ef1c \u0111\u1ea1i \u0111\u01b0\u1ee3c n\u00eau \u0111i\u1ec1u ch\u1ec9nh \u0111\u1ea1i l\u01b0\u1ee3ng n\u00e0o c\u1ee7a b\u1ed9 ch\u1ec9nh l\u01b0u?",
+    "query": "Which quantity does the introduced maximum power point tracking circuit adjust in the rectifier?",
+    "query_field": "retrieval_query_en",
+    "method": "lexical",
+    "filters": null,
+    "top_k": 3,
+    "answerable": true,
+    "results": [
+      {
+        "id": "telecom-06-00045:22:paragraph:3:dd079f4918b8",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 22,
+        "metadata": {
+          "section": "developments"
+        },
+        "text": "Synchronous buck/boost topologies with sub-\u03bcA quiescent currents are now common, ensuring that the converter\u2019s consumption does not negate the harvested energy. A novel maximum power point tracking (MPPT) circuit was introduced, which dynamically adjusts the rectifier\u2019s load resistance to extract the maximum available power from the ambient RF signals [76].",
+        "score": 0.45468361491434206,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 1,
+        "evidence_hit": true
+      },
+      {
+        "id": "telecom-06-00045:9:paragraph:4:18bbe75e09da",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 9,
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "text": "Recent advancements have introduced tunable and reconfigurable matching networks that employ varactors, MEMS switches, and machine learning algorithms to dynamically adjust impedance in real time, further optimizing energy-harvesting efficiency. 3.2.3. Rectifier The rectifier is a crucial component in RFEH, responsible for converting RF signals into DC power. Its efficiency directly impacts the overall energy conversion performance of the system.",
+        "score": 0.18468947372589017,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 2,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:21:paragraph:9:067699d07bdc",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 21,
+        "metadata": {
+          "section": "developments"
+        },
+        "text": "Recent studies have introduced adaptive impedance matching techniques that adjust in real time to variations in RF power levels and frequency shifts. A dynamic impedance matching circuit based on varactor diodes was proposed to enhance energy transfer across varying RF environments. It",
+        "score": 0.1833743032315244,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 3.1716000003143563
+  },
+  {
+    "query_id": "indtest-02",
+    "split": "test",
+    "question": "C\u00e1c c\u1ed9t th\u00f4ng minh \u1edf Seoul t\u00edch h\u1ee3p nh\u1eefng thi\u1ebft b\u1ecb n\u00e0o v\u00e0 h\u1ed7 tr\u1ee3 c\u00e1c m\u1ee5c \u0111\u00edch n\u00e0o?",
+    "query": "What components do the smart poles installed in Seoul integrate, and what purposes do they support?",
+    "query_field": "retrieval_query_en",
+    "method": "lexical",
+    "filters": null,
+    "top_k": 3,
+    "answerable": true,
+    "results": [
+      {
+        "id": "telecom-06-00045:24:paragraph:4:9d80f5472752",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 24,
+        "metadata": {
+          "section": "applications"
+        },
+        "text": "For instance, Seoul, South Korea, has initiated the installation of multifunctional smart poles that integrate street lighting, Wi-Fi access points, and CCTV cameras. These poles are designed to support various smart city applications, including environmental monitoring and public safety enhancements.",
+        "score": 0.4657603416632438,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 1,
+        "evidence_hit": true
+      },
+      {
+        "id": "telecom-06-00045:6:paragraph:1:dc1be09a17b6",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 6,
+        "metadata": {
+          "section": "fundamentals"
+        },
+        "text": "Components of an RF Energy-Harvesting System An RFEH system comprises several interconnected components, each playing a critical role in determining overall efficiency. The major components include the antenna, matching network, rectifier circuit, and energy storage unit. 3.2.1. Antenna The antenna serves as the primary interface for capturing ambient RF signals, making it a crucial component of RFEH systems.",
+        "score": 0.13547121598586492,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 2,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:17:paragraph:9:d5907fa77be6",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 17,
+        "metadata": {
+          "section": "techniques"
+        },
+        "text": "The integration of active components allows for the better control and optimization of the RFEH process, making them suitable for critical applications such as medical implants and wearable electronics. For example, closed-loop control circuits in active systems can dynamically adjust load impedance or antenna parameters based on real-time input, improving conversion efficiency and enabling smart energy management.",
+        "score": 0.10189858286170976,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 2.3215999999592896
+  },
+  {
+    "query_id": "indtest-03",
+    "split": "test",
+    "question": "C\u00e1c c\u1ea3m bi\u1ebfn m\u00f4i tr\u01b0\u1eddng t\u1ef1 c\u1ea5p ngu\u1ed3n m\u1edbi \u0111\u01b0\u1ee3c n\u00eau c\u00f3 th\u1ec3 theo d\u00f5i nh\u1eefng g\u00ec?",
+    "query": "What do the new self-powered environmental sensors monitor?",
+    "query_field": "retrieval_query_en",
+    "method": "lexical",
+    "filters": null,
+    "top_k": 3,
+    "answerable": true,
+    "results": [
+      {
+        "id": "telecom-06-00045:25:paragraph:3:ad9f4aeb7f43",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 25,
+        "metadata": {
+          "section": "applications"
+        },
+        "text": "This implementation aims to enhance public safety while reducing infrastructure costs associated with power supply and maintenance [91]. Furthermore, recent developments have introduced self-powered environmental sensors designed to monitor air quality, traffic flow, and energy consumption. These sensors, enabled by RF energy-harvesting technologies, form the foundation of data-driven decision-making in modern smart cities, allowing for optimized urban management and sustainable growth [92,93].",
+        "score": 0.2867473606687108,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 1,
+        "evidence_hit": true
+      },
+      {
+        "id": "telecom-06-00045:26:paragraph:0:8afa6053d064",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 26,
+        "metadata": {
+          "section": "applications"
+        },
+        "text": "Telecom 2025, 6, 45 26 of 40 sensors equipped with RF harvesters can continuously monitor key parameters such as machine vibration, temperature, humidity, environmental conditions, and structural integrity without relying on wired connections or frequent battery replacements. This capability enables real-time data collection and analysis, resulting in improved operational efficiency, reduced downtime, and cost savings [98].",
+        "score": 0.16768215818110682,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 2,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:26:paragraph:9:6486917ec114",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 26,
+        "metadata": {
+          "section": "applications"
+        },
+        "text": "These battery-less sensors harvested energy from drone-emitted RF signals to measure environmental parameters like temperature and humidity, enabling efficient data collection over large farmlands [102]. Recent research demonstrated that RF-powered agricultural sensors enabled a 30% improvement in irrigation efficiency by providing real-time soil moisture data, contributing to water conservation and sustainable farming practices.",
+        "score": 0.1587639442070733,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 1.637299999856623
+  },
+  {
+    "query_id": "indtest-04",
+    "split": "test",
+    "question": "Trong m\u00f4i tr\u01b0\u1eddng c\u00f4ng nghi\u1ec7p, vi\u1ec7c t\u00edch h\u1ee3p RFEH v\u00e0o c\u1ea3m bi\u1ebfn t\u1eeb xa \u0111\u00e3 h\u1ed7 tr\u1ee3 nh\u1eefng ho\u1ea1t \u0111\u1ed9ng n\u00e0o?",
+    "query": "In industrial settings, what activities have been advanced by integrating RF energy harvesting into remote sensors?",
+    "query_field": "retrieval_query_en",
+    "method": "lexical",
+    "filters": null,
+    "top_k": 3,
+    "answerable": true,
+    "results": [
+      {
+        "id": "telecom-06-00045:25:paragraph:9:fcb049559291",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 25,
+        "metadata": {
+          "section": "applications"
+        },
+        "text": "Industrial IoT In industrial environments, the integration of RFEH into remote sensors has significantly advanced predictive maintenance strategies and smart factory operations. Wireless",
+        "score": 0.41143444693731646,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 1,
+        "evidence_hit": true
+      },
+      {
+        "id": "telecom-06-00045:26:paragraph:3:7cc70e74ec1f",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 26,
+        "metadata": {
+          "section": "applications"
+        },
+        "text": "Moreover, EnOcean\u2019s energy-harvesting technology has been adopted in industrial automation to create maintenance-free wireless sensors that operate without batteries. These sensors harvest energy from their environment, drawing on sources such as motion, light, or temperature differences, and are used in various applications, including the monitoring of equipment status and environmental conditions in industrial settings [89].",
+        "score": 0.27980132398221563,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 2,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:2:paragraph:4:565ba34c6ecb",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 2,
+        "metadata": {
+          "section": "overview"
+        },
+        "text": "Machine learning (ML) models have also been applied to optimize energy harvesting by predicting RF energy availability in dynamic environments. Lima et al. [7] designed an AIbased energy optimization framework for self-sustaining IoT networks, increasing overall energy efficiency. While these advancements have improved RF energy harvesting, several research gaps remain. Scalability remains a major concern, particularly in integrating RFEH into large-scale 5G and 6G infrastructures.",
+        "score": 0.2238546320406005,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 1.2174000003142282
+  },
+  {
+    "query_id": "indtest-05",
+    "split": "test",
+    "question": "Theo b\u00e0i b\u00e1o, federated learning gi\u00fap c\u00e1c thi\u1ebft b\u1ecb trong m\u1ea1ng RFEH h\u1ecdc chi\u1ebfn l\u01b0\u1ee3c thu ho\u1ea1ch n\u0103ng l\u01b0\u1ee3ng nh\u01b0 th\u1ebf n\u00e0o?",
+    "query": "How does federated learning help devices in RFEH networks learn energy-harvesting strategies?",
+    "query_field": "retrieval_query_en",
+    "method": "lexical",
+    "filters": null,
+    "top_k": 3,
+    "answerable": true,
+    "results": [
+      {
+        "id": "telecom-06-00045:33:paragraph:1:d2aee0d8349f",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 33,
+        "metadata": {
+          "section": "future"
+        },
+        "text": "Moreover, federated learning techniques are emerging as a solution for distributed RFEH networks, allowing devices to collaboratively learn optimal harvesting strategies without centralized control, preserving data privacy. AI-based optimization also supports the realization of cognitive radio energy harvesting, where devices not only sense and adapt to RF environments but intelligently forecast RF spectrum usage patterns to maximize energy capture [11,128].",
+        "score": 0.30288024009175574,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 1,
+        "evidence_hit": true
+      },
+      {
+        "id": "telecom-06-00045:23:paragraph:4:7689544b56b4",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 23,
+        "metadata": {
+          "section": "developments"
+        },
+        "text": "AI has also been applied in power distribution and storage optimization. A neural network-based energy management system was introduced to predict energy demand and distribute harvested energy efficiently across multiple IoT devices [83]. In addition, federated learning frameworks have emerged to enhance distributed energy management by allowing local AI models on edge devices to collaboratively improve global energy-harvesting strategies without centralized data sharing.",
+        "score": 0.20545916818537538,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 2,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:34:paragraph:4:8fffe0f51056",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 34,
+        "metadata": {
+          "section": "conclusions"
+        },
+        "text": "There is a critical need for multidisciplinary approaches combining material science, RF engineering, machine learning, and regulatory policy to design adaptive, environment-aware RF harvesting systems capable of operating efficiently under real-world conditions. The exploration of AI-driven predictive energy management and federated learning in distributed harvester networks can optimize energy capture and consumption dynamically.",
+        "score": 0.18011488241736615,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 1.1154999992868397
+  },
+  {
+    "query_id": "indtest-06",
+    "split": "test",
+    "question": "B\u00e0i b\u00e1o c\u00f3 n\u00eau nh\u00e0 s\u1ea3n xu\u1ea5t v\u00e0 m\u00e3 s\u1ea3n ph\u1ea9m c\u1ee5 th\u1ec3 c\u1ee7a c\u00e1c c\u1ed9t th\u00f4ng minh \u1edf Seoul kh\u00f4ng?",
+    "query": "Does the paper name the manufacturer and specific product model of the smart poles in Seoul?",
+    "query_field": "retrieval_query_en",
+    "method": "lexical",
+    "filters": null,
+    "top_k": 3,
+    "answerable": false,
+    "results": [
+      {
+        "id": "telecom-06-00045:24:paragraph:4:9d80f5472752",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 24,
+        "metadata": {
+          "section": "applications"
+        },
+        "text": "For instance, Seoul, South Korea, has initiated the installation of multifunctional smart poles that integrate street lighting, Wi-Fi access points, and CCTV cameras. These poles are designed to support various smart city applications, including environmental monitoring and public safety enhancements.",
+        "score": 0.31645561092822444,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 1,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:23:paragraph:2:e0c65027b69e",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 23,
+        "metadata": {
+          "section": "developments"
+        },
+        "text": "A machine learning-based model was developed to analyze real-time RF spectrum data and predict the optimal frequency bands for energy harvesting [ 81]. The model improved energyharvesting efficiency by 25% by dynamically switching between different frequency bands. Another key innovation is the use of reinforcement learning for adaptive impedance matching and power management.",
+        "score": 0.18544112373113053,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 2,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:3:paragraph:3:a4684195e810",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 3,
+        "metadata": {
+          "section": "overview"
+        },
+        "text": "The main contributions of this paper are as follows: \u2022 A detailed analysis of recent RF energy-harvesting techniques including rectenna designs, impedance matching networks, and power management circuits. \u2022 A comprehensive review of applications in IoT, smart cities, biomedical devices, industry, and satellite communications. \u2022 The identification of current challenges and research gaps in RF energy harvesting.",
+        "score": 0.16285854782523454,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 1.0426000008010305
+  },
+  {
+    "query_id": "indtest-07",
+    "split": "test",
+    "question": "B\u00e0i b\u00e1o c\u00f3 cho bi\u1ebft ch\u00ednh x\u00e1c h\u1ec7 th\u1ed1ng qu\u1ea3n l\u00fd n\u0103ng l\u01b0\u1ee3ng d\u00f9ng m\u1ea1ng n\u01a1-ron ph\u00e2n ph\u1ed1i n\u0103ng l\u01b0\u1ee3ng cho bao nhi\u00eau thi\u1ebft b\u1ecb IoT kh\u00f4ng?",
+    "query": "Does the paper state exactly how many IoT devices receive energy distribution from the neural-network energy management system?",
+    "query_field": "retrieval_query_en",
+    "method": "lexical",
+    "filters": null,
+    "top_k": 3,
+    "answerable": false,
+    "results": [
+      {
+        "id": "telecom-06-00045:23:paragraph:4:7689544b56b4",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 23,
+        "metadata": {
+          "section": "developments"
+        },
+        "text": "AI has also been applied in power distribution and storage optimization. A neural network-based energy management system was introduced to predict energy demand and distribute harvested energy efficiently across multiple IoT devices [83]. In addition, federated learning frameworks have emerged to enhance distributed energy management by allowing local AI models on edge devices to collaboratively improve global energy-harvesting strategies without centralized data sharing.",
+        "score": 0.26079840475755095,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 1,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:3:paragraph:3:a4684195e810",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 3,
+        "metadata": {
+          "section": "overview"
+        },
+        "text": "The main contributions of this paper are as follows: \u2022 A detailed analysis of recent RF energy-harvesting techniques including rectenna designs, impedance matching networks, and power management circuits. \u2022 A comprehensive review of applications in IoT, smart cities, biomedical devices, industry, and satellite communications. \u2022 The identification of current challenges and research gaps in RF energy harvesting.",
+        "score": 0.1603417504861343,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 2,
+        "evidence_hit": false
+      },
+      {
+        "id": "telecom-06-00045:32:paragraph:6:7ceb68337e5b",
+        "source_id": "telecom-06-00045",
+        "source": "data/telecom-06-00045.pdf",
+        "page": 32,
+        "metadata": {
+          "section": "future"
+        },
+        "text": "Future RFEH systems must be designed to exploit the high-frequency, highdensity RF environment of 5G and 6G networks. Research has highlighted the potential of harvesting from mmWave bands using specialized rectennas optimized for high-frequency capture [123]. Furthermore, 6G systems are expected to embrace SWIPT more fully, where devices will simultaneously receive data and energy from the same carrier waves [124,125].",
+        "score": 0.1322659336166177,
+        "strategy": "tfidf",
+        "method": "lexical",
+        "rank": 3,
+        "evidence_hit": false
+      }
+    ],
+    "elapsed_ms": 1.01619999986724
+  }
+]

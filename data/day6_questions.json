@@ -1,0 +1,366 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "question": "Những bộ phận chính nào tạo nên một hệ thống thu hoạch năng lượng RF?",
+    "retrieval_query_en": "What are the main components of an RF energy harvesting system?",
+    "gold": [
+      {
+        "source_id": "telecom-06-00045",
+        "page": 2,
+        "evidence": "The core components of an RFEH system include a receiving antenna that captures ambient RF signals, a matching network that optimizes power transfer efficiency, a rectifier circuit (rectenna) that converts RF signals into DC voltage, and an energy storage unit that stores harvested energy for later use."
+      }
+    ],
+    "expected_answer": "Ăng-ten thu tín hiệu, mạng phối hợp trở kháng, mạch chỉnh lưu/rectenna và bộ lưu trữ năng lượng.",
+    "answerable": true,
+    "day6_evidence_quote": "The core components of an RFEH system include a receiving antenna that captures ambient RF signals, a matching network that optimizes power transfer efficiency, a rectifier circuit (rectenna) that converts RF signals into DC voltage, and an energy storage unit that stores harvested energy for later use."
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "question": "Năm nào là hai mốc giới hạn phạm vi thời gian của các công trình được bài tổng quan xem xét?",
+    "retrieval_query_en": "What are the two years defining the time range of studies considered by the review?",
+    "gold": [
+      {
+        "source_id": "telecom-06-00045",
+        "page": 3,
+        "evidence": "technologies developed between 2019 and 2025, ensuring relevance and timeliness"
+      }
+    ],
+    "expected_answer": "Từ năm 2019 đến năm 2025.",
+    "answerable": true,
+    "day6_evidence_quote": "The scope of this review is limited to scholarly publications and technologies developed between 2019 and 2025, ensuring relevance and timeliness."
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "question": "Sau sàng lọc, có bao nhiêu bài được chọn cuối cùng từ số bài ban đầu?",
+    "retrieval_query_en": "After screening, how many articles were finally selected from the initial set?",
+    "gold": [
+      {
+        "source_id": "telecom-06-00045",
+        "page": 4,
+        "evidence": "In total, 167 articles were initially gathered. After removing duplicates, screening abstracts, and conducting full-text evaluations, 132 articles were selected for final inclusion."
+      }
+    ],
+    "expected_answer": "132 bài được chọn từ 167 bài ban đầu.",
+    "answerable": true,
+    "day6_evidence_quote": "In total, 167 articles were initially gathered. After removing duplicates, screening abstracts, and conducting full-text evaluations, 132 articles were selected for final inclusion."
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "question": "Bảng phân loại ghi nhận bao nhiêu nghiên cứu về tối ưu năng lượng bằng AI/ML?",
+    "retrieval_query_en": "How many studies on AI/ML-assisted energy optimization are recorded in the classification table?",
+    "gold": [
+      {
+        "source_id": "telecom-06-00045",
+        "page": 5,
+        "evidence": "AI/ML-assisted energy optimization 15"
+      }
+    ],
+    "expected_answer": "15 bài.",
+    "answerable": true,
+    "day6_evidence_quote": "AI/ML-assisted energy optimization 15"
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "question": "Ngoài thiết kế mạch, những yếu tố môi trường và RF nào ảnh hưởng hiệu suất thu hoạch năng lượng?",
+    "retrieval_query_en": "Besides circuit design, what environmental and RF factors affect energy harvesting efficiency?",
+    "gold": [
+      {
+        "source_id": "telecom-06-00045",
+        "page": 6,
+        "evidence": "The efficiency of RFEH is influenced by factors such as the strength and frequency of the ambient RF signals, the design and orientation of the antenna, the effectiveness of the rectifier circuit, proper impedance matching, variations in RF signal availability due to interference, distance from the source, and obstacles."
+      }
+    ],
+    "expected_answer": "Cường độ và tần số tín hiệu RF, hướng ăng-ten, nhiễu và biến thiên tín hiệu, khoảng cách tới nguồn và vật cản; hiệu quả chỉnh lưu và phối hợp trở kháng cũng quan trọng.",
+    "answerable": true,
+    "day6_evidence_quote": "The efficiency of RFEH is influenced by factors such as the strength and frequency of the ambient RF signals, the design and orientation of the antenna, the effectiveness of the rectifier circuit, proper impedance matching, variations in RF signal availability due to interference, distance from the source, and obstacles."
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "question": "Mạng phối hợp trở kháng có vai trò gì giữa ăng-ten và bộ chỉnh lưu?",
+    "retrieval_query_en": "What role does the impedance matching network play between the antenna and rectifier?",
+    "gold": [
+      {
+        "source_id": "telecom-06-00045",
+        "page": 8,
+        "evidence": "minimizing signal reflection and ensuring that the maximum possible RF power is delivered from the antenna to the rectifier"
+      }
+    ],
+    "expected_answer": "Điều chỉnh trở kháng để giảm phản xạ, tăng truyền công suất và cải thiện hiệu suất chuyển đổi năng lượng.",
+    "answerable": true,
+    "day6_evidence_quote": "A matching network is a circuit designed to adjust the impedance between two components, typically between an antenna and a rectifier, to ensure efficient power transfer. It plays a critical role in maximizing energy transfer by minimizing signal reflection and ensuring that the maximum possible RF power is delivered from the antenna to the rectifier."
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "question": "Trong phần nền tảng, mạng π có lợi thế băng thông nào so với mạng L?",
+    "retrieval_query_en": "In the fundamentals section, what bandwidth advantage does a pi network have over an L network?",
+    "gold": [
+      {
+        "source_id": "telecom-06-00045",
+        "page": 9,
+        "evidence": "The π-network provides a broader bandwidth compared to L-networks and is effective in high-frequency applications requiring better selectivity and attenuation of unwanted signals."
+      }
+    ],
+    "expected_answer": "Mạng π cung cấp băng thông rộng hơn mạng L.",
+    "filter": {
+      "section": "fundamentals"
+    },
+    "answerable": true,
+    "day6_evidence_quote": "The π-network provides a broader bandwidth compared to L-networks and is effective in high-frequency applications requiring better selectivity and attenuation of unwanted signals."
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "question": "Đánh đổi chính khi thêm nhiều tầng vào mạch chỉnh lưu là gì?",
+    "retrieval_query_en": "What is the main trade-off when adding more stages to a rectifier circuit?",
+    "gold": [
+      {
+        "source_id": "telecom-06-00045",
+        "page": 10,
+        "evidence": "Each stage builds upon the voltage of the previous stage, and the maximum output voltage is determined by the total number of stages [36,37]. However, the primary drawback of multi-stage rectifiers is their decreasing overall efficiency"
+      }
+    ],
+    "expected_answer": "Điện áp đầu ra tăng, nhưng hiệu suất tổng giảm do tổn hao tích lũy ở các tầng.",
+    "answerable": true,
+    "day6_evidence_quote": "However, the primary drawback of multi-stage rectifiers is their decreasing overall efficiency. As more stages are added, cumulative power losses occur due to the inherent inefficiencies of each stage, making the design a trade-off between output voltage and energy conversion efficiency."
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "question": "Đặc điểm nào khiến siêu tụ phù hợp với ứng dụng cần các đợt cấp năng lượng thường xuyên?",
+    "retrieval_query_en": "What property makes supercapacitors suitable for applications requiring frequent energy bursts?",
+    "gold": [
+      {
+        "source_id": "telecom-06-00045",
+        "page": 11,
+        "evidence": "Supercapacitors are widely used for their ability to charge and discharge rapidly, making them ideal for applications requiring frequent energy bursts."
+      }
+    ],
+    "expected_answer": "Siêu tụ có thể nạp và xả nhanh.",
+    "answerable": true,
+    "day6_evidence_quote": "Supercapacitors are widely used for their ability to charge and discharge rapidly, making them ideal for applications requiring frequent energy bursts."
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "question": "Bài báo nêu khoảng mật độ công suất RF môi trường nào giữa vùng nông thôn và đô thị?",
+    "retrieval_query_en": "What range of ambient RF power density does the article report from rural to urban areas?",
+    "gold": [
+      {
+        "source_id": "telecom-06-00045",
+        "page": 12,
+        "evidence": "range from approximately 0.1 μW/cm2 in rural settings to over 10 μW/cm2 in urban centres"
+      }
+    ],
+    "expected_answer": "Khoảng 0,1 µW/cm² ở vùng nông thôn đến trên 10 µW/cm² ở trung tâm đô thị.",
+    "answerable": true,
+    "day6_evidence_quote": "range from approximately 0.1 µW/cm2 in rural settings to over 10 µW/cm2 in urban centres"
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "question": "Ở 2,4 GHz, một mạch chỉnh lưu được báo cáo đạt hiệu suất cực đại bao nhiêu tại công suất đầu vào 14 dBm?",
+    "retrieval_query_en": "At 2.4 GHz, what peak efficiency was reported for a rectifier at 14 dBm input power?",
+    "gold": [
+      {
+        "source_id": "telecom-06-00045",
+        "page": 13,
+        "evidence": "a rectifier circuit achieved a peak efficiency of 88% at an input power of 14 dBm while maintaining over 60% efficiency within the input power range of 3 dBm to 16 dBm at 2.4 GHz."
+      }
+    ],
+    "expected_answer": "88%, đồng thời duy trì trên 60% trong dải công suất đầu vào từ 3 đến 16 dBm.",
+    "answerable": true,
+    "day6_evidence_quote": "a rectifier circuit achieved a peak efficiency of 88% at an input power of 14 dBm while maintaining over 60% efficiency within the input power range of 3 dBm to 16 dBm at 2.4 GHz."
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "question": "Hệ thống thu hoạch RF đơn băng hoạt động ở dải tần nào và tối ưu những thành phần nào?",
+    "retrieval_query_en": "At what frequencies does a single-band RF energy harvesting system operate, and which components does it optimize?",
+    "gold": [
+      {
+        "source_id": "telecom-06-00045",
+        "page": 14,
+        "evidence": "Single-band systems are designed to operate at a specific frequency, such as 2.4 GHz or 5.8 GHz, which are commonly used in Wi-Fi, industrial, and ISM (Industrial, Scientific, and Medical) band applications. These systems optimize impedance matching networks and rectifier circuits to maximize efficiency at a single frequency, ensuring minimal losses."
+      }
+    ],
+    "expected_answer": "Nó hoạt động ở một tần số cụ thể, chẳng hạn 2,4 hoặc 5,8 GHz, và tối ưu mạng phối hợp cùng mạch chỉnh lưu cho tần số đó.",
+    "answerable": true,
+    "day6_evidence_quote": "Single-band systems are designed to operate at a specific frequency, such as 2.4 GHz or 5.8 GHz, which are commonly used in Wi-Fi, industrial, and ISM (Industrial, Scientific, and Medical) band applications. These systems optimize impedance matching networks and rectifier circuits to maximize efficiency at a single frequency, ensuring minimal losses."
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "question": "Trong phần kỹ thuật, dual-band rectenna được nêu đạt hiệu suất cực đại nào tại 1,8 GHz và 2,45 GHz?",
+    "retrieval_query_en": "What peak efficiencies does the dual-band rectenna achieve at 1.8 GHz and 2.45 GHz?",
+    "gold": [
+      {
+        "source_id": "telecom-06-00045",
+        "page": 15,
+        "evidence": "[34] reported that a dual-band rectenna operating at 1.8 GHz and 2.45 GHz achieved measured peak conversion efficiencies of 72% at 1.8 GHz (input power of 4 dbm) and 65% at 2.45 GHz (input power of 3 dbm)"
+      }
+    ],
+    "expected_answer": "72% tại 1,8 GHz và 65% tại 2,45 GHz.",
+    "filter": {
+      "section": "techniques"
+    },
+    "answerable": true,
+    "day6_evidence_quote": "Maher et al. [34] reported that a dual-band rectenna operating at 1.8 GHz and 2.45 GHz achieved measured peak conversion efficiencies of 72% at 1.8 GHz (input power of 4 dbm) and 65% at 2.45 GHz (input power of 3 dbm)"
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "question": "Hệ thống thu hoạch băng rộng quad-band được nêu hoạt động trong dải tần nào?",
+    "retrieval_query_en": "What frequency range does the broadband quad-band energy harvesting system operate over?",
+    "gold": [
+      {
+        "source_id": "telecom-06-00045",
+        "page": 16,
+        "evidence": "a quad-band RF energy harvester was developed to operate within the 0.8 GHz to 2.6 GHz frequency range."
+      }
+    ],
+    "expected_answer": "Từ 0,8 GHz đến 2,6 GHz.",
+    "answerable": true,
+    "day6_evidence_quote": "a quad-band RF energy harvester was developed to operate within the 0.8 GHz to 2.6 GHz frequency range."
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "question": "Năng lượng thu được trong các hệ thống thu hoạch RF thụ động thường ở mức nào?",
+    "retrieval_query_en": "What is the typical energy level captured in passive RF energy harvesting systems?",
+    "gold": [
+      {
+        "source_id": "telecom-06-00045",
+        "page": 17,
+        "evidence": "The energy captured in passive systems is often in the microwatt range, making ultra-low-power circuit design essential."
+      }
+    ],
+    "expected_answer": "Thường ở mức microwatt.",
+    "answerable": true,
+    "day6_evidence_quote": "The energy captured in passive systems is often in the microwatt range, making ultra-low-power circuit design essential."
+  },
+  {
+    "id": "q16",
+    "split": "test",
+    "question": "Thu hoạch năng lượng lai kết hợp những nguồn môi trường nào và lợi ích chính là gì?",
+    "gold": [
+      {
+        "source_id": "telecom-06-00045",
+        "page": 18,
+        "evidence": "Hybrid energy-harvesting systems are designed to capture and convert energy from multiple ambient sources, such as solar radiation, mechanical vibrations, and thermal gradients, into electrical power. By integrating different energy conversion mechanisms, these systems enhance overall efficiency and reliability, particularly in environments where a single energy source may be inconsistent or insufficient."
+      }
+    ],
+    "expected_answer": "Có thể kết hợp năng lượng RF với mặt trời, rung động cơ học và gradient nhiệt; việc kết hợp giúp tăng hiệu suất và độ tin cậy khi một nguồn đơn lẻ không ổn định hoặc không đủ.",
+    "answerable": true,
+    "day6_evidence_quote": "Hybrid energy-harvesting systems are designed to capture and convert energy from multiple ambient sources, such as solar radiation, mechanical vibrations, and thermal gradients, into electrical power. By integrating different energy conversion mechanisms, these systems enhance overall efficiency and reliability, particularly in environments where a single energy source may be inconsistent or insufficient."
+  },
+  {
+    "id": "q17",
+    "split": "test",
+    "question": "Những khó khăn triển khai nào được nêu đối với hệ thống thu hoạch năng lượng lai?",
+    "gold": [
+      {
+        "source_id": "telecom-06-00045",
+        "page": 19,
+        "evidence": "However, the design and implementation of hybrid energy harvesters present certain challenges, including the increased complexity in ensuring compatibility among different energy-harvesting mechanisms, potential increases in size and weight, and higher production costs due to the use of multiple materials and technologies. The integration process demands careful electrical isolation, thermal management, and power conditioning to avoid mutual interference and to optimize overall output."
+      }
+    ],
+    "expected_answer": "Tăng độ phức tạp khi tích hợp, kích thước/khối lượng và chi phí; cần cách ly điện, quản lý nhiệt và điều hòa công suất.",
+    "answerable": true,
+    "day6_evidence_quote": "However, the design and implementation of hybrid energy harvesters present certain challenges, including the increased complexity in ensuring compatibility among different energy-harvesting mechanisms, potential increases in size and weight, and higher production costs due to the use of multiple materials and technologies. The integration process demands careful electrical isolation, thermal management, and power conditioning to avoid mutual interference and to optimize overall output."
+  },
+  {
+    "id": "q18",
+    "split": "test",
+    "question": "Trong phần phát triển gần đây, mô hình machine learning về spectrum prediction phân tích dữ liệu gì và dự đoán điều gì?",
+    "gold": [
+      {
+        "source_id": "telecom-06-00045",
+        "page": 23,
+        "evidence": "A machine learning-based model was developed to analyze real-time RF spectrum data and predict the optimal frequency bands for energy harvesting [ 81]."
+      }
+    ],
+    "expected_answer": "Mô hình phân tích dữ liệu phổ RF thời gian thực để dự đoán các băng tần tối ưu cho thu hoạch năng lượng.",
+    "filter": {
+      "section": "developments"
+    },
+    "answerable": true,
+    "day6_evidence_quote": "A machine learning-based model was developed to analyze real-time RF spectrum data and predict the optimal frequency bands for energy harvesting [ 81]."
+  },
+  {
+    "id": "q19",
+    "split": "test",
+    "question": "Trong phần ứng dụng, cảm biến không pin của EnOcean có thể thu năng lượng từ những nguồn môi trường nào?",
+    "gold": [
+      {
+        "source_id": "telecom-06-00045",
+        "page": 25,
+        "evidence": "EnOcean GmbH has developed battery-less wireless sensors that harvest energy from their environment, such as motion, light, and temperature differences."
+      }
+    ],
+    "expected_answer": "Chuyển động, ánh sáng và chênh lệch nhiệt độ.",
+    "filter": {
+      "section": "applications"
+    },
+    "answerable": true,
+    "day6_evidence_quote": "EnOcean GmbH has developed battery-less wireless sensors that harvest energy from their environment, such as motion, light, and temperature differences."
+  },
+  {
+    "id": "q20",
+    "split": "test",
+    "question": "Trong phần thách thức, mật độ công suất RF ở cùng một khu vực đô thị có thể biến thiên theo thời gian, vị trí và mật độ người dùng ở mức nào?",
+    "gold": [
+      {
+        "source_id": "telecom-06-00045",
+        "page": 28,
+        "evidence": "RF power densities can vary by two to three orders of magnitude within the same urban area depending on time, location, and user density"
+      }
+    ],
+    "expected_answer": "Từ hai đến ba bậc độ lớn.",
+    "filter": {
+      "section": "challenges"
+    },
+    "answerable": true,
+    "day6_evidence_quote": "RF power densities can vary by two to three orders of magnitude within the same urban area depending on time, location, and user density"
+  },
+  {
+    "id": "q21",
+    "split": "dev",
+    "question": "Bài báo có nêu dung lượng cụ thể, tính bằng mAh, của pin lithium-ion được dùng trong một hệ thống thu hoạch RF không?",
+    "retrieval_query_en": "Does the article state a specific capacity in mAh for a lithium-ion battery used in an RF energy harvesting system?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Bài báo có nhắc đến pin lithium-ion nhưng không nêu dung lượng của pin theo mAh cho một hệ thống cụ thể."
+  },
+  {
+    "id": "q22",
+    "split": "dev",
+    "question": "Bài báo có xác định một mẫu điện thoại thông minh cụ thể được dùng làm thiết bị thử nghiệm cho rectenna không?",
+    "retrieval_query_en": "Does the article identify a specific smartphone model used as a test device for a rectenna?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Không có mẫu điện thoại thông minh cụ thể nào được xác định làm thiết bị thử nghiệm trong tài liệu."
+  },
+  {
+    "id": "q23",
+    "split": "test",
+    "question": "Bài báo có nêu giá bán cụ thể bằng USD của một thiết kế rectenna được khảo sát không?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Tài liệu không đưa ra giá bán theo USD cho một thiết kế rectenna cụ thể."
+  },
+  {
+    "id": "q24",
+    "split": "test",
+    "question": "Bài báo có quy định nhiệt độ vận hành tối đa cụ thể, tính bằng độ C, cho rectenna không?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Tài liệu bàn về gradient nhiệt và biến thiên nhiệt độ nhưng không quy định nhiệt độ vận hành tối đa cho rectenna."
+  }
+]

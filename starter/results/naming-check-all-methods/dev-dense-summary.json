@@ -1,0 +1,21 @@
+{
+  "method": "dense",
+  "config": {
+    "strategy": "B",
+    "similarity": "cosine"
+  },
+  "questions": 17,
+  "answerable_questions": 15,
+  "unanswerable_questions": 2,
+  "hit_at_1": {
+    "n": 4,
+    "N": 15,
+    "rate": 0.26666666666666666
+  },
+  "evidence_hit_at_3": {
+    "n": 7,
+    "N": 15,
+    "rate": 0.4666666666666667
+  },
+  "median_ms": 83.79690000015216
+}

@@ -1,0 +1,21 @@
+{
+  "method": "lexical",
+  "query_field": "retrieval_query_en",
+  "config": {
+    "algorithm": "tfidf"
+  },
+  "questions": 17,
+  "answerable_questions": 15,
+  "unanswerable_questions": 2,
+  "hit_at_1": {
+    "n": 9,
+    "N": 15,
+    "rate": 0.6
+  },
+  "evidence_hit_at_3": {
+    "n": 12,
+    "N": 15,
+    "rate": 0.8
+  },
+  "median_ms": 1.3057999999546155
+}
