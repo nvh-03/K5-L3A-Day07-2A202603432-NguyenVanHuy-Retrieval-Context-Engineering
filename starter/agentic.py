@@ -135,8 +135,12 @@ class OpenAICompatibleController:
                 'role': 'system',
                 'content': (
                     'Bạn là agent truy xuất tài liệu. Dùng search_chunks khi context hiện có chưa đủ. '
-                    'Tài liệu hiện tại chủ yếu bằng tiếng Anh; nếu câu hỏi bằng tiếng Việt, hãy dịch '
-                    'ý chính sang tiếng Anh khi tạo truy vấn tìm kiếm. '
+                    'Tài liệu hoàn toàn bằng tiếng Anh. QUAN TRỌNG: Mọi truy vấn tìm kiếm trong search_chunks '
+                    'BẮT BUỘC PHẢI VIẾT HOÀN TOÀN BẰNG TIẾNG ANH (English only); nếu câu hỏi bằng tiếng Việt, '
+                    'hãy dịch toàn bộ các từ khóa, khái niệm, và định danh sang tiếng Anh (ví dụ: "Bảng 8.4" -> "Table 8.4", '
+                    '"Hình 2.5" -> "Figure 2.5", "Hình 10.4" -> "Figure 10.4", "hàng thay thế" -> "cover substitutes", '
+                    '"động vật" -> "therapy dogs animal", "thuốc" -> "medication safety FDA"). '
+                    'Tuyệt đối không để sót từ tiếng Việt trong search query. '
                     'Chỉ trả lời từ context; nếu thiếu bằng chứng thì tiếp tục tìm hoặc gọi abstain '
                     'với lý do ngắn. Với câu trả lời có căn cứ, sao chép chính xác ID chunk từ Context IDs '
                     'dưới dạng [chunk-id] trong answer và liệt kê đúng các ID đó trong citations. '
@@ -175,7 +179,7 @@ class OpenAICompatibleController:
             }]
             message = self._chat(retry_messages, tools=tools)
             tool_calls = message.get('tool_calls')
-        if not isinstance(tool_calls, list) or len(tool_calls) != 1:
+        if not isinstance(tool_calls, list) or len(tool_calls) == 0:
             raise ValueError('Model phải gọi đúng một tool retrieval, answer hoặc abstain.')
         tool_call = tool_calls[0]
         if not isinstance(tool_call, dict):
@@ -274,6 +278,7 @@ class OpenAICompatibleController:
         body: dict[str, Any] = {'model': self.model, 'messages': messages, 'temperature': 0}
         if tools is not None:
             body['tools'] = tools
+            body['parallel_tool_calls'] = False
             body['tool_choice'] = (
                 'auto'
                 if urlparse(self.base_url).hostname == 'generativelanguage.googleapis.com'

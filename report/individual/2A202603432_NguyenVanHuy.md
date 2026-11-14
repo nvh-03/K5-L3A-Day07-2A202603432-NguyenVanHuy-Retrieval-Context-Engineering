@@ -79,19 +79,25 @@ Trace retrieval baseline ở `starter/results/independent-test-retrieval-baselin
 
 ## Thử thách nâng cao (nếu thực hiện)
 
-- Tài liệu, nguồn, quyền sử dụng, số trang và phiên bản:
-- Cách xử lý text, bảng, ảnh, biểu đồ; phạm vi index và phần chưa xử lý:
-- Cách chia benchmark, schema evidence, model và cấu hình đã chốt trên dev:
+- **Nguồn:** OpenStax, *Business Law I Essentials 2e*, ©2026 Rice University (phát triển bởi Barnes & Noble Education LoudCloud), [trang sách chính thức](https://openstax.org/details/books/business-law-i-essentials-2e). Sách theo CC BY-NC-SA 4.0: chỉ dùng/chia sẻ phi thương mại, ghi công và chia sẻ bản phái sinh theo cùng giấy phép. Hình ảnh có thể có điều khoản/ghi công riêng trong caption. Corpus PDF, chunks và ảnh giữ cục bộ; không đưa vào Git khi chưa kiểm tra quyền phân phối. Nếu phân phối lại trích đoạn, phải tuân thủ attribution “Access for free at openstax.org”.
+- **Phạm vi index:** PDF có 164 trang vật lý. `bonus_chunks.json` có 534 chunks, gồm 510 text, 17 table, 4 image, 2 chart và 1 diagram trên PDF trang 11–154 (144 trang; số trang in trong sách thường thấp hơn số trang PDF 10 trang). Bỏ trang 1–10 (bìa/front matter), 155–160 (Answer Key để tránh rò rỉ đáp án), 161–164 (Index điều hướng). Trích xuất 69 ảnh, nhưng chỉ 7 hình/biểu đồ/sơ đồ có mô tả riêng; một số caption còn ở text chunks nhưng chưa có mô tả thị giác. Vì vậy chưa thể khẳng định đã index đầy đủ mọi nội dung trực quan hữu ích.
+- **Pipeline và benchmark:** text lấy bằng `pypdf`; 17 bảng được biểu diễn lại có cấu trúc; một số hình được mô tả thủ công và giữ `image_path`, `figure_id`, trang cùng attribution. Đã xem trực quan các hình được hỏi trong benchmark. Bộ câu hỏi có 18 dev (15 answerable, 3 unanswerable) và 30 test (24 answerable, 6 unanswerable), đủ phân bổ nhóm rubric. Với multi-hop, từng phần tử `gold` là evidence bắt buộc; `evidence_groups` biểu diễn lựa chọn thay thế (ví dụ hai trong bốn quốc gia). CER chỉ đạt khi context cuối chứa mọi nhóm evidence nguyên văn, đúng nguồn/trang.
+- **Lượt agent hiện có:** OpenRouter `openai/gpt-4o-mini`, lexical; traces ghi 30 câu, 0 lỗi hệ thống, thời gian median 6,10 giây và mean 6,34 giây. Runner mặc định top-k 3, tối đa 4 lượt search, context budget 2000; summary cũ không lưu cấu hình nên budget là cấu hình mặc định chứ không phải trường được ghi trong trace. Dữ liệu cũ không lưu token usage/chi phí nên chi phí là **không xác định**, không phải 0. Bản `traces.json` có timestamp 10:35, trước thay đổi controller lúc 10:36; cấu hình controller hiện tại chưa được chạy trên một test còn độc lập. Bộ test đã được xem nên lượt này chỉ là exploratory, không dùng để khẳng định đạt bonus.
 
 | Nhóm test | Đạt / tổng | Tỷ lệ | Lỗi / nhận xét |
 |---|---|---|---|
-| Bảng | | | |
-| Ảnh, sơ đồ | | | |
-| Biểu đồ | | | |
-| Multi-hop | | | |
-| Text | | | |
-| Thiếu bằng chứng | | | |
-| **Toàn bộ** | | | |
+| Bảng | 4 / 6 | 66,7% | Hai false abstention (q05, q06) dù context cuối có evidence |
+| Ảnh, sơ đồ | 3 / 5 | 60,0% | False abstention q10, q11 |
+| Biểu đồ | 4 / 5 | 80,0% | q12 trả lời đúng nhưng cite đoạn văn thay vì vùng hình được hỏi |
+| Multi-hop | 1 / 4 | 25,0% | q17 nhầm rational-basis với Central Hudson; q19 và q20 thiếu phần trả lời thứ hai |
+| Text | 4 / 4 | 100% | Không có lỗi được ghi nhận |
+| Thiếu bằng chứng | 6 / 6 | 100% | Abstain đúng, không có khẳng định ngoài căn cứ |
+| **Toàn bộ** | **22 / 30** | **73,3%** | **Không đạt ngưỡng 27/30 (90%)** |
 
-- Trace, nhãn và evidence từng câu; thời gian, chi phí, lỗi hệ thống:
-- Giới hạn, cách tái lập và đường dẫn benchmark:
+Summary tự động cũ báo 26/30 vì tính đạt khi chỉ một phần gold khớp hoặc citation cùng trang; không dùng con số đó. Chấm lại đủ 30 câu: answerable có grade 0/1/2 lần lượt 4/3/17; abstain đúng 6/6. CER nghiêm ngặt là 19/24 (79,2%). Các lỗi chính: q05 và q06 từ chối nhầm dù evidence đã vào context; q10/q11 không trả lời dù tài liệu có caption/text hỗ trợ; q12 citation không trỏ tới hình; q17 nhập nhằng hai phép thử; q19 bỏ comparative negligence; q20 bỏ tên quốc gia. Không có lỗi provider trong trace hiện có.
+
+Nhãn từng câu ở [`manual_reviews.json`](../../starter/results/bonus-agent-test/manual_reviews.json), trace/context/citation ở [`traces.json`](../../starter/results/bonus-agent-test/traces.json), kết quả strict ở [`audit-summary.json`](../../starter/results/bonus-agent-test/audit-summary.json). Đây là audit thủ công do AI assistant thực hiện, không phải chấm độc lập bởi người; cần chủ dự án/giảng viên xác nhận trước khi nộp. Các evidence của q03/q18 được sửa cho khớp đúng nội dung nguồn; q20 dùng `evidence_groups` để chấp nhận hai trong bốn quốc gia hợp lệ.
+
+Đã sửa `run_bonus_agent.py` để chỉ tạo kiểm tra evidence tự động, không tự tuyên bố pass; `bonus_metrics.py` yêu cầu nhãn cho toàn bộ câu, mọi citation hỗ trợ, đủ evidence bắt buộc cho câu nhiều bước, và giữ lỗi trong mẫu số. **Còn thiếu để hoàn tất và nhận điểm bonus:** sau khi đóng băng cấu hình hiện tại, tạo bộ test mới độc lập (ít nhất 30 câu theo rubric), chạy agent một lần, kiểm tra/chấm từng câu độc lập bởi người và chỉ tuyên bố đạt nếu có ít nhất 27/30. Không dùng lại test đang xem để tinh chỉnh.
+
+Tái tạo corpus/benchmark và cách chạy được ghi trong [`data/README.md`](../../data/README.md) và [`starter/README.md`](../../starter/README.md); scripts chính là [`build_bonus_chunks.py`](../../starter/build_bonus_chunks.py), [`build_bonus_questions.py`](../../starter/build_bonus_questions.py), [`run_bonus_agent.py`](../../starter/run_bonus_agent.py) và [`bonus_metrics.py`](../../starter/bonus_metrics.py). Lượt kiểm thử code: `python -m unittest discover -s tests -p test_bonus_metrics.py -v` (4 tests pass); `check_all_golds.py` không tìm thấy evidence thiếu.

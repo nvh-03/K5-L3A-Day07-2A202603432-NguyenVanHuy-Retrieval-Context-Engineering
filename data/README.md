@@ -31,3 +31,25 @@ python starter/run_agent.py --chunks data/day6_chunks.json --questions data/day7
 - **Câu thiếu evidence:** `id`, `split`, `question`, `answerable: false`, `expected_behavior: "search_and_abstain"`, `absence_reason`. Xem `agent_cases_example.json`.
 
 Không đưa `gold` hoặc nhãn đáp án vào model và retrieval tool. Ghi nguồn dữ liệu và quyền sử dụng. Cách chuyển một số định dạng Day 6: [starter/README.md](../starter/README.md).
+
+## Corpus Thử thách nâng cao (local)
+
+- Nguồn: OpenStax, *Business Law I Essentials 2e*, ©2026 Rice University; sách được phát triển bởi Barnes & Noble Education LoudCloud. Xem [trang sách chính thức](https://openstax.org/details/books/business-law-i-essentials-2e). Nội dung sách theo CC BY-NC-SA 4.0: chỉ sử dụng/chia sẻ phi thương mại, ghi công và phát hành bản phái sinh theo cùng giấy phép. Mỗi hình có thể có giấy phép/ghi công riêng trong caption; phải giữ và kiểm tra các điều khoản đó. Khi phân phối lại nội dung sách, tuân thủ yêu cầu attribution “Access for free at openstax.org” trong bản số/trang in tương ứng.
+- Bản PDF cục bộ `bonus.pdf` có 164 trang vật lý. `bonus_chunks.json` có 534 chunks trên các trang PDF 11–154 (144 trang vật lý; trang in trong sách thường thấp hơn số trang PDF 10 trang). Các trang 1–10 là bìa/front matter; trang 155–160 là Answer Key và bị loại để tránh rò rỉ đáp án; trang 161–164 là Index và bị loại vì chỉ phục vụ điều hướng. Cần ghi số trang PDF trong citation, không nhầm với số trang in.
+- Chunk builder trích xuất text, tạo 17 biểu diễn bảng có cấu trúc và thêm mô tả thủ công cho 7 hình/biểu đồ/sơ đồ; 69 ảnh được trích xuất để kiểm tra. Đây chưa phải kiểm kê thị giác đầy đủ: nhiều ảnh chỉ có caption/text chunk, chưa có mô tả riêng; các hình được dùng trong benchmark phải được đối chiếu trực quan với ảnh gốc và caption.
+- [`bonus_questions.json`](bonus_questions.json) được tạo từ `starter/build_bonus_questions.py`: 18 dev (15 có đáp án, 3 thiếu bằng chứng) và 30 test (24 có đáp án, 6 thiếu bằng chứng). Test có 6 Bảng, 5 Ảnh/sơ đồ, 5 Biểu đồ, 4 Multi-hop, 4 Text và 6 Thiếu bằng chứng. Trong benchmark bonus, mọi phần tử `gold` là evidence bắt buộc, trừ khi câu hỏi khai báo `evidence_groups` với `min_matches` và `gold_indices` cho lựa chọn thay thế (ví dụ cần hai trong bốn quốc gia). CER yêu cầu đủ mọi nhóm evidence trong context cuối, cùng `source_id`/trang và quote nguyên văn.
+- Các file `bonus.pdf`, `bonus_chunks.json`, `bonus_questions.json` và `bonus_figures/` bị loại khỏi Git theo mặc định. Không phân phối chúng công khai nếu chưa kiểm tra giấy phép phi thương mại, attribution/share-alike của văn bản và điều khoản riêng của từng hình. Có thể tái tạo cục bộ bằng cách lấy PDF từ trang OpenStax ở trên rồi chạy:
+
+```powershell
+python starter\build_bonus_chunks.py
+python starter\build_bonus_questions.py
+```
+
+Chạy agent trên dev/test và tổng hợp nhãn thủ công:
+
+```powershell
+python starter\run_bonus_agent.py --chunks data\bonus_chunks.json --questions data\bonus_questions.json --split dev --output starter\results\bonus-agent-dev
+python starter\bonus_metrics.py --chunks data\bonus_chunks.json --questions data\bonus_questions.json --traces starter\results\bonus-agent-test\traces.json --reviews starter\results\bonus-agent-test\manual_reviews.json --split test --output starter\results\bonus-agent-test\audit-summary.json
+```
+
+`run_bonus_agent.py` chỉ tạo trace và kiểm tra evidence tự động; nó không chấm độ đúng/đủ câu trả lời hay độ an toàn của abstention. `bonus_metrics.py` chỉ báo pass rate khi có một nhãn cho từng câu và kiểm tra đủ evidence/citation; lỗi và kết quả thiếu vẫn thuộc mẫu số. Lượt `bonus-agent-test` hiện có là exploratory, được chạy trước thay đổi controller và đã được xem; không dùng làm test độc lập cuối hoặc để khẳng định đạt ngưỡng 90%. Nếu đã xem kết quả để chỉnh pipeline, phải tạo một test mới trước khi kết luận.

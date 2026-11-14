@@ -9,3 +9,9 @@ __pycache__/
 # Local datasets and generated output; share permitted artifacts deliberately
 starter/data/
 starter/results/
+
+# OpenStax bonus corpus and extracted assets are local; check NC-SA and figure credits before sharing
+/data/bonus.pdf
+/data/bonus_chunks.json
+/data/bonus_questions.json
+/data/bonus_figures/
